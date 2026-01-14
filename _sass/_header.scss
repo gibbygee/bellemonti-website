@@ -7,12 +7,12 @@
   left: 0;
   right: 0;
   height: auto;
-  min-height: 180px;
+  min-height: auto;
   background-color: $color-white;
   border-bottom: 1px solid $color-border;
   z-index: $z-index-header;
   transition: box-shadow $transition-medium;
-  padding: 24px 0;
+  padding: 16px 0;
 
   // Shadow effect on scroll
   &.scrolled {

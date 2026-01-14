@@ -1,18 +1,18 @@
 <header class="site-header">
-  <div class="header-container" style="flex-direction: column; justify-content: center;">
+  <div class="header-container" style="flex-direction: column; justify-content: flex-start;">
     <div class="site-logo">
       <a href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" style="display: block; height: 60px; width: auto;">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" style="display: block; height: 50px; width: auto;">
       </a>
     </div>
 
-    <div style="margin-top: 16px;">
+    <div style="margin-top: 8px;">
       <a href="{{ '/' | relative_url }}" style="font-size: 32px; font-weight: 700; color: #333; text-decoration: none;">
         {{ site.title }}
       </a>
     </div>
 
-    <div style="margin-top: 8px;">
+    <div style="margin-top: 4px;">
       {% include navigation.html %}
     </div>
   </div>
