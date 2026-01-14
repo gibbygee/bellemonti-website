@@ -44,6 +44,9 @@ collections:
   services:
     output: true
     permalink: /services/:slug/
+  readings:
+    output: true
+    permalink: /reading/:slug/
 
 # Defaults
 defaults:
@@ -62,6 +65,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "readings"
+    values:
+      layout: "reading"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

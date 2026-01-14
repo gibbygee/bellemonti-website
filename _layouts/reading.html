@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="reading">
+  <div class="container">
+    <header class="reading-header">
+      <p class="text-secondary" style="margin-bottom: 8px;">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%B %d, %Y" }}
+        </time>
+        {% if page.author %}
+          • {{ page.author }}
+        {% endif %}
+      </p>
+      <h1 style="margin-bottom: 24px;">{{ page.title }}</h1>
+
+      {% if page.excerpt %}
+        <p class="text-large text-secondary" style="margin-bottom: 32px;">
+          {{ page.excerpt }}
+        </p>
+      {% endif %}
+    </header>
+
+    <div class="reading-content">
+      {{ content }}
+    </div>
+
+    <footer class="reading-footer" style="margin-top: 48px; padding-top: 32px; border-top: 1px solid #e1e4e8;">
+      <a href="{{ '/reading/' | relative_url }}" class="btn btn-outline">← Back to What I'm Reading</a>
+    </footer>
+  </div>
+</article>

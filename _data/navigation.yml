@@ -14,6 +14,10 @@
   link: /blog/
   visible: true
 
+- name: What I'm Reading
+  link: /reading/
+  visible: true
+
 - name: Contact
   link: /contact/
   visible: false  # Hidden - set to true to show
