@@ -36,6 +36,33 @@ plugins:
 # Custom settings
 logo: /assets/images/logo.png
 
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:slug/
+  services:
+    output: true
+    permalink: /services/:slug/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

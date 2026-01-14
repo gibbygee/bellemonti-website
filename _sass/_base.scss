@@ -36,8 +36,8 @@ body {
 
 // Site Content - Account for fixed header and menu bar
 .site-content {
-  padding-top: 140px; // Header (82px) + Menu bar (44px) + spacing
-  min-height: calc(100vh - 140px);
+  padding-top: 180px; // Header (82px) + Menu bar (44px) + extra spacing
+  min-height: calc(100vh - 180px);
 }
 
 // Links
