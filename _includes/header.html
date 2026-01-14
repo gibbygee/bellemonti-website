@@ -1,9 +1,9 @@
 <header class="site-header">
   <div class="header-container" style="flex-direction: column; justify-content: center; text-align: center;">
-    <div class="site-logo">
+    <div class="site-logo" style="display: flex; justify-content: center;">
       <a href="{{ '/' | relative_url }}">
         {% if site.logo %}
-          <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" style="margin: 0 auto;">
+          <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" style="display: block; height: 60px; width: auto;">
         {% endif %}
       </a>
     </div>
