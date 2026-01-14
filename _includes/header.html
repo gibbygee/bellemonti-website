@@ -1,14 +1,21 @@
 <header class="site-header">
-  <div class="header-container">
+  <div class="header-container" style="flex-direction: column; justify-content: center; text-align: center;">
     <div class="site-logo">
-      <a href="{{ '/' | relative_url }}" style="display: flex; align-items: center; gap: 16px;">
+      <a href="{{ '/' | relative_url }}">
         {% if site.logo %}
-          <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}">
+          <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" style="margin: 0 auto;">
         {% endif %}
-        <span style="font-size: 32px; font-weight: 700; color: #333;">{{ site.title }}</span>
       </a>
     </div>
 
-    {% include navigation.html %}
+    <div style="margin-top: 16px;">
+      <a href="{{ '/' | relative_url }}" style="font-size: 32px; font-weight: 700; color: #333; text-decoration: none;">
+        {{ site.title }}
+      </a>
+    </div>
+
+    <div style="margin-top: 8px;">
+      {% include navigation.html %}
+    </div>
   </div>
 </header>
