@@ -1,14 +1,30 @@
 // Navigation Styles
 @import 'variables';
 
+.menu-bar {
+  position: fixed;
+  top: 82px; // Header height (50px logo + 32px padding)
+  left: 0;
+  right: 0;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-border;
+  z-index: $z-index-header - 1;
+  padding: 12px 0;
+}
+
+.menu-container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $spacing-md 0 45px;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0 $mobile-padding 0 45px;
+  }
+}
+
 .site-nav {
   display: flex;
   align-items: center;
-  gap: $spacing-lg;
-
-  @media (max-width: $breakpoint-mobile) {
-    gap: $spacing-md;
-  }
 
   ul {
     display: flex;
@@ -18,7 +34,7 @@
     gap: $spacing-lg;
 
     @media (max-width: $breakpoint-mobile) {
-      gap: $spacing-sm;
+      gap: $spacing-md;
     }
   }
 

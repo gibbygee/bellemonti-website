@@ -3,7 +3,11 @@
     {% for item in site.data.navigation %}
       <li>
         <a href="{{ item.link | relative_url }}"
-           {% if page.url == item.link %}class="active"{% endif %}>
+           {% if item.link == '/' %}
+             {% if page.url == '/' or page.url == '/index.html' %}class="active"{% endif %}
+           {% else %}
+             {% if page.url contains item.link %}class="active"{% endif %}
+           {% endif %}>
           {{ item.name }}
         </a>
       </li>

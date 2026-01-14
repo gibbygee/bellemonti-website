@@ -43,22 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-  // Active navigation state
-  const navLinks = document.querySelectorAll('.site-nav a');
-  const currentPath = window.location.pathname;
-
-  navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href');
-
-    // Check if link matches current page
-    if (linkPath === currentPath ||
-        (currentPath === '/' && linkPath === '/index.html') ||
-        (currentPath.includes(linkPath) && linkPath !== '/')) {
-      link.classList.add('active');
-    }
-  });
-
-
   // Intersection Observer for fade-in animations
   const observerOptions = {
     threshold: 0.1,
