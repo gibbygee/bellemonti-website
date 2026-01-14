@@ -1,14 +1,19 @@
 - name: Home
   link: /
+  visible: true
 
 - name: About
   link: /about/
+  visible: false  # Hidden - set to true to show
 
 - name: Services
   link: /services/
+  visible: false  # Hidden - set to true to show
 
 - name: Dispatches
   link: /blog/
+  visible: true
 
 - name: Contact
   link: /contact/
+  visible: false  # Hidden - set to true to show
