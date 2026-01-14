@@ -4,8 +4,8 @@ title: Home
 permalink: /
 ---
 
-# market-based product management
+# Market-based product management
 
-## for enterprise software teams
+# For enterprise software teams
 
-### we build great PMs
+# We build great PMs
