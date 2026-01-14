@@ -43,17 +43,3 @@
     display: block;
   }
 }
-
-.site-title {
-  a {
-    font-size: 28px;
-    font-weight: 700;
-    color: $color-text-primary;
-    text-decoration: none;
-    transition: color $transition-fast;
-
-    &:hover {
-      color: $color-ocean-blue;
-    }
-  }
-}

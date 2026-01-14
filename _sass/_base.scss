@@ -34,10 +34,10 @@ body {
   }
 }
 
-// Site Content - Account for fixed header and menu bar
+// Site Content - Account for fixed header
 .site-content {
-  padding-top: 200px; // Header (102px) + Menu bar (44px) + extra spacing
-  min-height: calc(100vh - 200px);
+  padding-top: 125px;
+  min-height: calc(100vh - 125px);
 }
 
 // Links

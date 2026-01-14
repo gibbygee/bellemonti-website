@@ -2,9 +2,7 @@
 @import 'variables';
 
 .site-footer {
-  background-color: $color-background;
-  border-top: 1px solid $color-border;
-  padding: $spacing-xxl 0 $spacing-lg;
+  padding: $spacing-md 0;
   margin-top: $spacing-xxl;
 }
 
@@ -68,8 +66,6 @@
 
 .footer-bottom {
   text-align: center;
-  padding-top: $spacing-lg;
-  border-top: 1px solid $color-border;
 
   p {
     color: $color-text-secondary;
