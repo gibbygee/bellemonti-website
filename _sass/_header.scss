@@ -6,11 +6,13 @@
   top: 0;
   left: 0;
   right: 0;
-  height: $header-height;
+  height: auto;
+  min-height: 180px;
   background-color: $color-white;
   border-bottom: 1px solid $color-border;
   z-index: $z-index-header;
   transition: box-shadow $transition-medium;
+  padding: 24px 0;
 
   // Shadow effect on scroll
   &.scrolled {
@@ -22,9 +24,7 @@
   max-width: $container-width;
   margin: 0 auto;
   padding: 0 $spacing-md;
-  height: 100%;
   display: flex;
-  align-items: center;
   gap: $spacing-lg;
 
   @media (max-width: $breakpoint-mobile) {

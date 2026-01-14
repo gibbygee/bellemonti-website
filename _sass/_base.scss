@@ -36,8 +36,8 @@ body {
 
 // Site Content - Account for fixed header
 .site-content {
-  padding-top: $header-height;
-  min-height: calc(100vh - $header-height);
+  padding-top: 220px;
+  min-height: calc(100vh - 220px);
 }
 
 // Links
