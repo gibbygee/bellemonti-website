@@ -1,12 +1,11 @@
 <header class="site-header">
   <div class="header-container">
     <div class="site-logo">
-      <a href="{{ '/' | relative_url }}">
+      <a href="{{ '/' | relative_url }}" style="display: flex; align-items: center; gap: 16px;">
         {% if site.logo %}
           <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}">
-        {% else %}
-          {{ site.title }}
         {% endif %}
+        <span style="font-size: 32px; font-weight: 700; color: #333;">{{ site.title }}</span>
       </a>
     </div>
 
