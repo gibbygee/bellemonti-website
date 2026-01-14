@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .brand-blue { fill: #0B4DBA; }
+    .brand-text {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 72px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+  </style>
+
+  <!-- Mountain M -->
+  <path class="brand-blue"
+        d="M120 170 
+           L220 40 
+           L300 130 
+           L380 40 
+           L480 170 
+           L450 170 
+           L300 70 
+           L150 170 
+           Z" />
+
+  <!-- Brand name -->
+  <text x="300" y="255" text-anchor="middle" class="brand-blue brand-text">
+    Bellemonti
+  </text>
+</svg>
