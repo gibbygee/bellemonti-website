@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fundamentals are always "in""
+title: 'Fundamentals are always "in"'
 date: 2025-01-27
 author: Bellemonti
 excerpt: "PMs are the keeper of the economic flame for the company"
