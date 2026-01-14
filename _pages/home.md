@@ -4,11 +4,11 @@ title: Home
 permalink: /
 ---
 
-Market-based product management
+**Market-based product management**
 
-For enterprise software teams
+**For enterprise software teams**
 
-We build great PMs
+**We build great PMs**
 
 Follow: [X](https://x.com/SteelAardvark)
 
