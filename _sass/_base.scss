@@ -1,0 +1,73 @@
+// Base Styles and CSS Reset
+@import 'variables';
+
+// Modern CSS Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text-primary;
+  background-color: $color-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Container
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0 $mobile-padding;
+  }
+}
+
+// Site Content - Account for fixed header
+.site-content {
+  padding-top: $header-height;
+  min-height: calc(100vh - $header-height);
+}
+
+// Links
+a {
+  color: $color-ocean-blue;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-teal;
+  }
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Lists
+ul, ol {
+  list-style-position: inside;
+  margin-bottom: $spacing-md;
+}
+
+// Buttons
+button {
+  font-family: $font-primary;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

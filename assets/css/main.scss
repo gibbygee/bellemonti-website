@@ -1,0 +1,15 @@
+---
+---
+
+// Bellemonti Website Styles
+// Main stylesheet that imports all partials
+
+@import 'variables';
+@import 'base';
+@import 'typography';
+@import 'header';
+@import 'navigation';
+@import 'footer';
+@import 'animations';
+@import 'grid';
+@import 'utilities';

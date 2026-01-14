@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="header-container">
+    <div class="site-logo">
+      <a href="{{ '/' | relative_url }}">
+        {% if site.logo %}
+          <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}">
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </a>
+    </div>
+
+    {% include navigation.html %}
+  </div>
+</header>

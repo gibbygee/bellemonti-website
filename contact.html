@@ -1,0 +1,76 @@
+---
+layout: page
+title: Contact Us
+---
+
+<section class="section">
+  <p class="text-large text-center mb-xxl">
+    We'd love to hear from you. Get in touch to discuss how we can help your business succeed.
+  </p>
+
+  <div class="grid-2 gap-lg">
+    <div>
+      <h2>Get in Touch</h2>
+      <p class="mb-lg">
+        Whether you have a question about our services, need a consultation, or want to discuss a project, we're here to help.
+      </p>
+
+      <div class="mb-md">
+        <h3>Email</h3>
+        <p>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+      </div>
+
+      <div class="mb-md">
+        <h3>Office Hours</h3>
+        <p>
+          Monday - Friday: 9:00 AM - 6:00 PM<br>
+          Saturday - Sunday: Closed
+        </p>
+      </div>
+
+      <div class="mb-md">
+        <h3>Response Time</h3>
+        <p>
+          We typically respond to all inquiries within 24 hours during business days.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Send Us a Message</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div style="margin-bottom: 16px;">
+          <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600;">Name *</label>
+          <input type="text" id="name" name="name" required
+                 style="width: 100%; padding: 12px; border: 1px solid #e1e4e8; border-radius: 4px; font-family: 'Courier New', Courier, monospace;">
+        </div>
+
+        <div style="margin-bottom: 16px;">
+          <label for="email" style="display: block; margin-bottom: 8px; font-weight: 600;">Email *</label>
+          <input type="email" id="email" name="email" required
+                 style="width: 100%; padding: 12px; border: 1px solid #e1e4e8; border-radius: 4px; font-family: 'Courier New', Courier, monospace;">
+        </div>
+
+        <div style="margin-bottom: 16px;">
+          <label for="subject" style="display: block; margin-bottom: 8px; font-weight: 600;">Subject *</label>
+          <input type="text" id="subject" name="subject" required
+                 style="width: 100%; padding: 12px; border: 1px solid #e1e4e8; border-radius: 4px; font-family: 'Courier New', Courier, monospace;">
+        </div>
+
+        <div style="margin-bottom: 24px;">
+          <label for="message" style="display: block; margin-bottom: 8px; font-weight: 600;">Message *</label>
+          <textarea id="message" name="message" rows="6" required
+                    style="width: 100%; padding: 12px; border: 1px solid #e1e4e8; border-radius: 4px; font-family: 'Courier New', Courier, monospace; resize: vertical;"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+      </form>
+
+      <p class="text-small mt-md" style="color: #666;">
+        * Note: To enable the contact form, you'll need to sign up for a free <a href="https://formspree.io/" target="_blank">Formspree</a> account and replace YOUR_FORM_ID in the form action.
+      </p>
+    </div>
+  </div>
+</section>

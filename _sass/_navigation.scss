@@ -1,0 +1,70 @@
+// Navigation Styles
+@import 'variables';
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: $spacing-lg;
+
+  @media (max-width: $breakpoint-mobile) {
+    gap: $spacing-md;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: $spacing-lg;
+
+    @media (max-width: $breakpoint-mobile) {
+      gap: $spacing-sm;
+    }
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    padding: $spacing-xs 0;
+    color: $color-text-primary;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color $transition-fast;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: $font-size-small;
+    }
+
+    // Underline animation
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $color-teal;
+      transition: width $transition-medium;
+    }
+
+    &:hover {
+      color: $color-ocean-blue;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &.active {
+      color: $color-ocean-blue;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

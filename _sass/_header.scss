@@ -1,0 +1,57 @@
+// Header Styles
+@import 'variables';
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-border;
+  z-index: $z-index-header;
+  transition: box-shadow $transition-medium;
+
+  // Shadow effect on scroll
+  &.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  }
+}
+
+.header-container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0 $mobile-padding;
+  }
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $color-text-primary;
+    font-weight: 700;
+    font-size: 24px;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-ocean-blue;
+    }
+  }
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+}
