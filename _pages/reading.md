@@ -5,6 +5,10 @@ permalink: /reading/
 ---
 
 <style>
+  .page-header {
+    padding-top: 8px;
+  }
+
   .page-header h1 {
     font-size: 28px;
     padding-top: 5px;
