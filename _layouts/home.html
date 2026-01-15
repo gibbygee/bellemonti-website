@@ -4,6 +4,41 @@ layout: default
 
 <div class="home">
   <div class="home-container">
-    {{ content }}
+    <!-- Full-width welcome section -->
+    <div class="welcome-section">
+      <h1>Welcome to Bellemonti</h1>
+    </div>
+
+    <!-- Two-column grid for content and sidebar -->
+    <div class="home-grid">
+      <div class="home-main">
+        <h3>Market-based product management for enterprise software teams</h3>
+        <p><strong>We build great PMs!</strong></p>
+        <p>Follow: <a href="https://x.com/SteelAardvark">X</a></p>
+        <p>contact at bellemonti.com</p>
+        {{ content }}
+      </div>
+
+      <aside class="home-sidebar">
+        <div class="sidebar-panel">
+          <h4>What I'm Reading</h4>
+
+          {% if site.readings.size > 0 %}
+            {% assign recent_readings = site.readings | sort: 'date' | reverse | limit: 3 %}
+            <ul style="list-style: none; padding-left: 0;">
+              {% for reading in recent_readings %}
+                <li style="margin-bottom: 12px;">
+                  <a href="{{ reading.url | relative_url }}">{{ reading.title }}</a>
+                  <span class="text-secondary text-small"> • {{ reading.date | date: "%B %d, %Y" }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+            <p><a href="{{ '/reading/' | relative_url }}" class="btn btn-outline">View All →</a></p>
+          {% else %}
+            <p>No reading posts yet. Check back soon!</p>
+          {% endif %}
+        </div>
+      </aside>
+    </div>
   </div>
 </div>
