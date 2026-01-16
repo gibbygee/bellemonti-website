@@ -2,8 +2,13 @@
 layout: default
 ---
 
-<article class="reading">
+<article class="reading" style="margin-top: 8px;">
   <div class="container">
+    <nav style="margin-bottom: 20px;">
+      <a href="{{ '/reading/' | relative_url }}" style="color: #7f8c8d; text-decoration: none; font-size: 14px;">
+        ← back
+      </a>
+    </nav>
     <header class="reading-header">
       <p class="text-secondary" style="margin-bottom: 8px;">
         <time datetime="{{ page.date | date_to_xmlschema }}">
@@ -14,12 +19,6 @@ layout: default
         {% endif %}
       </p>
       <h1 style="margin-bottom: 24px;">{{ page.title }}</h1>
-
-      {% if page.excerpt %}
-        <p class="text-large text-secondary" style="margin-bottom: 32px;">
-          {{ page.excerpt }}
-        </p>
-      {% endif %}
     </header>
 
     <div class="reading-content">
@@ -27,7 +26,7 @@ layout: default
     </div>
 
     <footer class="reading-footer" style="margin-top: 48px; padding-top: 32px; border-top: 1px solid #e1e4e8;">
-      <a href="{{ '/reading/' | relative_url }}" class="btn btn-outline">← Back to What I'm Reading</a>
+      <a href="{{ '/reading/' | relative_url }}" style="color: #7f8c8d; text-decoration: none; font-size: 14px;">← back</a>
     </footer>
   </div>
 </article>

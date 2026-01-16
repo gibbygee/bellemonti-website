@@ -10,7 +10,6 @@ permalink: /blog/
   }
 
   .page-header h1 {
-    font-size: 28px;
     padding-top: 5px;
   }
 
