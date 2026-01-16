@@ -32,5 +32,5 @@ permalink: /reading/
     {% endfor %}
   </div>
 {% else %}
-  <p>No reading posts yet. Check back soon for updates!</p>
+  <p>No reading posts yet</p>
 {% endif %}
