@@ -6,6 +6,8 @@
         <a href="{{ item.link | relative_url }}"
            {% if item.link == '/' %}
              {% if page.url == '/' or page.url == '/index.html' %}class="active"{% endif %}
+           {% elsif item.link == '/blog/' %}
+             {% if page.url contains item.link or page.layout == 'post' %}class="active"{% endif %}
            {% else %}
              {% if page.url contains item.link %}class="active"{% endif %}
            {% endif %}>
