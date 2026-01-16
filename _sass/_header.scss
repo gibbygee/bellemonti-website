@@ -6,7 +6,9 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: $color-white;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid $color-border;
   z-index: $z-index-header;
   transition: box-shadow $transition-medium;

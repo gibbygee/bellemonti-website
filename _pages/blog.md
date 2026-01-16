@@ -16,7 +16,6 @@ permalink: /blog/
 
   .dispatch-list {
     margin-top: 20px;
-    max-width: 66%;
   }
 
   .dispatch-item {

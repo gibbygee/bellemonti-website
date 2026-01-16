@@ -23,14 +23,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+// Site wrapper with borders
+.site-wrapper {
+  max-width: $container-width;
+  margin: 0 auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  min-height: 100vh;
+}
+
 // Container
 .container {
   max-width: $container-width;
   margin: 0 auto;
-  padding: 0 $spacing-md 0 45px;
+  padding: 0 $spacing-md;
 
   @media (max-width: $breakpoint-mobile) {
-    padding: 0 $mobile-padding 0 45px;
+    padding: 0 $mobile-padding;
   }
 }
 

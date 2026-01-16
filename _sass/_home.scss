@@ -2,12 +2,10 @@
 @import 'variables';
 
 .home-container {
-  max-width: $container-width;
-  margin: 0 auto;
-  padding: 0 $spacing-md 0 45px;
+  padding: 0 $spacing-md;
 
   @media (max-width: $breakpoint-mobile) {
-    padding: 0 $mobile-padding 0 45px;
+    padding: 0 $mobile-padding;
   }
 }
 
