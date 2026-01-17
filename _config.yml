@@ -22,8 +22,8 @@ title: Bellemonti
 email: contact@bellemonti.com
 description: >- # this means to ignore newlines until "baseurl:"
   Professional business solutions and services.
-baseurl: "/bellemonti-website" # the subpath of your site, e.g. /blog
-url: "https://gibbygee.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://bellemonti.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
