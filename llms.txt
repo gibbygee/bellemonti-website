@@ -1,0 +1,31 @@
+# Bellemonti
+
+> Market-based product management for enterprise software teams. We build great PMs!
+
+## About
+
+Bellemonti is a business consulting company focused on product management, founded by John Garrish. The site features blog posts ("Dispatches") about product management, software development, and building effective teams.
+
+## Main Sections
+
+- [Home](https://bellemonti.com/): Welcome page and latest updates
+- [Dispatches](https://bellemonti.com/blog/): Blog posts on product management and software
+- [Reading](https://bellemonti.com/reading/): Curated articles and resources
+
+## Key Topics
+
+- Product management best practices
+- Enterprise software development
+- Team building and leadership
+- Software business fundamentals
+- AI tools for product managers (Cursor, Claude Code)
+
+## Contact
+
+- Website: https://bellemonti.com
+- X/Twitter: https://x.com/SteelAardvark
+- Email: contact@bellemonti.com
+
+## Technical
+
+This site is built with Jekyll and hosted on GitHub Pages. It was created using Claude Code.
