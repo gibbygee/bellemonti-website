@@ -4,9 +4,6 @@ title: "I'm repeating myself + code copy button"
 date: 2026-01-17
 author: john garrish
 ---
-
-# I'm repeating myself Claude!
-
 I realized that Claude Code is losing a little bit of context every time I open a new terminal. 
 
 So, I asked... 
