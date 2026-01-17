@@ -1,11 +1,13 @@
 ---
 layout: reading
-title: "Adding some content for Claude Code"
+title: "I'm repeating myself - adding context for Claude Code"
 date: 2026-01-17
 author: john garrish
 ---
 
-I realized that Claude Code is losing a little bit of context every time I open a new terminal. So, I asked... 
+I realized that Claude Code is losing a little bit of context every time I open a new terminal. 
+
+So, I asked... 
 
 > What can we add in the `.claude` folder that will make it easier for Claude to recognize and understand this project for future changes—so that when you start a new session, Claude has a way to understand quickly what's in the project?
 
