@@ -10,11 +10,11 @@
   link: /services/
   visible: false  # Hidden - set to true to show
 
-- name: Dispatches
+- name: Writing
   link: /blog/
   visible: true
 
-- name: Reading
+- name: Dispatches
   link: /reading/
   visible: true
 

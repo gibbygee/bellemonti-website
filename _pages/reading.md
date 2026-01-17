@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reading
+title: Dispatches
 permalink: /reading/
 ---
 

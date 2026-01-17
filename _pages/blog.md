@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dispatches
+title: Writing
 permalink: /blog/
 ---
 

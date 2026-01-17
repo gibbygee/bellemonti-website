@@ -8,7 +8,7 @@ layout: default
       {{ content }}
 
       <div class="reading-section" style="margin-top: 32px;">
-        <h4>Latest Reading</h4>
+        <h4>Latest Dispatches</h4>
 
         {% if site.readings.size > 0 %}
           {% assign recent_readings = site.readings | sort: 'date' | reverse | limit: 3 %}
