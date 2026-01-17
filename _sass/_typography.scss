@@ -86,3 +86,23 @@ blockquote {
   font-style: italic;
   color: $color-text-secondary;
 }
+
+// Compact spacing for content areas
+.reading-content,
+.post-content {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 4px;
+    margin-top: $spacing-sm;
+  }
+
+  > h1:first-child,
+  > h2:first-child,
+  > h3:first-child,
+  > h4:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: $spacing-sm;
+  }
+}
