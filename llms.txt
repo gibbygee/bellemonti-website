@@ -4,19 +4,21 @@
 
 ## About
 
-Bellemonti is a business consulting company focused on product management, founded by John Garrish. The site features blog posts ("Dispatches") about product management, software development, and building effective teams.
+Bellemonti is a strategic advisory and consulting company focused on product management for b2b enterprise software, founded by John Garrish. 
+
+The site features blog posts ("Dispatches") about current product management topics, and building effective product management teams.
 
 ## Main Sections
 
 - [Home](https://bellemonti.com/): Welcome page and latest updates
-- [Dispatches](https://bellemonti.com/blog/): Blog posts on product management and software
+- [Dispatches](https://bellemonti.com/blog/): Blog posts on product management and b2b enterprise software
 - [Reading](https://bellemonti.com/reading/): Curated articles and resources
 
 ## Key Topics
 
-- Product management best practices
-- Enterprise software development
-- Team building and leadership
+- Enterprise Software Product management best practices
+- The business of software - software product management for software businesses, not just software
+- Product Management team building and leadership
 - Software business fundamentals
 - AI tools for product managers (Cursor, Claude Code)
 
