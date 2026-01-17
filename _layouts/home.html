@@ -8,7 +8,7 @@ layout: default
       {{ content }}
 
       <div class="reading-section" style="margin-top: 32px;">
-        <h4>What I'm Reading</h4>
+        <h4>Latest Reading</h4>
 
         {% if site.readings.size > 0 %}
           {% assign recent_readings = site.readings | sort: 'date' | reverse | limit: 3 %}
@@ -20,7 +20,6 @@ layout: default
               </li>
             {% endfor %}
           </ul>
-          <p><a href="{{ '/reading/' | relative_url }}" class="btn btn-outline">View All</a></p>
         {% else %}
           <p>No reading posts yet. Check back soon!</p>
         {% endif %}
