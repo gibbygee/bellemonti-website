@@ -1,6 +1,6 @@
 ---
 layout: reading
-title: "From Hard Fork - How to Create a Free Website Using Claude Code and GitHub Pages"
+title: "From Hard Fork - How to ...Free Website w/ Claude Code and GitHub Pages"
 date: 2026-01-16
 author: john garrish
 ---
