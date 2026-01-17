@@ -133,3 +133,44 @@
     transform: translateY(-4px);
   }
 }
+
+// Code block copy button
+.code-block-wrapper {
+  position: relative;
+
+  pre {
+    margin: 0;
+  }
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 10px;
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 500;
+  color: $color-text-secondary;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity $transition-fast, background-color $transition-fast;
+
+  .code-block-wrapper:hover & {
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-text-primary;
+  }
+
+  &.copied {
+    background-color: $color-teal;
+    color: $color-white;
+    border-color: $color-teal;
+  }
+}

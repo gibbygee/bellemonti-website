@@ -70,8 +70,9 @@ pre {
   background-color: $color-background;
   padding: $spacing-md;
   border-radius: 4px;
-  overflow-x: auto;
   margin-bottom: $spacing-md;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 
   code {
     background-color: transparent;

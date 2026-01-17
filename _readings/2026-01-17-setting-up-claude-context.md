@@ -9,7 +9,9 @@ I realized that Claude Code is losing a little bit of context every time I open 
 
 So, I asked... 
 
-> What can we add in the `.claude` folder that will make it easier for Claude to recognize and understand this project for future changes—so that when you start a new session, Claude has a way to understand quickly what's in the project?
+``` 
+What can we add in the .claude folder that will make it easier for Claude to recognize and understand this project for future changes—so that when you start a new session, Claude has a way to understand quickly what's in the project?
+```
 
 ## What Claude suggested
 
@@ -19,7 +21,8 @@ Claude Code looks for a CLAUDE.md file in the project root (or .claude/ folder) 
 
 ## Benefits, according to Claude
 
-``` Having a well-structured `CLAUDE.md` file means:
+``` 
+Having a well-structured `CLAUDE.md` file means:
 
 - Claude understands your project immediately at the start of each session
 - No need to re-explain project structure or conventions
