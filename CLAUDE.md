@@ -9,6 +9,11 @@ bundle exec jekyll serve    # Start local server at http://127.0.0.1:4000
 bundle install              # Install dependencies
 ```
 
+**Slash Commands:**
+- `/d` - Create new reading post (Dispatch) in `_readings/` directory with today's date
+
+To add more slash commands, create `.md` files in `.cursor/commands/`
+
 ## Project Structure
 
 ```
@@ -17,13 +22,15 @@ _data/navigation.yml # Menu items (visible: true/false controls display)
 _layouts/            # Templates: default, home, page, post, reading
 _includes/           # Components: head, header, navigation, footer
 _pages/              # Static pages (home, blog, reading, about, contact, services)
-_posts/              # Blog posts ("Writing")
-_readings/           # Dispatches collection
+_posts/              # Blog posts (nav: "Writing", URL: /blog/)
+_readings/           # Reading posts (nav: "Dispatches", URL: /reading/)
 _services/           # Services collection
 _sass/               # SCSS partials (see Styling below)
+.cursor/commands/    # Slash commands for Cursor IDE (e.g., d.md for /d)
 assets/css/main.scss # Main stylesheet (imports all partials)
-assets/js/main.js    # JS: header scroll effect, smooth anchors, fade animations
+assets/js/main.js    # JS: header scroll, smooth anchors, fade animations, copy buttons
 assets/images/       # Logo files and images
+llms.txt             # Project description for AI tools
 ```
 
 ## Collections
@@ -37,7 +44,7 @@ assets/images/       # Logo files and images
 
 ## Content Patterns
 
-**Blog post front matter - referred to as Writing on the site:**
+**Blog post (`_posts/`) - displayed under "Writing" nav:**
 ```yaml
 ---
 layout: post
@@ -48,14 +55,17 @@ excerpt: "Brief description"
 ---
 ```
 
-**Dispatches item front matter:**
+**Reading post (`_readings/`) - displayed under "Dispatches" nav:**
 ```yaml
 ---
 layout: reading
 title: "Title"
 date: YYYY-MM-DD
+author: john garrish
 ---
 ```
+
+**Important:** Use `/d` slash command to create new reading posts with proper format.
 
 ## Styling
 
@@ -84,19 +94,44 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 
 ## Key Files to Know
 
-- `_layouts/home.html` - Home page with dynamic "Latest Dispatches" section
+- `_layouts/home.html` - Home page with dynamic "Latest Dispatches" section (pulls 3 most recent from `_readings/`)
 - `_includes/navigation.html` - Renders menu with active state detection
-- `assets/js/main.js` - Intersection Observer for fade animations, header scroll effect
+- `assets/js/main.js` - Intersection Observer for fade animations, header scroll effect, copy buttons for code blocks
 - `_config.yml` - Site settings, collection definitions, plugin list
+- `_data/navigation.yml` - Navigation menu configuration (visible: true/false)
+- `.cursor/commands/` - Custom slash commands (e.g., `/d` for new reading posts)
 
-## Plugins
+## Plugins & Dependencies
 
+**Jekyll Plugins:**
 - jekyll-feed (RSS)
 - jekyll-seo-tag (meta tags)
 - jekyll-sitemap (XML sitemap)
 
+**Ruby Gems (in Gemfile):**
+- jekyll ~> 4.4
+- webrick ~> 1.8 (required for Jekyll 4+)
+
+## Features
+
+**Code Copy Buttons:**
+- Automatically added to all code blocks (fenced with triple backticks)
+- Appears on hover in top-right corner
+- Shows "Copied!" confirmation with teal background
+- Implemented in `assets/js/main.js` and styled in `_sass/_utilities.scss`
+
+**Scroll Effects:**
+- Header shadow appears when scrolling past 50px
+- Smooth scroll for anchor links with 127px offset for fixed header
+
+**Animations:**
+- Fade-in effects using Intersection Observer
+- Elements with `.fade-in-visible` class animate when scrolling into view
+
 ## Notes
 
 - Container max-width: 735px
-- Header height: 103px (account for in scroll offsets)
+- Header height: 103px (CSS), but use 127px offset for smooth scroll calculations
 - Sass deprecation warnings are cosmetic (uses @import, will need migration to @use eventually)
+- Site hosted on GitHub Pages at bellemonti.com (CNAME file)
+- `llms.txt` provides project description for AI tools
