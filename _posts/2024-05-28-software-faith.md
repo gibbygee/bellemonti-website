@@ -3,7 +3,7 @@ layout: post
 title: "Software faith"
 date: 2024-05-28
 author: john garrish
-excerpt: "The secret to building performance into a software business is faith"
+excerpt: "The secret to building performance into a software business is ... faith"
 ---
 The financial-ization of the software business has produced some fantastic wealth in the US. But it lead to a lot of sideliners getting into the software business and I don't think a lot of them really understand what it takes to build performance into a software business. 
 

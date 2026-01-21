@@ -14,7 +14,7 @@ In its most fundamental form, the business of software is inherently inefficient
 
 Yet, as companies scale, this kind of inefficiency abounds. Pejoratively it might be called bureaucracy. It's a natural consequence of growing larger as an organization. Sean Goedecke lays this problem at the feet of "legibility" which is an all-purpose explanation. It's a masterful argument:
 
-*"By "legible", I mean work that is predictable, well-estimated, has a paper trail, and doesn't depend on any contingent factors (like the availability of specific people). Quarterly planning, OKRs, and Jira all exist to make work legible. Illegible work is everything else: asking for and giving favors, using tacit knowledge that isn't or can't be written down, fitting in unscheduled changes, and drawing on interpersonal relationships."*
+> "By "legible", I mean work that is predictable, well-estimated, has a paper trail, and doesn't depend on any contingent factors (like the availability of specific people). Quarterly planning, OKRs, and Jira all exist to make work legible. Illegible work is everything else: asking for and giving favors, using tacit knowledge that isn't or can't be written down, fitting in unscheduled changes, and drawing on interpersonal relationships."
 
 <small>
 Source: [Seeing like a software company](https://www.seangoedecke.com/seeing-like-a-software-company/)
@@ -42,7 +42,7 @@ The solution of course is not complex, but it's certainly hard. And as such, it 
 
 Frank Slootman articulates this nicely in his books and online:
 
-"We compensated the ServiceNow exec team on just one metric. It was unquestionably the purest performance metric for a cloud software company. Our board fought me on this. They were convinced a grown up company had to have a balanced scorecard, arguably the worst idea to ever come out of academia. People say they want focus, but their actions do not bear it out, quite the opposite. Focus is hard once you understand what that means. What are you not going to do?" 
+> "We compensated the ServiceNow exec team on just one metric. It was unquestionably the purest performance metric for a cloud software company. Our board fought me on this. They were convinced a grown up company had to have a balanced scorecard, arguably the worst idea to ever come out of academia. People say they want focus, but their actions do not bear it out, quite the opposite. Focus is hard once you understand what that means. What are you not going to do?" 
 
 From: [Amp it up!](https://www.linkedin.com/pulse/amp-up-frank-slootman/)
 

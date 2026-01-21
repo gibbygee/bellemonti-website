@@ -7,7 +7,7 @@ excerpt: "You're probably not failing because you need some advanced technique. 
 ---
 Reminds me of that old quote from Bruce Lee:
 
-I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.
+> I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.
 
 Everyone wants to talk about "advanced" product management techniques. OKRs and North Star metrics and "product sense" and all that. Meanwhile their backlog looks like my junk drawer - full of good intentions and dead batteries.
 

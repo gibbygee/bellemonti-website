@@ -3,7 +3,7 @@ layout: post
 title: "Maybe PM should be slow"
 date: 2024-10-29
 author: john garrish
-excerpt: "What if Product Management isn't about going faster? What if the whole point of Product Management is to SLOW THINGS DOWN?"
+excerpt: "What if the whole point of Product Management is to SLOW THINGS DOWN?"
 ---
 What if Product Management isn't about going faster? What if the whole point of Product Management is to SLOW THINGS DOWN?
 

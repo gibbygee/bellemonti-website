@@ -9,7 +9,7 @@ You are your calendar.
 
 As Tom Peters said a decade ago:
 
-The calendar never lies. You can claim something is your priority, but if your calendar doesn't reflect it, you're lying to yourself.
+> The calendar never lies. You can claim something is your priority, but if your calendar doesn't reflect it, you're lying to yourself.
 
 I see it all the time. Product teams get confronted with all the problems. They are always on the receiving end of every howling shit-throwing monkey in the company. 
 

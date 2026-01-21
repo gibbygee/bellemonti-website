@@ -12,7 +12,7 @@ Software is intangible. Which means that software companies are largely intangib
 
 In our WFH / hybrid world our verbal communication options are effectively limitless. We've got tools to talk by phone, app, on screen, with a whiteboard as a backdrop or even occasionaly, in person. Any way that you want to talk? You can talk. It's a verbal attention blitz from the minute we log in to "the office", to the minute we log out (if we log out).   
 
-do you have a minute to talk?
+> do you have a minute to talk?
 
 The only kind of writing that we do anymore is just a way to find time to ... talk.  We've created so many tools for talking that WRITING has become the exception.   
 
@@ -36,7 +36,7 @@ The side benefit of this approach is that if you "manage by reviewing the WORDS"
 
 The thing is - expecting and reviewing written work skips that middle step - it eliminates the meta-conversation about the work. It takes the bureaucratic overhead of "status updates" out of the equation.   
 
-"Just share what you've written"  
+> "Just share what you've written"  
 
 There's no need to give status updates about a plan to write, or why something wasn't written. What was written, was written. And tomorrow is a new day. You have another opportunity to write more. The writing itself is the update, the summary, and the status all in one.  
 

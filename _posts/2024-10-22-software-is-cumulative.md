@@ -3,11 +3,11 @@ layout: post
 title: "Software is cumulative"
 date: 2024-10-22
 author: john garrish
-excerpt: "Software has a different physics entirely - it's not manufacturing"
+excerpt: "Software is not manufacturing"
 ---
 Watching Elon Musk talk about manufacturing is a guilty pleasure. Not because of amazing technical feats (to wit: Mechazilla) but rather, how he articulates the differences between physical and digital products:
 
-The hard part isn't designing the thing. The hard part is building it ten thousand times without going bankrupt.
+> The hard part isn't designing the thing. The hard part is building it ten thousand times without going bankrupt.
 
 But software? Software has a different physics entirely.
 

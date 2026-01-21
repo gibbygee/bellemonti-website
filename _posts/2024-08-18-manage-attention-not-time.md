@@ -7,7 +7,7 @@ excerpt: "Product Managers don't need micromanagement but they do need engagemen
 ---
 Product Managers hate micromanagement and complain about it constantly. 
 
-It kills motivation! It kills creativity! 
+> It kills motivation! It kills creativity! 
 
 I hear this a lot, and see this a lot.
 

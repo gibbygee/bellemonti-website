@@ -3,7 +3,7 @@ layout: post
 title: "Repetition and persuasion"
 date: 2024-12-02
 author: john garrish
-excerpt: "PMs are in the business of alignment, and communication is the craft."
+excerpt: "For product managers, communication is the craft"
 ---
 It is often written that PMs are in the business of alignment, and communication is the craft.
 
