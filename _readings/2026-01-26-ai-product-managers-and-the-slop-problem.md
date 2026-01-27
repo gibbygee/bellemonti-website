@@ -12,7 +12,7 @@ I. See. This. Every. Day. It's so so hard to get PMs to adopt the new tools and 
 <a href="https://productschool.com" target="_blank" rel="noopener noreferrer">Product School</a> founder Carlos Gonzalez de Villaumbrosia writes:
 
 > Type #1 (traditional PM) is fading fast. In 2026 and beyond, there’s little room for a PM who isn’t leveraging AI in some form. Kind of like a photographer refusing to go digital. ... Let me be clear: if you’re a traditional PM who hasn’t leaned into AI, your days in the field may be numbered. 
-https://productschool.com/blog/artificial-intelligence/guide-ai-product-manager
+<a href="https://productschool.com/blog/artificial-intelligence/guide-ai-product-manager" target="_blank" rel="noopener noreferrer">https://productschool.com/blog/artificial-intelligence/guide-ai-product-manager</a>
 
 It's not getting better. Karri Saarinen, CEO of <a href="https://x.com/linear" target="_blank" rel="noopener noreferrer">Linear</a>, <a href="https://x.com/karrisaarinen/status/2007534281011155419?s=20" target="_blank" rel="noopener noreferrer">pointed this out</a> about design and UX:
 
@@ -22,13 +22,13 @@ It's not getting better. Karri Saarinen, CEO of <a href="https://x.com/linear" t
 
 The problem isn't just adoption resistance, though. There's a deeper issue with how AI is being used, or maybe this is all of a piece.
 
-![staysaasy tweet about AI slop](/assets/images/staysaasy-tweet-ai-slop.png)
-
 As <a href="https://x.com/staysaasy/status/2011911516455416068?s=20" target="_blank" rel="noopener noreferrer">staysaasy put it</a>: "Folks I cannot express just how disrespectful it is to try to get someone to do you a favor by dropping an AI slop document in their inbox. How to lose friends and piss off people."
+
+![staysaasy tweet about AI slop](/assets/images/staysaasy-tweet-ai-slop.png)
 
 ### I use AI all day, but I'm determined not to look like I do
 
-It's a bad look. Here's the "skill" I added to cursor, for this very reason.
+So as much as I'm advocating for it, using it like a consumer is a bad look. Here's the "skill" I added to cursor, for this very reason.
 
 - No emdashes
 - No emojis
@@ -72,6 +72,7 @@ When formatting a markdown document:
 - Only change formatting, not substance
 - Maintain document structure and hierarchy
 ```
+
 
 
 Stay safe out there folks.
