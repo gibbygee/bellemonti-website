@@ -27,7 +27,7 @@ It's a bad look. Here's the "skill" I added to cursor, for this very reason.
 - No emojis
 - Sentence case for headers - Dont Capitalize Every First Letter
 
-If you other good ones, let me know.
+If you have other good ones, let me know. I'm pondering maybe puting misspelings in as well, just as a clue.
 
 ```
 ---
