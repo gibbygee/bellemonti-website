@@ -21,21 +21,25 @@ I think they need another P in the term - because I want to pronounce it Slop (h
 
 ### What this all means for PMs
 
-No matter how cranky developers are about PMs, the sad fact I've seen over and over is - PMs are routinely disregarded in many software organizations because they often dont speak at a level of technical depth that Devs are comfortable with. He who owns the compiler wins, and unless you have strong strong strong executive support, PMs often chase around trying speak the language of Dev.
+NNo matter how cranky developers are about PMs, the sad fact I've seen over and over is - PMs are routinely disregarded in many software organizations because they often dont speak at a level of technical depth that Devs are comfortable with. He who owns the compiler wins, and unless you have strong strong strong executive support, PMs often chase around trying speak the language of Dev.
 
-To me - PMs focused on the market is not a bug, it's a feature. PMs should NOT work at a heavily technical level - they should always be honing "customer understanding" skills - what is valuable, for whom, and why.
+To me - having PMs focused on the market is not a bug, it's a feature. PMs should NOT work at a heavily technical level - they should always be honing "customer understanding" skills - what is valuable, for whom, and why.
 
-Perhaps it's an obvious statement at this point - but I think PM what is changing beneath our feet is: Devs are getting displaced, because many are ... terrible. They are not really very good programmers. 
+Perhaps it's an obvious statement at this point - but I think for PM what is changing beneath our feet is ... Devs are getting displaced, because many are ... terrible. They are not really very good programmers.
 
-In a world where slop was just beyond the reach of "civilians" these so-so devs have made their living creating code "by the pound." But as the engine cover comes off, and we now have these tools that can peer inside the engine compartment and do the simple things, then DEVELOPERS need to adapt. The good ones, the deep ones? They are fine. AI tooling is all just accelerative. They make great devs even greater. But the lousy ones? Where do they shift?
+In a world where slop was just beyond the reach of "civilians" (ie the untrained programmer, ie a PM) these so-so devs have made their living creating code "by the pound." But as the engine cover comes off, and we now have these tools that can peer inside the engine compartment and do the simple things, then Developers need to adapt. 
 
-Well, they are shifting over to the equivalent of "techy PMs. " In this equation, the first people who are going to be displaced? Techy PMs. It's all shifting left. 
+The good ones, the deep ones? They are fine. AI tooling is all just accelerative. AI makes great devs even greater. But the lousy ones? Where do they shift? What do they do?
 
-My POV is that the PMs who have made their living moving things from XLS to Jira? Going away. Everyone will need to adapt. So either you dig in, and begin to bridge that gap between "English" and "code" (like that layer of displaced Devs)... or you go somewhere else in the problem set.
+Well, they shift over to the equivalent of "techy PMs. " And here is the issue for PM. In this equation, the first people who are then, by transitive axiom, going to be displaced in this? Techy PMs. It's all shifting left.
 
-Which is to say - up. If you are a PM who has made Jira tickets your life, now is the time to skill up. Change your worldview. Use your superpowers in new ways. How do you understand what customers need, and why, and how to rank, sort, filter all of this into revenue-bearing problems to solve?
+My POV is that the techy PMs who have made their living moving things from XLS to Jira? This is going away. 
 
-It's the new frontier for PM. The good news, those tools that are disrupting dev, are also disrupting PM. There are more ways, to learn more, way faster, than ever before.
+So the choice is - either you dig in, and begin to bridge that gap between "English" and "code" (like that layer of displaced Devs)... or you go somewhere else in the problem set.
+
+Which is to say - up. If you are a PM who has made Jira tickets your life, now is the time to skill up. Change your worldview. Use your superpowers in new ways. How do you understand what customers need, and why, and how to rank, sort, filter and articulate all of this ambiguity into revenue-bearing problems to solve?
+
+It's the new normal for PM. The good news is that those tools that are disrupting dev, are also disrupting PM. If you haven't taken <a href="https://www.cursorforpms.com" target="_blank" rel="noopener noreferrer">Carl Velotti's Cursor for PM course</a>, do it now, today, don't wait. There are more ways, to learn more, way faster, than ever before.
 
 Ultimately the displaced in this shifting might be Product Marketing. Because where are market-y PMs going to go? We'll see. A post for another time.
 
