@@ -9,9 +9,16 @@ Aakash Gupta wrote a <a href="https://aakashgupta.medium.com/what-is-an-ai-produ
 
 I. See. This. Every. Day. It's so so hard to get PMs to adopt the new tools and it's somewhat mystifying to me. PMs are universally overworked and strapped for time — you'd think they would be clamoring for this. But it is nigh onto impossible to get adoption of new tools. It's wild.
 
-Karri Saarinen, CEO of <a href="https://x.com/linear" target="_blank" rel="noopener noreferrer">Linear</a>, <a href="https://x.com/karrisaarinen/status/2007534281011155419?s=20" target="_blank" rel="noopener noreferrer">pointed this out</a> about design and UX:
+<a href="https://productschool.com" target="_blank" rel="noopener noreferrer">Product School</a> founder Carlos Gonzalez de Villaumbrosia writes:
+
+> Type #1 (traditional PM) is fading fast. In 2026 and beyond, there’s little room for a PM who isn’t leveraging AI in some form. Kind of like a photographer refusing to go digital. ... Let me be clear: if you’re a traditional PM who hasn’t leaned into AI, your days in the field may be numbered. 
+https://productschool.com/blog/artificial-intelligence/guide-ai-product-manager
+
+It's not getting better. Karri Saarinen, CEO of <a href="https://x.com/linear" target="_blank" rel="noopener noreferrer">Linear</a>, <a href="https://x.com/karrisaarinen/status/2007534281011155419?s=20" target="_blank" rel="noopener noreferrer">pointed this out</a> about design and UX:
 
 > "As these systems improve, this middle becomes thinner. Less time is spent manually translating intent into implementation."
+
+### The Slop!
 
 The problem isn't just adoption resistance, though. There's a deeper issue with how AI is being used, or maybe this is all of a piece.
 
