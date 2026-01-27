@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle exec jekyll serve:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill -9)",
+      "Bash(cat:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(wc:*)",
+      "Bash(npm i:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(git push:*)",
+      "Bash(pgrep:*)",
+      "Bash(bundle exec jekyll build:*)",
+      "Bash(pkill:*)",
+      "WebFetch(domain:bellemonti.com)",
+      "Bash(git mv:*)",
+      "Bash(find:*)"
+    ]
+  }
+}
