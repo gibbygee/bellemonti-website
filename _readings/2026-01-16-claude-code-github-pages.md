@@ -11,6 +11,28 @@ I got the idea for this approach from the <a href="https://www.nytimes.com/2026/
 
 And yes, this very site (<a href="https://bellemonti.com" target="_blank" rel="noopener noreferrer">bellemonti.com</a>) was built the same way! (more on this below)
 
+## How I currently use it for Bellemonti.com
+
+The Bellemonti.com website (this site) is built using Claude Code using Jekyll and GitHub Pages, which means all content is managed through markdown files.
+
+I can edit any page, blog post, or reading by simply opening the markdown file and making changes, including any rudimentary formatting which is really all I need. 
+
+Markdown is particularly well-suited for product managers because it focuses on content, not either hyper-marketing-formatting or quasi-readable-dev-formatting. It is readable in plain text.
+
+The best, though - markdown is the native language of AI coding assistants, making it easy to get help with documentation, specs, and content. It works everywhere, and by everywhere I mean in Cursor. Unlike MSFT Word which has so much junk formatting embedded in it.
+
+## How I intend to use it!
+
+I think there is a virtuous loop here for consulting - whereby the consultant (me) can build a repo of verifiable information for a client. And using this kind of web framework, it would make it very easy to show the deliverable as it's built (rather than, say, viewing in Cursor which is very hard for civilians). Because its built on markdown, it would allow me to combine a few presentation pages ("here is where we are") but with, also, access to the work. Standby for where this goes.
+---
+
+## See the code / use the code
+
+<a href="https://github.com/gibbygee/bellemonti-website" target="_blank" rel="noopener noreferrer">
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" style="vertical-align: middle; margin-right: 10px;">
+  Go here if you want to see how I did it!
+</a>
+
 ---
 
 ## Background
@@ -84,21 +106,3 @@ Based on Casey's experience building <a href="https://cnewton.org" target="_blan
 - Kevin: ~20 minutes for a basic personal website
 - Casey: ~1 hour for a fully-featured personal website with multiple widgets and integrations
 
-## How I use it for Bellemonti.com
-
-The Bellemonti.com website (this site) is built using Claude Code using Jekyll and GitHub Pages, which means all content is managed through markdown files.
-
-I can edit any page, blog post, or reading by simply opening the markdown file and making changes, including any rudimentary formatting which is really all I need. 
-
-Markdown is particularly well-suited for product managers because it focuses on content, not either hyper-marketing-formatting or quasi-readable-dev-formatting. It is readable in plain text.
-
-The best, though - markdown is the native language of AI coding assistants, making it easy to get help with documentation, specs, and content. It works everywhere, and by everywhere I mean in Cursor. Unlike MSFT Word which has so much junk formatting embedded in it.
-
----
-
-## See the code / use the code
-
-<a href="https://github.com/gibbygee/bellemonti-website" target="_blank" rel="noopener noreferrer">
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" style="vertical-align: middle; margin-right: 10px;">
-  Go here if you want to see how I did it!
-</a>
