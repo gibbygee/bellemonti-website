@@ -9,40 +9,34 @@ I got the idea for this approach from the <a href="https://www.nytimes.com/2026/
 - <a href="https://kevinroose.com" target="_blank" rel="noopener noreferrer">kevinroose.com</a>
 - <a href="https://cnewton.org" target="_blank" rel="noopener noreferrer">cnewton.org</a>
 
-And yes, this very site (<a href="https://bellemonti.com" target="_blank" rel="noopener noreferrer">bellemonti.com</a>) was built the same way. Site design took me about 90 minutes. Getting the custom URL took longer, but only because it took awhile to resolve all the DNS servers. But it was simple.
+And yes, this very site (<a href="https://bellemonti.com" target="_blank" rel="noopener noreferrer">bellemonti.com</a>) was built the same way. Site design took me about 90 minutes. Getting the custom URL took longer, but only because it took awhile to resolve all the DNS servers. But it was dead simple.
 
-I built it using Claude Code, and Claude Code uses Jekyll, and its all stored in GitHub, and its rendered with Githubg Pages. I set it up so that all the content (like this post), is managed through markdown files. Which makes it very easy to edit. Any fancy formatting? I ask my friendly robots for help, and they oblige.
+Tooling-wise - I built it using Claude Code; and Claude Code used Jekyll to make it presentable (what you see here); and it's all stored in GitHub; which is then rendered via Github Pages. Github Pages is free to use, if you keep the repo public. I do have to pay for my custom URL, but you can use it just "vanilla" from Github if you want. No charge.
 
-I can edit any page, blog post, or reading by simply opening the markdown file and making changes, including any rudimentary formatting which is really all I need. 
+I set it up so that all my content (like this post), is managed through markdown files. Which makes it very easy to edit. I can edit any page or post by simply opening the markdown file and making changes, including any rudimentary formatting which is really all I need. Any fancy formatting for the site? I ask my friendly robots for help, and they oblige.
 
-This captured my attention for a couple of reasons. Markdown is particularly well-suited for product managers because it focuses on content, not either hyper-marketing-formatting or quasi-readable-dev-formatting. It is readable in plain text.
+This captured my attention for a couple of reasons. Markdown is particularly well-suited for product managers because it focuses on content, not ... either ... hyper-marketing-formatting AI slop (like what most AI engines produce natively today) ... or ... barely-readable-dev-formatting (like XML, JSON, etc). Editing is possible everywhere, and by everywhere I mean in Cursor or OneDrive or Sublime (https://www.sublimetext.com) or Typora (https://typora.io) or any one of many tools. Unlike MSFT Word or Confluence which is only editable in one place.
 
-The best, though - markdown is the native language of AI coding assistants, making it easy to get help with documentation, specs, and content. It works everywhere, and by everywhere I mean in Cursor. Unlike MSFT Word which has so much junk formatting embedded in it.
+The best, though - markdown is the native language of AI coding assistants. Word, or even HTML pages, have some much junk formatting embedded in it that the engines choke a little bit.
 
-Right now, it's just a site. Boring, really. But I think there is a virtuous loop here for consulting - whereby the consultant (me) can build a repo of verifiable information for a client. And using this kind of web framework, it would make it very easy to show the deliverable as it's built (rather than, say, viewing in Cursor which is very hard for civilians). Because its built on markdown, it would allow me to combine a few presentation pages ("here is where we are") but with, also, access to the work. Standby for where this goes.
+Right now, it's just a site. Boring, really. But I think there is a virtuous loop here for consulting - whereby the consultant (me) can build a repo of verifiable information for a client, and coach along the way. And, using this kind of web framework, it would make it very easy to show the deliverable as it's built (rather than, say, viewing in Cursor which is very hard for civilians). Because its built on markdown, it would allow me to combine a few presentation pages ("here is where we are") but with, also, access to the work. Lastly, it becomes a ready-made leave behind. Standby for where this goes. :) 
 
----
-
-## See the code / use the code
-
-<a href="https://github.com/gibbygee/bellemonti-website" target="_blank" rel="noopener noreferrer">
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" style="vertical-align: middle; margin-right: 10px;">
-</a>
+See the code, use the code >> <a href="https://github.com/gibbygee/bellemonti-website" target="_blank" rel="noopener noreferrer"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" style="vertical-align: middle; margin-right: 10px;"></a>
 
 ---
 
 ## Background
 
-Kevin Roose describes replacing his Squarespace website (which cost $192/year) with a free website hosted on GitHub, built using Claude Code in about 20 minutes. I moved mine from Wix (which was great) but I saved about $350 / year.
+Here are the steps I followed, as described by Kevin Roose and Casey Newton on their podcast.
 
 ## Steps
 
-### 1. Set Up Claude Code
+### Set Up Claude Code
 - Install <a href="https://claude.com/product/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a> on your computer - <a href="https://docs.claude.com/en/docs/claude-code/quickstart" target="_blank" rel="noopener noreferrer">Download and installation instructions</a>
 - Claude Code is an autonomous coding agent that puts the Claude chatbot inside your terminal window
 - It can take instructions in plain English and execute tasks autonomously
 
-### 2. Provide Your Requirements
+### Provide Your Requirements
 Kevin's approach:
 - Give Claude Code your old website as a reference
 - Tell it to make it look like other sites you like
@@ -52,18 +46,16 @@ Example prompt structure:
 - "I have an old website at [URL]. Can you recreate it but make it look like [reference sites]?"
 - Or: "Build me a personal website with [features]"
 
-### 3. Let Claude Code Build It
+### Let Claude Code Build It
 - Claude Code will handle the orchestration and execution
 - No need for copying and pasting code
 - It will check in with you but can work autonomously
 - Kevin's website took about 20 minutes to build
 
-### 4. Host on GitHub Pages
+### Host on GitHub Pages
 - Once built, host the website on GitHub (free)
 - This replaces paid hosting services like Squarespace
 - GitHub Pages can host static websites for free
-
-### 5. Cancel Your Old Hosting!!
 
 
 ## Key features you can add
@@ -83,7 +75,6 @@ Based on Casey's experience building <a href="https://cnewton.org" target="_blan
 - Building static websites
 - Creating personal websites and portfolios
 - Adding features incrementally (just ask Claude Code to add them)
-- Iterating quickly - Casey built his site in about an hour on day one
 
 ### Potential challenges
 - Claude Code may overengineer things - you might need to walk it back from complexity
@@ -96,9 +87,4 @@ Based on Casey's experience building <a href="https://cnewton.org" target="_blan
 - Be specific about what you want
 - Don't be afraid to ask for changes or refinements
 - Test the website thoroughly before canceling your old hosting
-
-## Time investment
-
-- Kevin: ~20 minutes for a basic personal website
-- Casey: ~1 hour for a fully-featured personal website with multiple widgets and integrations
 
