@@ -27,7 +27,6 @@ Right now, it's just a site. Boring, really. But I think there is a virtuous loo
 
 <a href="https://github.com/gibbygee/bellemonti-website" target="_blank" rel="noopener noreferrer">
   <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" style="vertical-align: middle; margin-right: 10px;">
-  Go here if you want to see how I did it!
 </a>
 
 ---
