@@ -9,7 +9,7 @@ I got the idea for this approach from the <a href="https://www.nytimes.com/2026/
 - <a href="https://kevinroose.com" target="_blank" rel="noopener noreferrer">kevinroose.com</a>
 - <a href="https://cnewton.org" target="_blank" rel="noopener noreferrer">cnewton.org</a>
 
-And yes, this very site (<a href="https://bellemonti.com" target="_blank" rel="noopener noreferrer">bellemonti.com</a>) was built the same way! (more on this below)
+And yes, this very site (<a href="https://bellemonti.com" target="_blank" rel="noopener noreferrer">bellemonti.com</a>) was built the same way! 
 
 ## How I currently use it for Bellemonti.com
 
@@ -24,6 +24,7 @@ The best, though - markdown is the native language of AI coding assistants, maki
 ## How I intend to use it!
 
 I think there is a virtuous loop here for consulting - whereby the consultant (me) can build a repo of verifiable information for a client. And using this kind of web framework, it would make it very easy to show the deliverable as it's built (rather than, say, viewing in Cursor which is very hard for civilians). Because its built on markdown, it would allow me to combine a few presentation pages ("here is where we are") but with, also, access to the work. Standby for where this goes.
+
 ---
 
 ## See the code / use the code
