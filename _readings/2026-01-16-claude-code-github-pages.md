@@ -9,21 +9,17 @@ I got the idea for this approach from the <a href="https://www.nytimes.com/2026/
 - <a href="https://kevinroose.com" target="_blank" rel="noopener noreferrer">kevinroose.com</a>
 - <a href="https://cnewton.org" target="_blank" rel="noopener noreferrer">cnewton.org</a>
 
-And yes, this very site (<a href="https://bellemonti.com" target="_blank" rel="noopener noreferrer">bellemonti.com</a>) was built the same way! 
+And yes, this very site (<a href="https://bellemonti.com" target="_blank" rel="noopener noreferrer">bellemonti.com</a>) was built the same way. Site design took me about 90 minutes. Getting the custom URL took longer, but only because it took awhile to resolve all the DNS servers. But it was simple.
 
-## How I currently use it for Bellemonti.com
-
-The Bellemonti.com website (this site) is built using Claude Code using Jekyll and GitHub Pages, which means all content is managed through markdown files.
+I built it using Claude Code, and Claude Code uses Jekyll, and its all stored in GitHub, and its rendered with Githubg Pages. I set it up so that all the content (like this post), is managed through markdown files. Which makes it very easy to edit. Any fancy formatting? I ask my friendly robots for help, and they oblige.
 
 I can edit any page, blog post, or reading by simply opening the markdown file and making changes, including any rudimentary formatting which is really all I need. 
 
-Markdown is particularly well-suited for product managers because it focuses on content, not either hyper-marketing-formatting or quasi-readable-dev-formatting. It is readable in plain text.
+This captured my attention for a couple of reasons. Markdown is particularly well-suited for product managers because it focuses on content, not either hyper-marketing-formatting or quasi-readable-dev-formatting. It is readable in plain text.
 
 The best, though - markdown is the native language of AI coding assistants, making it easy to get help with documentation, specs, and content. It works everywhere, and by everywhere I mean in Cursor. Unlike MSFT Word which has so much junk formatting embedded in it.
 
-## How I intend to use it!
-
-I think there is a virtuous loop here for consulting - whereby the consultant (me) can build a repo of verifiable information for a client. And using this kind of web framework, it would make it very easy to show the deliverable as it's built (rather than, say, viewing in Cursor which is very hard for civilians). Because its built on markdown, it would allow me to combine a few presentation pages ("here is where we are") but with, also, access to the work. Standby for where this goes.
+Right now, it's just a site. Boring, really. But I think there is a virtuous loop here for consulting - whereby the consultant (me) can build a repo of verifiable information for a client. And using this kind of web framework, it would make it very easy to show the deliverable as it's built (rather than, say, viewing in Cursor which is very hard for civilians). Because its built on markdown, it would allow me to combine a few presentation pages ("here is where we are") but with, also, access to the work. Standby for where this goes.
 
 ---
 
