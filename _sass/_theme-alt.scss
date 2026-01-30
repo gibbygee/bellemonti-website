@@ -1,0 +1,273 @@
+// Alternate "Minimal" Theme
+// Inspired by mattrothenberg.com
+// All overrides scoped under .theme-alt on <body>
+
+.theme-alt {
+  // Base overrides
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #1a1a1a;
+
+  // Remove site-wrapper borders
+  .site-wrapper {
+    border-left: none;
+    border-right: none;
+  }
+
+  // Typography
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+  }
+
+  p {
+    color: #1a1a1a;
+  }
+
+  // Links — dark text with subtle underline
+  a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: #333;
+      text-decoration-color: #333;
+    }
+  }
+
+  // Header — simplified, no blur/border/shadow
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: none;
+    background-color: #fafafa;
+
+    &.scrolled {
+      box-shadow: none;
+    }
+  }
+
+  // Navigation — plain text, opacity hover, no underline animation
+  .site-nav a {
+    color: #555;
+    text-decoration: none;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      color: #1a1a1a;
+      opacity: 0.8;
+    }
+
+    &.active {
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+  }
+
+  // Footer — lighter
+  .footer-section {
+    h3 {
+      color: #1a1a1a;
+    }
+
+    p, li {
+      color: #555;
+    }
+
+    a {
+      color: #555;
+      text-decoration: none;
+
+      &:hover {
+        color: #1a1a1a;
+      }
+    }
+  }
+
+  .footer-bottom {
+    p, a {
+      color: #555;
+    }
+
+    a:hover {
+      color: #1a1a1a;
+    }
+  }
+
+  // Cards — softer, no hover lift
+  .card {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
+  // Buttons — muted, no hover lift
+  .btn {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    border-radius: 6px;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .btn-primary {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+
+    &:hover {
+      background-color: #1a1a1a;
+      border-color: #1a1a1a;
+      color: #fff;
+    }
+  }
+
+  .btn-secondary {
+    background-color: #555;
+    border-color: #555;
+    color: #fff;
+
+    &:hover {
+      background-color: #333;
+      border-color: #333;
+      color: #fff;
+    }
+  }
+
+  .btn-outline {
+    color: #333;
+    border-color: #ccc;
+
+    &:hover {
+      background-color: #333;
+      border-color: #333;
+      color: #fff;
+    }
+  }
+
+  // Home sidebar — no border, lighter
+  .sidebar-panel {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    h4 {
+      color: #1a1a1a;
+    }
+  }
+
+  // Code blocks — lighter
+  code {
+    background-color: #f0f0f0;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  }
+
+  pre {
+    background-color: #f0f0f0;
+    border: 1px solid #e5e5e5;
+
+    code {
+      background-color: transparent;
+    }
+  }
+
+  .copy-btn {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+
+    &.copied {
+      background-color: #333;
+      border-color: #333;
+    }
+  }
+
+  // Blockquotes
+  blockquote {
+    border-left-color: #ccc;
+    color: #555;
+  }
+
+  // Disable/tone down animations
+  .fade-in {
+    animation: none;
+    opacity: 1;
+  }
+
+  .fade-in-visible {
+    opacity: 1;
+    transition: none;
+    transform: none;
+  }
+
+  .hover-lift:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .hover-scale:hover {
+    transform: none;
+  }
+
+  // Slightly more generous spacing
+  .site-content {
+    padding-top: calc(103px + 12px);
+  }
+
+  .home-container {
+    padding: 0 32px;
+  }
+
+  // Text utility color overrides
+  .text-ocean {
+    color: #333;
+  }
+
+  .text-teal {
+    color: #333;
+  }
+
+  // Section gray
+  .section-gray {
+    background-color: #f0f0f0;
+  }
+
+  .bg-gray {
+    background-color: #f0f0f0;
+  }
+
+  .bg-ocean,
+  .bg-teal {
+    background-color: #333;
+  }
+}
+
+// Theme toggle link in footer
+.theme-toggle-link {
+  font-size: 13px;
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #555;
+  }
+}
+
+.theme-alt .theme-toggle-link {
+  color: #999;
+  text-decoration: none;
+
+  &:hover {
+    color: #555;
+    text-decoration: none;
+  }
+}
