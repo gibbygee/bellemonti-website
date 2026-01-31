@@ -1,3 +1,15 @@
+# CLAUDE.md
+
+Claude Code guidelines for this workspace.
+
+All conventions and behavioral guidelines live in `AGENTS.md` at the project root. That file is the single source of truth for any AI agent working in this repo.
+
+Project context is in this file.
+
+Read `AGENTS.md` before making any changes.
+
+---
+
 # Bellemonti Website
 
 Jekyll-based website for Bellemonti, a product management consulting company. Hosted on GitHub Pages at bellemonti.com.

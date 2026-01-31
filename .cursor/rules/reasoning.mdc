@@ -1,0 +1,10 @@
+---
+description: Behavioral guidelines for AI assistance
+alwaysApply: true
+---
+
+# Reasoning rules
+
+Behavioral guidelines and reasoning principles live in `AGENTS.md` at the project root. That file is the single source of truth for any AI agent working in this repo.
+
+Read `AGENTS.md` before making any changes.
