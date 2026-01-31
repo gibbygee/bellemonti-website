@@ -62,24 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
   fadeElements.forEach(element => observer.observe(element));
 
 
-  // Theme toggle
-  const themeToggle = document.getElementById('theme-toggle');
-  if (themeToggle) {
-    // Set initial button label based on current theme
-    if (document.body.classList.contains('theme-alt')) {
-      themeToggle.textContent = 'Original';
-    }
-
-    themeToggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      document.body.classList.toggle('theme-alt');
-      const isAlt = document.body.classList.contains('theme-alt');
-      localStorage.setItem('theme', isAlt ? 'alt' : 'default');
-      themeToggle.textContent = isAlt ? 'Original' : 'Minimal';
-    });
-  }
-
-
   // Copy button for code blocks
   const codeBlocks = document.querySelectorAll('pre');
 

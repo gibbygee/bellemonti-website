@@ -4,12 +4,6 @@
   {% include head.html %}
 
   <body>
-    <script>
-      // Apply saved theme immediately to prevent FOUC
-      if (localStorage.getItem('theme') === 'alt') {
-        document.body.classList.add('theme-alt');
-      }
-    </script>
     <div class="site-wrapper">
       {% include header.html %}
 
