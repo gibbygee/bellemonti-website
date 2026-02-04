@@ -33,8 +33,8 @@
 
 .text-primary { color: $color-text-primary; }
 .text-secondary { color: $color-text-secondary; }
-.text-ocean { color: $color-ocean-blue; }
-.text-teal { color: $color-teal; }
+.text-ocean { color: $color-link; }
+.text-teal { color: $color-link; }
 
 .text-small { font-size: $font-size-small; }
 .text-large { font-size: $font-size-h4; }
@@ -45,8 +45,8 @@
 // Background utilities
 .bg-white { background-color: $color-white; }
 .bg-gray { background-color: $color-background; }
-.bg-ocean { background-color: $color-ocean-blue; }
-.bg-teal { background-color: $color-teal; }
+.bg-ocean { background-color: $color-link; }
+.bg-teal { background-color: $color-link; }
 
 // Button styles
 .btn {
@@ -60,48 +60,43 @@
   border: 2px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  transition: all $transition-fast;
 
   &:hover {
-    transform: translateY(-2px);
-  }
-
-  &:active {
-    transform: translateY(0);
+    text-decoration: none;
   }
 }
 
 .btn-primary {
-  background-color: $color-teal;
+  background-color: $color-link;
   color: $color-white;
-  border-color: $color-teal;
+  border-color: $color-link;
 
   &:hover {
-    background-color: darken($color-teal, 10%);
-    border-color: darken($color-teal, 10%);
+    background-color: $color-link-hover;
+    border-color: $color-link-hover;
     color: $color-white;
   }
 }
 
 .btn-secondary {
-  background-color: $color-ocean-blue;
+  background-color: $color-text-secondary;
   color: $color-white;
-  border-color: $color-ocean-blue;
+  border-color: $color-text-secondary;
 
   &:hover {
-    background-color: darken($color-ocean-blue, 10%);
-    border-color: darken($color-ocean-blue, 10%);
+    background-color: $color-text-primary;
+    border-color: $color-text-primary;
     color: $color-white;
   }
 }
 
 .btn-outline {
   background-color: transparent;
-  color: $color-ocean-blue;
-  border-color: $color-ocean-blue;
+  color: $color-link;
+  border-color: $color-link;
 
   &:hover {
-    background-color: $color-ocean-blue;
+    background-color: $color-link;
     color: $color-white;
   }
 }
@@ -126,12 +121,6 @@
   border: 1px solid $color-border;
   border-radius: 8px;
   padding: $spacing-lg;
-  transition: box-shadow $transition-medium, transform $transition-medium;
-
-  &:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
-  }
 }
 
 // Code block copy button
@@ -157,7 +146,7 @@
   border-radius: 4px;
   cursor: pointer;
   opacity: 0;
-  transition: opacity $transition-fast, background-color $transition-fast;
+  transition: opacity 0.2s;
 
   .code-block-wrapper:hover & {
     opacity: 1;
@@ -169,8 +158,98 @@
   }
 
   &.copied {
-    background-color: $color-teal;
+    background-color: $color-link;
     color: $color-white;
-    border-color: $color-teal;
+    border-color: $color-link;
+  }
+}
+
+// Login page
+.login-page {
+  display: flex;
+  justify-content: center;
+  padding: $spacing-xxl 0;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  padding: $spacing-xl;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-xl;
+
+  img {
+    height: 50px;
+    width: auto;
+  }
+}
+
+.login-company {
+  font-size: $font-size-h2;
+  font-weight: 700;
+  color: $color-text-primary;
+}
+
+.login-form {
+  .form-group {
+    margin-bottom: $spacing-md;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: $font-size-small;
+    font-weight: 600;
+    color: $color-text-primary;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 12px;
+    font-family: $font-primary;
+    font-size: $font-size-base;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    color: $color-text-primary;
+
+    &:focus {
+      outline: none;
+      border-color: $color-link;
+    }
+  }
+}
+
+.login-error {
+  margin-bottom: $spacing-md;
+  padding: 10px 12px;
+  font-size: $font-size-small;
+  color: #d32f2f;
+  background-color: #fdecea;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+.login-submit {
+  width: 100%;
+  padding: 10px;
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  font-weight: 600;
+  color: $color-white;
+  background-color: $color-link;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-link-hover;
   }
 }

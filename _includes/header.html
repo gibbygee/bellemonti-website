@@ -1,9 +1,13 @@
 <header class="site-header">
   <div class="header-container">
-    <div class="site-logo">
-      <a href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}">
-      </a>
+    <div class="header-top">
+      <div class="site-logo">
+        <a href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}">
+          <span class="site-title">{{ site.title }}</span>
+        </a>
+      </div>
+      <a href="{{ '/login/' | relative_url }}" class="login-btn">Login</a>
     </div>
 
     {% include navigation.html %}

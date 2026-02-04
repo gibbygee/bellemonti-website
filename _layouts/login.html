@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <div class="header-container">
+          <div class="header-top">
+            <div class="site-logo">
+              <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}">
+                <span class="site-title">{{ site.title }}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="site-content">
+        {{ content }}
+      </main>
+    </div>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+  </body>
+
+</html>

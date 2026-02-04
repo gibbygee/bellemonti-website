@@ -1,78 +1,16 @@
 // Animations and Transitions
 @import 'variables';
 
-// Fade in animation
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+// Minimal animations - kellblog-style (no fancy effects)
 
 .fade-in {
-  opacity: 0;
-  animation: fadeIn $transition-slow forwards;
+  opacity: 1;
 }
 
 .fade-in-visible {
-  opacity: 0;
-  transition: opacity $transition-slow, transform $transition-slow;
+  opacity: 1;
 
   &.visible {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// Slide animations
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-in-left {
-  animation: slideInLeft $transition-slow forwards;
-}
-
-.slide-in-right {
-  animation: slideInRight $transition-slow forwards;
-}
-
-// Hover effects
-.hover-lift {
-  transition: transform $transition-medium, box-shadow $transition-medium;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
-}
-
-.hover-scale {
-  transition: transform $transition-fast;
-
-  &:hover {
-    transform: scale(1.05);
   }
 }

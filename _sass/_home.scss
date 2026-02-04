@@ -11,8 +11,8 @@
 
 .welcome-section {
   width: 100%;
-  margin-bottom: 2px;
-  padding: $spacing-xs 0;
+  margin-bottom: $spacing-md;
+  padding: $spacing-sm 0;
 
   h1 {
     margin-top: 0;
@@ -24,18 +24,18 @@
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 1fr 220px;
   gap: $spacing-xl;
   align-items: start;
 
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: $breakpoint-mobile) {
     grid-template-columns: 1fr;
     gap: $spacing-lg;
   }
 }
 
 .home-main {
-  min-width: 0; // Prevents grid blowout
+  min-width: 0;
   padding: $spacing-xs 0;
 
   h3:first-child {
@@ -44,36 +44,83 @@
 }
 
 .home-sidebar {
-  position: sticky;
-  top: calc(#{$header-height} + #{$spacing-md}); // Fixed header height + spacing
+  padding-top: $spacing-sm;
+  font-size: $font-size-small;
 
-  @media (max-width: $breakpoint-tablet) {
-    position: static;
+  @media (max-width: $breakpoint-mobile) {
+    padding-top: 0;
   }
 }
 
-.sidebar-panel {
-  border: 1px solid #ccc;
-  padding: $spacing-xs $spacing-md;
+.sidebar-section {
+  margin-bottom: $spacing-lg;
 
   h4 {
     margin-top: 0;
-    padding-top: 6px;
-    margin-bottom: $spacing-md;
-    color: $color-ocean-blue;
+    margin-bottom: $spacing-sm;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: $color-text-secondary;
+    border-bottom: 1px solid $color-border;
+    padding-bottom: $spacing-xs;
   }
 
   ul {
-    margin-bottom: $spacing-md;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   li {
-    line-height: 1.6;
+    margin-bottom: $spacing-xs;
+    line-height: 1.5;
+  }
+}
+
+.latest-dispatch {
+  margin-top: $spacing-lg;
+  border-top: 1px solid $color-border;
+  padding-top: $spacing-md;
+
+  h3 {
+    margin-bottom: $spacing-sm;
+    font-size: $font-size-small;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: $color-text-secondary;
+  }
+}
+
+.dispatch-entry {
+  a {
+    font-weight: 600;
+  }
+}
+
+.dispatch-content {
+  margin-top: $spacing-sm;
+  color: $color-text-primary;
+  line-height: $line-height-base;
+}
+
+.follow-links {
+  display: flex;
+  gap: $spacing-sm;
+
+  li {
+    margin-bottom: 0;
   }
 
-  .btn-outline {
-    width: 100%;
-    text-align: center;
-    display: inline-block;
+  a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.7;
+      text-decoration: none;
+    }
   }
 }

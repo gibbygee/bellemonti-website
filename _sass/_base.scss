@@ -23,12 +23,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// Site wrapper with borders
+// Site wrapper - no borders
 .site-wrapper {
   max-width: $container-width;
   margin: 0 auto;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
   min-height: 100vh;
 }
 
@@ -43,20 +41,19 @@ body {
   }
 }
 
-// Site Content - Account for fixed header
+// Site Content - no fixed header offset needed
 .site-content {
-  padding-top: calc(#{$header-height} + 2px);
-  min-height: calc(100vh - #{$header-height});
+  padding-top: 0;
 }
 
 // Links
 a {
-  color: $color-ocean-blue;
+  color: $color-link;
   text-decoration: none;
-  transition: color $transition-fast;
 
   &:hover {
-    color: $color-teal;
+    color: $color-link-hover;
+    text-decoration: underline;
   }
 }
 

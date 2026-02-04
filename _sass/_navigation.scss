@@ -22,44 +22,23 @@
   }
 
   a {
-    position: relative;
     display: inline-block;
     padding: $spacing-xs 0;
     color: $color-text-primary;
     text-decoration: none;
     font-weight: normal;
-    transition: color $transition-fast;
 
     @media (max-width: $breakpoint-mobile) {
       font-size: $font-size-small;
     }
 
-    // Underline animation
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: $color-teal;
-      transition: width $transition-medium;
-    }
-
     &:hover {
-      color: $color-ocean-blue;
-
-      &::after {
-        width: 100%;
-      }
+      color: $color-link;
+      text-decoration: none;
     }
 
     &.active {
-      color: $color-ocean-blue;
-
-      &::after {
-        width: 100%;
-      }
+      color: $color-link;
     }
   }
 }
