@@ -15,7 +15,10 @@ layout: default
             <div class="dispatch-entry">
               <a href="{{ latest_reading.url | relative_url }}">{{ latest_reading.title }}</a>
               <span class="text-secondary text-small"> — {{ latest_reading.date | date: "%B %d, %Y" }}</span>
-              <div class="dispatch-content reading-content">{{ latest_reading.content | markdownify }}</div>
+              {% capture dispatch_raw %}{{ latest_reading.content | markdownify }}{% endcapture %}
+              {% assign dispatch_parts = dispatch_raw | split: '<img' %}
+              {% capture dispatch_clean %}{% for part in dispatch_parts %}{% if forloop.first %}{{ part }}{% else %}{% assign after_img = part | split: '/>' %}{% for segment in after_img %}{% unless forloop.first %}{{ segment }}{% if forloop.last == false %}/> {% endif %}{% endunless %}{% endfor %}{% endif %}{% endfor %}{% endcapture %}
+              <div class="dispatch-content reading-content">{{ dispatch_clean }}</div>
             </div>
           </div>
         {% endif %}
