@@ -33,7 +33,7 @@ plugins:
   - jekyll-sitemap
 
 # Custom settings
-# logo: /assets/images/logo.png  # Disabled to prevent image in link previews
+image: /assets/images/logo.png
 
 # Collections
 collections:
