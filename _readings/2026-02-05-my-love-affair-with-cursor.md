@@ -33,7 +33,7 @@ I usually interpret this into a more understandable example to make the point:
 
 It makes perfect sense in my mind, but not so much in anyone else's mind.
 
-Clear writing, sadly, has become a <a href="https://www.bellemonti.com/p/writing-is-a-subversive-act" target="_blank" rel="noopener noreferrer">subversive act</a> in today's software company.
+Clear writing, sadly, has become a <a href="https://bellemonti.com/2025/03/11/too-much-talking.html" target="_blank" rel="noopener noreferrer">subversive act</a> in today's software company.
 
 Which brings me back to Cursor. What I love so much about Cursor is that it bridges this gap. It is writing centric - it's about the words and it gives me a canvas to write words with this magic robot brain behind me. No more cut and paste back and forth into chat threads. I can write inline, and think inline. But I'm still in control of my craft. It's a power tool - an electric drill instead of a hand drill.
 
@@ -41,7 +41,7 @@ It's rough at the moment. I can see it getting better every day.
 
 # Dialectic podcast and Cursor
 
-I've officially gone down the rabbit hole on [Dialectic](https://dialectic.simplecast.com/).
+I've officially gone down the rabbit hole on [Dialectic](https://www.dialectic.fm).
 
 I listened to [Ryo Lu](https://www.ryolu.com/) and [Brie Wolfson](https://www.briwolfson.com/) and midway it occurred to me that the common thread was Cursor. Cursor is what happens when many great minds come together and based on these two I'm now wondering what everyone else is like. One might argue that if your company culture is not being formed like this, you are doing it wrong. But thats a post for another day.
 
