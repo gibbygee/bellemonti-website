@@ -47,7 +47,7 @@ I listened to [Ryo Lu](https://www.ryolu.com/) and [Brie Wolfson](https://www.br
 
 Two podcasts on the topic that I would recommend - with a snip from each that caught my attention:
 
-[Dialectic E34: Ryo Lu - It's all the Same Thing](https://dialectic.simplecast.com/episodes/its-all-the-same-thing)
+[Dialectic E34: Ryo Lu - It's all the Same Thing](https://youtu.be/8ncYSGbfeyY)
 
 Ryo's catchphrase is a part of the conversation that they come back to several times: 
 
@@ -65,7 +65,7 @@ Great stuff.
 
 Which led me to...
 
-[Dialectic, E35: Loving Attention & Ease in Craft](https://dialectic.simplecast.com/episodes/loving-attention-ease-in-craft)
+[Dialectic, E35: Loving Attention & Ease in Craft](https://youtu.be/GqVv_e52Z2Y)
 
 Brie Wolfson on developing a finger feel for excellence in whatever you do. It's a similar idea to Ryo. All-in, a great podcast as well, which I also won't elaborate on other than to say, go listen.
 
