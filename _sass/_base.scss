@@ -187,9 +187,9 @@ body.matrix-active {
   transition: all 0.3s ease;
 
   &:hover {
-    color: #00ff41;
-    border-color: #00ff41;
-    background-color: rgba(0, 0, 0, 0.05);
+    color: #006b1f;
+    border-color: #006b1f;
+    background-color: rgba(0, 255, 65, 0.15);
   }
 
   body.matrix-active & {

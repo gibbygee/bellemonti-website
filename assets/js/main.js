@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function initDrops() {
       columns = Math.floor(matrixCanvas.width / fontSize);
-      drops = Array(columns).fill(0);
+      drops = Array.from({length: columns}, () => Math.floor(Math.random() * matrixCanvas.height / fontSize));
     }
 
     function draw() {
