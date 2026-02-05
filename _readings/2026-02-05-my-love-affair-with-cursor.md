@@ -43,7 +43,7 @@ It's rough at the moment. I can see it getting better every day.
 
 I've officially gone down the rabbit hole on [Dialectic](https://www.dialectic.fm).
 
-I listened to [Ryo Lu](https://www.ryolu.com/) and [Brie Wolfson](https://www.briwolfson.com/) and midway it occurred to me that the common thread was Cursor. Cursor is what happens when many great minds come together and based on these two I'm now wondering what everyone else is like. One might argue that if your company culture is not being formed like this, you are doing it wrong. But thats a post for another day.
+I listened to [Ryo Lu](https://ryo.lu) and [Brie Wolfson](https://www.briewolfson.com/) and midway it occurred to me that the common thread was Cursor. Cursor is what happens when many great minds come together and based on these two I'm now wondering what everyone else is like. One might argue that if your company culture is not being formed like this, you are doing it wrong. But thats a post for another day.
 
 Two podcasts on the topic that I would recommend - with a snip from each that caught my attention:
 
