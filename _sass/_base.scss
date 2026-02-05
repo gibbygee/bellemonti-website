@@ -121,6 +121,10 @@ body.matrix-active {
     &:hover {
       color: #7fff7f;
     }
+
+    &.active {
+      color: #00ff41 !important;
+    }
   }
 
   h1, h2, h3, h4, h5, h6,
@@ -147,7 +151,7 @@ body.matrix-active {
   }
 
   .site-logo img {
-    filter: brightness(0) invert(1) sepia(1) saturate(50) hue-rotate(90deg);
+    filter: brightness(0) invert(48%) sepia(96%) saturate(1458%) hue-rotate(93deg) brightness(104%) contrast(105%);
   }
 
   .sidebar-section {
