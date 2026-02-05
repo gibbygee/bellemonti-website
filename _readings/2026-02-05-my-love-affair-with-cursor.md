@@ -33,7 +33,7 @@ I usually interpret this into a more understandable example to make the point:
 
 It makes perfect sense in my mind, but not so much in anyone else's mind.
 
-Clear writing, sadly, has become a <a href="https://bellemonti.com/2025/03/11/too-much-talking.html" target="_blank" rel="noopener noreferrer">subversive act</a> in today's software company.
+Clear writing, sadly, has become a <a href="https://bellemonti.com/2025/03/11/too-much-talking" target="_blank" rel="noopener noreferrer">subversive act</a> in today's software company.
 
 Which brings me back to Cursor. What I love so much about Cursor is that it bridges this gap. It is writing centric - it's about the words and it gives me a canvas to write words with this magic robot brain behind me. No more cut and paste back and forth into chat threads. I can write inline, and think inline. But I'm still in control of my craft. It's a power tool - an electric drill instead of a hand drill.
 
