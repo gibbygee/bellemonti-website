@@ -39,7 +39,13 @@ When formatting a markdown document:
 - Only change formatting, not substance
 - Maintain document structure and hierarchy
 
-### External links (X/Twitter)
+### External links
+- All external links must open in new browser tabs
+- Use HTML format: `<a href="[URL]" target="_blank" rel="noopener noreferrer">link text</a>`
+- Never use markdown format `[text](url)` for external links
+- Always include both `target="_blank"` and `rel="noopener noreferrer"` attributes
+
+**X/Twitter links - special formatting:**
 - Display X (Twitter) links with inline SVG icon only, not full URL text
 - Place icon immediately after quoted text (same line, no line break)
 - Use this SVG code:

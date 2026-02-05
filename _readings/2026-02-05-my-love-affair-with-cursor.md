@@ -41,13 +41,13 @@ It's rough at the moment. I can see it getting better every day.
 
 # Dialectic podcast and Cursor
 
-I've officially gone down the rabbit hole on [Dialectic](https://www.dialectic.fm).
+I've officially gone down the rabbit hole on <a href="https://www.dialectic.fm" target="_blank" rel="noopener noreferrer">Dialectic</a>.
 
-I listened to [Ryo Lu](https://ryo.lu) and [Brie Wolfson](https://www.briewolfson.com/) and midway it occurred to me that the common thread was Cursor. Cursor is what happens when many great minds come together and based on these two I'm now wondering what everyone else is like. One might argue that if your company culture is not being formed like this, you are doing it wrong. But thats a post for another day.
+I listened to <a href="https://ryo.lu" target="_blank" rel="noopener noreferrer">Ryo Lu</a> and <a href="https://www.briewolfson.com/" target="_blank" rel="noopener noreferrer">Brie Wolfson</a> and midway it occurred to me that the common thread was Cursor. Cursor is what happens when many great minds come together and based on these two I'm now wondering what everyone else is like. One might argue that if your company culture is not being formed like this, you are doing it wrong. But thats a post for another day.
 
 Two podcasts on the topic that I would recommend - with a snip from each that caught my attention:
 
-[Dialectic E34: Ryo Lu - It's all the Same Thing](https://youtu.be/8ncYSGbfeyY)
+<a href="https://youtu.be/8ncYSGbfeyY" target="_blank" rel="noopener noreferrer">Dialectic E34: Ryo Lu - It's all the Same Thing</a>
 
 Ryo's catchphrase is a part of the conversation that they come back to several times: 
 
@@ -65,7 +65,7 @@ Great stuff.
 
 Which led me to...
 
-[Dialectic, E35: Loving Attention & Ease in Craft](https://youtu.be/GqVv_e52Z2Y)
+<a href="https://youtu.be/GqVv_e52Z2Y" target="_blank" rel="noopener noreferrer">Dialectic, E35: Loving Attention & Ease in Craft</a>
 
 Brie Wolfson on developing a finger feel for excellence in whatever you do. It's a similar idea to Ryo. All-in, a great podcast as well, which I also won't elaborate on other than to say, go listen.
 
