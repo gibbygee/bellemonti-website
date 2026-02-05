@@ -77,3 +77,124 @@ button {
   border: none;
   background: none;
 }
+
+// Matrix canvas
+#matrix-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: none;
+}
+
+body.matrix-active {
+  background-color: #000;
+
+  #matrix-canvas {
+    display: block;
+  }
+
+  .site-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .site-header {
+    background-color: transparent;
+    border-bottom-color: rgba(0, 255, 65, 0.2);
+  }
+
+  .site-content,
+  .home-container {
+    background-color: transparent;
+  }
+
+  // All text green
+  color: rgba(0, 255, 65, 0.9);
+
+  a {
+    color: #00ff41;
+
+    &:hover {
+      color: #7fff7f;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .site-title,
+  span,
+  p, li, td, th, label, blockquote {
+    color: rgba(0, 255, 65, 0.9) !important;
+  }
+
+  .text-secondary,
+  .color-text-secondary,
+  .sidebar-section h4 {
+    color: rgba(0, 255, 65, 0.5) !important;
+  }
+
+  .login-btn {
+    color: #00ff41;
+    border-color: rgba(0, 255, 65, 0.3);
+
+    &:hover {
+      color: #7fff7f;
+      border-color: #00ff41;
+    }
+  }
+
+  .site-logo img {
+    filter: brightness(0) invert(1) sepia(1) saturate(50) hue-rotate(90deg);
+  }
+
+  .sidebar-section {
+    h4 {
+      border-bottom-color: rgba(0, 255, 65, 0.2);
+    }
+  }
+
+  .latest-dispatch {
+    border-top-color: rgba(0, 255, 65, 0.2);
+  }
+
+  // SVG icons
+  svg {
+    fill: #00ff41 !important;
+  }
+}
+
+.tagline-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+#matrix-toggle {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: $color-text-secondary;
+  border: 1px solid $color-border;
+  padding: 6px 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #00ff41;
+    border-color: #00ff41;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  body.matrix-active & {
+    color: #00ff41;
+    border-color: #00ff41;
+    background-color: rgba(0, 255, 65, 0.1);
+  }
+}
