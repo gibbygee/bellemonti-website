@@ -63,7 +63,7 @@ Ryo talks about how important it is for craftpeople to work directly with the ma
 
 Great stuff.
 
-Which lead me to...
+Which led me to...
 
 [Dialectic, E35: Loving Attention & Ease in Craft](https://dialectic.simplecast.com/episodes/loving-attention-ease-in-craft)
 
