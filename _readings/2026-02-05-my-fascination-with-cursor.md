@@ -1,6 +1,6 @@
 ---
 layout: reading
-title: "My love affair with Cursor"
+title: "My fascination with Cursor + Descript"
 date: 2026-02-05
 author: john garrish
 ---
