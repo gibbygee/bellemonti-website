@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dispatches
-permalink: /reading/
+permalink: /dispatches/
 ---
 
 <style>

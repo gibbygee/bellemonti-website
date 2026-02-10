@@ -46,7 +46,7 @@ collections:
     permalink: /services/:slug/
   readings:
     output: true
-    permalink: /reading/:slug/
+    permalink: /dispatches/:slug/
 
 # Defaults
 defaults:

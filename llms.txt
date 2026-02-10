@@ -12,7 +12,7 @@ The site features blog posts ("Dispatches") about current product management top
 
 - [Home](https://bellemonti.com/): Welcome page and latest updates
 - [Dispatches](https://bellemonti.com/blog/): Blog posts on product management and b2b enterprise software
-- [Reading](https://bellemonti.com/reading/): Curated articles and resources
+- [Dispatches](https://bellemonti.com/dispatches/): Curated articles and resources
 
 ## Key Topics
 

@@ -35,7 +35,7 @@ _layouts/            # Templates: default, home, page, post, reading
 _includes/           # Components: head, header, navigation, footer
 _pages/              # Static pages (home, blog, reading, about, contact, services)
 _posts/              # Blog posts (nav: "Writing", URL: /blog/)
-_readings/           # Reading posts (nav: "Dispatches", URL: /reading/)
+_readings/           # Reading posts (nav: "Dispatches", URL: /dispatches/)
 _services/           # Services collection
 _sass/               # SCSS partials (see Styling below)
 .cursor/commands/    # Slash commands for Cursor IDE (e.g., d.md for /d)
@@ -51,7 +51,7 @@ llms.txt             # Project description for AI tools
 |------------|-------------|--------|
 | pages | `/:slug/` | page |
 | posts | `/blog/:slug/` | post |
-| readings | `/reading/:slug/` | reading |
+| readings | `/dispatches/:slug/` | reading |
 | services | `/services/:slug/` | page |
 
 ## Content Patterns

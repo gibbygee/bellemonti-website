@@ -9,6 +9,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.4"
 gem "webrick", "~> 1.8"
+gem "logger"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
