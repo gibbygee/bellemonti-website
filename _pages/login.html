@@ -33,5 +33,12 @@ permalink: /login/
   <div class="iframe-wrapper">
     <iframe src="https://aardvark-azure.vercel.app/login" allowfullscreen></iframe>
   </div>
+  <script>
+    window.addEventListener('message', function(e) {
+      if (e.origin === 'https://aardvark-azure.vercel.app' && e.data.type === 'login-success') {
+        window.location.href = 'https://aardvark-azure.vercel.app/';
+      }
+    });
+  </script>
 </body>
 </html>
