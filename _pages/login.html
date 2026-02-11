@@ -16,6 +16,12 @@ permalink: /login/
       height: 100%;
       overflow: hidden;
     }
+    .iframe-wrapper {
+      width: 100%;
+      height: calc(100% + 57px);
+      margin-top: -57px;
+      overflow: hidden;
+    }
     iframe {
       width: 100%;
       height: 100%;
@@ -24,6 +30,8 @@ permalink: /login/
   </style>
 </head>
 <body>
-  <iframe src="https://aardvark-azure.vercel.app/login" allowfullscreen></iframe>
+  <div class="iframe-wrapper">
+    <iframe src="https://aardvark-azure.vercel.app/login" allowfullscreen></iframe>
+  </div>
 </body>
 </html>
