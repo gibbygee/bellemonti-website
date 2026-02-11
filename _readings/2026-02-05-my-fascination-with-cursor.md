@@ -88,10 +88,7 @@ Go yakiimo go yakiimo go
 
 <a href="https://www.instagram.com/reel/DT_aIWxkl_y/?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer">Yakiimo</a>
 
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DT_aIWxkl_y/?igsh=NTc4MTIwNjQ2YQ==" data-instgrm-version="14" style="margin: 1em auto; max-width: 540px; min-width: 326px; width: 100%;">
-  <a href="https://www.instagram.com/reel/DT_aIWxkl_y/?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer">View this post on Instagram</a>
-</blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
+<a href="https://www.instagram.com/reel/DT_aIWxkl_y/?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer">View this post on Instagram</a>
 
 Be good to each other.
 -j
