@@ -1,36 +1,29 @@
 ---
-layout: login
+layout: null
 title: Login
 permalink: /login/
 ---
-
-<div class="login-page">
-  <div class="login-card">
-    <form class="login-form" id="login-form">
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com">
-      </div>
-
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required placeholder="Enter your password">
-      </div>
-
-      <div class="login-error" id="login-error" style="display: none;">
-        Incorrect password. Please try again.
-      </div>
-
-      <button type="submit" class="login-submit">Sign In</button>
-
-      <p class="forgot-password"><a href="{{ '/forgot-password/' | relative_url }}">Forgot password?</a></p>
-    </form>
-  </div>
-</div>
-
-<script>
-  document.getElementById('login-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    document.getElementById('login-error').style.display = 'block';
-  });
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - {{ site.title }}</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://aardvark-azure.vercel.app/login" allowfullscreen></iframe>
+</body>
+</html>
