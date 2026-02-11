@@ -7,38 +7,10 @@ permalink: /login/
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login - {{ site.title }}</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-    .iframe-wrapper {
-      width: 100%;
-      height: calc(100% + 57px);
-      margin-top: -57px;
-      overflow: hidden;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0;url=https://aardvark-azure.vercel.app/login">
 </head>
 <body>
-  <div class="iframe-wrapper">
-    <iframe src="https://aardvark-azure.vercel.app/login" allowfullscreen></iframe>
-  </div>
-  <script>
-    window.addEventListener('message', function(e) {
-      if (e.origin === 'https://aardvark-azure.vercel.app' && e.data.type === 'login-success') {
-        window.location.href = 'https://aardvark-azure.vercel.app/';
-      }
-    });
-  </script>
+  <script>window.location.href = 'https://aardvark-azure.vercel.app/login';</script>
 </body>
 </html>
