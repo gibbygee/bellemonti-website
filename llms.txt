@@ -4,21 +4,22 @@
 
 ## About
 
-Bellemonti is a strategic advisory and consulting company focused on product management for b2b enterprise software, founded by John Garrish. 
+Bellemonti is a strategic advisory and consulting company focused on product management for b2b enterprise software, founded by John Garrish.
 
-The site features blog posts ("Dispatches") about current product management topics, and building effective product management teams.
+The site features two kinds of writing: "Writing" (blog posts on product management and the business of software) and "Dispatches" (curated articles and resources, including AI tools for PMs).
 
-## Main Sections
+## Main sections
 
-- [Home](https://bellemonti.com/): Welcome page and latest updates
-- [Dispatches](https://bellemonti.com/blog/): Blog posts on product management and b2b enterprise software
-- [Dispatches](https://bellemonti.com/dispatches/): Curated articles and resources
+- [Home](https://bellemonti.com/): Welcome page and latest dispatch
+- [Writing](https://bellemonti.com/blog/): Blog posts on product management and b2b enterprise software (from `_posts/`)
+- [Dispatches](https://bellemonti.com/dispatches/): Curated articles and resources (from `_readings/`)
+- [About](https://bellemonti.com/about/), [Services](https://bellemonti.com/services/), [Contact](https://bellemonti.com/contact/) (pages may be hidden in nav; edit `_data/navigation.yml` to show)
 
-## Key Topics
+## Key topics
 
-- Enterprise Software Product management best practices
-- The business of software - software product management for software businesses, not just software
-- Product Management team building and leadership
+- Enterprise software product management best practices
+- The business of software - product management for software businesses
+- Product management team building and leadership
 - Software business fundamentals
 - AI tools for product managers (Cursor, Claude Code)
 
@@ -30,4 +31,6 @@ The site features blog posts ("Dispatches") about current product management top
 
 ## Technical
 
-This site is built with Jekyll and hosted on GitHub Pages. It was created using Claude Code.
+- Built with Jekyll; hosted on GitHub Pages. Created with Claude Code.
+- Content: blog posts in `_posts/` (permalink `/:year/:month/:day/:title/`); readings in `_readings/` (permalink `/dispatches/:slug/`). Layouts in `_layouts/`, nav in `_data/navigation.yml`.
+- For AI agents: read `AGENTS.md` at the project root before making changes; it is the single source of truth for formatting and coding behavior.
