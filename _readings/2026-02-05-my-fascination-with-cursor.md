@@ -84,11 +84,7 @@ Some choice quotes from Salvatier:
 
 ## Your zen for Thursday
 
-Go yakiimo go yakiimo go
-
-<a href="https://www.instagram.com/reel/DT_aIWxkl_y/?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer">Yakiimo</a>
-
-<a href="https://www.instagram.com/reel/DT_aIWxkl_y/?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer">View this post on Instagram</a>
+<a href="https://www.instagram.com/reel/DT_aIWxkl_y/?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer">Go yakiimo go yakiimo go</a>
 
 Be good to each other.
 -j
