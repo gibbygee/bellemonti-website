@@ -5,7 +5,7 @@ title: "Today is sponsored by the letter C for Context"
 date: 2026-02-25
 author: john garrish
 
-### Today is sponsored by the letter C for Context
+# Today is sponsored by the letter C for Context
 
 *Much of any digital job is now preparing context for AI models. Organizing files in folders, naming everything correctly, introducing things in the right order, and only then asking the AI to do something in clear written English.* 
 
@@ -26,7 +26,7 @@ author: john garrish
 
 *The AI PM OS* 
 
-### Follows
+## Follows
 
 - [bcherny](https://x.com/bcherny)
 - [karpathy](https://x.com/karpathy)
@@ -39,7 +39,7 @@ author: john garrish
 - [aakashgupta](https://x.com/aakashgupta)
 - [SteelAardvark](https://x.com/SteelAardvark)
 
-### Other goodies
+## Other goodies
 
 ** Something big is happening - Matt Shumer **
   *"I'm going to be direct with you because I think you deserve honesty more than comfort. Dario Amodei, who is probably the most safety-focused CEO in the AI industry, has publicly predicted that AI will eliminate 50% of entry-level white-collar jobs within one to five years. And many people in the industry think he's being conservative."*
@@ -57,7 +57,7 @@ author: john garrish
 *The Anthropic Hive Mind* ("the campfire model")
 [Medium](https://steve-yegge.medium.com/the-anthropic-hive-mind-d01f768f3d7b)
 
-### Your zen for Weds
+## Your zen for Weds
 
 *Don't persuade yourself into the restaurant mindset. Slowly over time develop the capacity to see the decision space and move around it*.
 
