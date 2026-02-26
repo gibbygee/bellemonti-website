@@ -1,6 +1,6 @@
 ---
 layout: reading
-title: "Feb 25 dispatch"
+title: "Today is sponsored by the letter C for Context"
 date: 2026-02-25
 author: john garrish
 ---
