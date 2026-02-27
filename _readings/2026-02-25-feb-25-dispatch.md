@@ -1,12 +1,10 @@
 ---
-
 layout: reading
 title: "Today is sponsored by the letter C for Context"
 date: 2026-02-25
 author: john garrish
 ---
 
---
 ## Context on Context
 
 [The context development lifecycle: Optimizing context for AI coding agents](https://www.jedi.be/blog/2026/context-development-lifecycle/) - jedi.be
