@@ -22,7 +22,6 @@ layout: post
 title: "Your Post Title Here"
 date: 2026-01-15
 author: Your Name
-excerpt: "A brief 1-2 sentence summary that appears on the blog listing page."
 ---
 
 Write your blog post content here using Markdown.

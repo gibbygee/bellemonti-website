@@ -3,7 +3,6 @@ layout: post
 title: "Fundamentals are always \"in\""
 date: 2025-01-27
 author: john garrish
-excerpt: "PMs have lost the lense of the business"
 ---
 Somewhere along the way, last 10 years PMs started burrowing into the agile lifestyle - and when we did, we lost the lense of the business.
 

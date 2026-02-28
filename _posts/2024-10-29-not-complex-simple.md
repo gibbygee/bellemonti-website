@@ -3,7 +3,6 @@ layout: post
 title: "Not complex, simple"
 date: 2024-10-29
 author: john garrish
-excerpt: "You're probably not failing because you need some advanced technique. You're failing because you aren't very good at the basics."
 ---
 Reminds me of that old quote from Bruce Lee:
 

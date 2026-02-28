@@ -3,7 +3,6 @@ layout: post
 title: "You will regret snowflakes"
 date: 2024-08-19
 author: john garrish
-excerpt: "Snowflaking products continues against all logic"
 ---
 I keep encountering this phenomena and it baffles me. How can this possibly persist in this day and age. Even in the "on-prem" packaged era of software (late 90s - early 00') it was 'relatively' uncommon to see snowflakes among scaled vendors. But you see it enough and you wonder how it happens. Even in cloud, now, which is arguably worse because YOU, the vendor, pay the freight.
 

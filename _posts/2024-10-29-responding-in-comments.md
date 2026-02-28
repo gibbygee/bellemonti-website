@@ -3,7 +3,6 @@ layout: post
 title: "Responding in comments"
 date: 2024-10-29
 author: john garrish
-excerpt: "Nobody wins when you argue your points in comments"
 ---
 Reminds me of that old saying about wrestling with a pig - you both get dirty and the pig likes it.
 

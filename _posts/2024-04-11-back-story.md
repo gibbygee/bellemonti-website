@@ -3,7 +3,6 @@ layout: post
 title: "Back story"
 date: 2024-04-11
 author: john garrish
-excerpt: "I am a sucker for a good origin story"
 ---
 I am a sucker for a good origin story. 
 

@@ -3,7 +3,6 @@ layout: post
 title: "Financial physics"
 date: 2024-10-29
 author: john garrish
-excerpt: "The compounding complexity of software"
 ---
 
 Here's what your CFO thinks software development looks like (a version of underpants gnomes):

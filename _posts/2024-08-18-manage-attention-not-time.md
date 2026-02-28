@@ -3,7 +3,6 @@ layout: post
 title: "Manage attention not time"
 date: 2024-08-18
 author: john garrish
-excerpt: "Product Managers don't need micromanagement but they do need engagement"
 ---
 Product Managers hate micromanagement and complain about it constantly. 
 

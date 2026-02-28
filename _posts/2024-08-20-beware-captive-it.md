@@ -3,7 +3,6 @@ layout: post
 title: "Beware captive IT"
 date: 2024-08-20
 author: john garrish
-excerpt: "IT is not product"
 ---
 I live and breathe the "software business," as in, a company whose business is selling software and/or access to its software. 
 

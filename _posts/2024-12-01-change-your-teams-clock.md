@@ -3,7 +3,6 @@ layout: post
 title: "Change your team's clock"
 date: 2024-12-01
 author: john garrish
-excerpt: "You are your calendar. The calendar never lies."
 ---
 You are your calendar. 
 

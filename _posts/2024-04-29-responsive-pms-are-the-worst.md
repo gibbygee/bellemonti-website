@@ -3,7 +3,6 @@ layout: post
 title: "Responsive PMs are the worst"
 date: 2024-04-29
 author: john garrish
-excerpt: "Having witnessed HIGHLY RESPONSIVE PMs, I've concluded that unresponsive PMs are actually better for the company"
 ---
 Reminds me of that old 30 Rock gag... 
 

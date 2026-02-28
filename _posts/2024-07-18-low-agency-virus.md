@@ -3,7 +3,6 @@ layout: post
 title: "Low-agency virus"
 date: 2024-07-18
 author: john garrish
-excerpt: "PMs have lost their mojo"
 ---
 We live in a moment of empowerment. A few years ago the term was the super-empowered individual, applied to the malicious cretins like Osama bin Laden who with a relatively small resource footprint was able to catalyze the US into a 20 year war. It's the Arab Spring, or the Kardashians or the unlikely 2016 Trump victory or AOC or any of 1000s of other examples.
 

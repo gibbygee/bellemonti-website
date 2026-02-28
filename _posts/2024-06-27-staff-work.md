@@ -3,7 +3,6 @@ layout: post
 title: "Staff work"
 date: 2024-06-27
 author: john garrish
-excerpt: "Maybe the problem is - we need better staffwork"
 ---
 Maybe the problem is - we need better staffwork
 
