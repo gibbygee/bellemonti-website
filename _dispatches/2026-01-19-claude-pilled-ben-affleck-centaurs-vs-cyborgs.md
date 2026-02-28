@@ -2,6 +2,7 @@
 layout: reading
 title: "Claude-pilled + Ben Affleck + centaurs vs cyborgs"
 date: 2026-01-19
+author: steel aardvark
 ---
 
 ## Anthropic's Claude Goes Mainstream

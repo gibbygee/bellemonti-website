@@ -3,9 +3,7 @@ layout: post
 title: "Too much talking"
 date: 2025-03-11
 author: john garrish
-excerpt: "In an era of talking, writing can be a subversive act."
 ---
-
 In an era of talking, writing can be a subversive act.
 
 Software is intangible. Which means that software companies are largely intangible. It follows that describing things that happen in software companies in intangible ways is ... not good.  
