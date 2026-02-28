@@ -22,7 +22,7 @@ bundle install              # Install dependencies
 ```
 
 **Slash Commands:**
-- `/d` - Create new reading post (Dispatch) in `_dispatches/` directory with today's date
+- `/new-dispatch` - Create new reading post (Dispatch) in `_dispatches/` directory with today's date
 
 To add more slash commands, create `.md` files in `.cursor/commands/`
 
