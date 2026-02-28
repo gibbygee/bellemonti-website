@@ -12,13 +12,49 @@ The site features two kinds of writing: "Writing" (blog posts on product managem
 
 - [Home](https://bellemonti.com/): Welcome page and latest dispatch
 - [Writing](https://bellemonti.com/blog/): Blog posts on product management and b2b enterprise software (from `_posts/`)
-- [Dispatches](https://bellemonti.com/dispatches/): Curated articles and resources (from `_readings/`)
+- [Dispatches](https://bellemonti.com/dispatches/): Curated articles and resources (from `_dispatches/`)
 - [About](https://bellemonti.com/about/), [Services](https://bellemonti.com/services/), [Contact](https://bellemonti.com/contact/) (pages may be hidden in nav; edit `_data/navigation.yml` to show)
+
+## Writing (blog posts)
+
+- [Back story](https://bellemonti.com/2024/04/11/back-story/) — Apr 11, 2024
+- [Responsive PMs are the worst](https://bellemonti.com/2024/04/29/responsive-pms-are-the-worst/) — Apr 29, 2024
+- [Software faith](https://bellemonti.com/2024/05/28/software-faith/) — May 28, 2024
+- [Staff work](https://bellemonti.com/2024/06/27/staff-work/) — Jun 27, 2024
+- [Ship More](https://bellemonti.com/2024/07/17/ship-more/) — Jul 17, 2024
+- [Low-agency virus](https://bellemonti.com/2024/07/18/low-agency-virus/) — Jul 18, 2024
+- [Manage attention not time](https://bellemonti.com/2024/08/18/manage-attention-not-time/) — Aug 18, 2024
+- [You will regret snowflakes](https://bellemonti.com/2024/08/19/you-will-regret-snowflakes/) — Aug 19, 2024
+- [Beware captive IT](https://bellemonti.com/2024/08/20/beware-captive-it/) — Aug 20, 2024
+- [As good as it gets?](https://bellemonti.com/2024/08/21/as-good-as-it-gets/) — Aug 21, 2024
+- [Software is cumulative](https://bellemonti.com/2024/10/22/software-is-cumulative/) — Oct 22, 2024
+- [Financial physics](https://bellemonti.com/2024/10/29/financial-physics/) — Oct 29, 2024
+- [Maybe PM should be slow](https://bellemonti.com/2024/10/29/maybe-pm-should-be-slow/) — Oct 29, 2024
+- [Not complex, simple](https://bellemonti.com/2024/10/29/not-complex-simple/) — Oct 29, 2024
+- [Responding in comments](https://bellemonti.com/2024/10/29/responding-in-comments/) — Oct 29, 2024
+- [Change your team's clock](https://bellemonti.com/2024/12/01/change-your-teams-clock/) — Dec 1, 2024
+- [Repetition and persuasion](https://bellemonti.com/2024/12/02/repetition-and-persuasion/) — Dec 2, 2024
+- [A roadmap is a story](https://bellemonti.com/2024/12/12/a-roadmap-is-a-story/) — Dec 12, 2024
+- [Fundamentals are always "in"](https://bellemonti.com/2025/01/27/fundamentals-are-always-in/) — Jan 27, 2025
+- [Too much talking](https://bellemonti.com/2025/03/11/too-much-talking/) — Mar 11, 2025
+- [Software is (mostly) not waste](https://bellemonti.com/2025/12/01/software-is-mostly-not-waste/) — Dec 1, 2025
+
+## Dispatches
+
+- [Cursor PM tutorial from Carl Velotti + PM-in-Code](https://bellemonti.com/dispatches/cursor-pm-tutorial/) — Jan 15, 2026
+- [From Hard Fork - How to build a free website w/ Claude Code and GitHub Pages](https://bellemonti.com/dispatches/claude-code-github-pages/) — Jan 16, 2026
+- [I'm repeating myself + code copy button](https://bellemonti.com/dispatches/setting-up-claude-context/) — Jan 17, 2026
+- [Claude-pilled + Ben Affleck + centaurs vs cyborgs](https://bellemonti.com/dispatches/claude-pilled-ben-affleck-centaurs-vs-cyborgs/) — Jan 19, 2026
+- [AI Product Managers where art thou? Enter, The Slop](https://bellemonti.com/dispatches/ai-product-managers-and-the-slop-problem/) — Jan 26, 2026
+- [Slop-pocalypse](https://bellemonti.com/dispatches/slop-pocalypse/) — Jan 27, 2026
+- [My fascination with Cursor + Descript](https://bellemonti.com/dispatches/my-fascination-with-cursor/) — Feb 5, 2026
+- [Today is sponsored by the letter C for Context](https://bellemonti.com/dispatches/feb-25-dispatch/) — Feb 25, 2026
+- [AI Doom or Boom](https://bellemonti.com/dispatches/ai-doom-or-boom/) — Feb 27, 2026
 
 ## Key topics
 
 - Enterprise software product management best practices
-- The business of software - product management for software businesses
+- The business of software — product management for software businesses
 - Product management team building and leadership
 - Software business fundamentals
 - AI tools for product managers (Cursor, Claude Code)
@@ -32,5 +68,6 @@ The site features two kinds of writing: "Writing" (blog posts on product managem
 ## Technical
 
 - Built with Jekyll; hosted on GitHub Pages. Created with Claude Code.
-- Content: blog posts in `_posts/` (permalink `/:year/:month/:day/:title/`); readings in `_readings/` (permalink `/dispatches/:slug/`). Layouts in `_layouts/`, nav in `_data/navigation.yml`.
+- Content: blog posts in `_posts/` (permalink `/:year/:month/:day/:title/`); dispatches in `_dispatches/` (permalink `/dispatches/:slug/`). Layouts in `_layouts/`, nav in `_data/navigation.yml`.
 - For AI agents: read `AGENTS.md` at the project root before making changes; it is the single source of truth for formatting and coding behavior.
+- **Keep this file current**: update `llms.txt` whenever a new post or dispatch is added.

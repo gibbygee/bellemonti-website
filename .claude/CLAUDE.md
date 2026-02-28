@@ -24,6 +24,8 @@ bundle install              # Install dependencies
 **Slash Commands:**
 - `/new-dispatch` - Create new reading post (Dispatch) in `_dispatches/` directory with today's date
 
+**Important:** Whenever a new post (`_posts/`) or dispatch (`_dispatches/`) is added, update `llms.txt` in the project root to include the new entry with its title, URL, and date.
+
 To add more slash commands, create `.md` files in `.cursor/commands/`
 
 ## Project Structure
