@@ -44,7 +44,7 @@ collections:
   services:
     output: true
     permalink: /services/:slug/
-  readings:
+  dispatches:
     output: true
     permalink: /dispatches/:slug/
 
@@ -67,7 +67,7 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "readings"
+      type: "dispatches"
     values:
       layout: "reading"
 

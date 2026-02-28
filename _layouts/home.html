@@ -8,13 +8,15 @@ layout: default
       <div class="home-main">
         {{ content }}
 
-        {% assign latest_reading = site.readings | sort: 'date' | reverse | first %}
+        {% assign latest_reading = site.dispatches | sort: 'date' | reverse | first %}
         {% if latest_reading %}
           <div class="latest-dispatch">
             <h3>Latest Dispatch</h3>
             <div class="dispatch-entry">
-              <a href="{{ latest_reading.url | relative_url }}">{{ latest_reading.title }}</a>
-              <span class="text-secondary text-small"> — {{ latest_reading.date | date: "%B %d, %Y" }}</span>
+              <div style="margin-bottom: 4px;">
+                <a href="{{ latest_reading.url | relative_url }}" style="font-size: 24px; font-weight: 600;">{{ latest_reading.title }}</a>
+                <span class="text-secondary text-small"> — {{ latest_reading.date | date: "%B %d, %Y" }}</span>
+              </div>
               {% capture dispatch_raw %}{{ latest_reading.content | markdownify }}{% endcapture %}
               {% assign dispatch_parts = dispatch_raw | split: '<img' %}
               {% capture dispatch_clean %}{% for part in dispatch_parts %}{% if forloop.first %}{{ part }}{% else %}{% assign after_img = part | split: '/>' %}{% for segment in after_img %}{% unless forloop.first %}{{ segment }}{% if forloop.last == false %}/> {% endif %}{% endunless %}{% endfor %}{% endif %}{% endfor %}{% endcapture %}
@@ -28,11 +30,11 @@ layout: default
         <div class="sidebar-section">
           <h4>Recent Dispatches</h4>
           <ul>
-            {% assign all_readings = site.readings | sort: 'date' | reverse %}
+            {% assign all_readings = site.dispatches | sort: 'date' | reverse %}
             {% for reading in all_readings offset:1 limit:5 %}
               <li><a href="{{ reading.url | relative_url }}">{{ reading.title }}</a></li>
             {% endfor %}
-            {% if site.readings.size < 2 %}
+            {% if site.dispatches.size < 2 %}
               <li>No other dispatches yet.</li>
             {% endif %}
           </ul>

@@ -67,9 +67,9 @@ permalink: /dispatches/
   }
 </style>
 
-{% if site.readings.size > 0 %}
+{% if site.dispatches.size > 0 %}
   <div class="reading-list">
-    {% assign sorted_readings = site.readings | sort: 'date' | reverse %}
+    {% assign sorted_readings = site.dispatches | sort: 'date' | reverse %}
     {% for reading in sorted_readings %}
       <div class="reading-item">
         <div class="reading-content">

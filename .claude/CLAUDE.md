@@ -22,7 +22,7 @@ bundle install              # Install dependencies
 ```
 
 **Slash Commands:**
-- `/d` - Create new reading post (Dispatch) in `_readings/` directory with today's date
+- `/d` - Create new reading post (Dispatch) in `_dispatches/` directory with today's date
 
 To add more slash commands, create `.md` files in `.cursor/commands/`
 
@@ -35,7 +35,7 @@ _layouts/            # Templates: default, home, page, post, reading
 _includes/           # Components: head, header, navigation, footer
 _pages/              # Static pages (home, blog, reading, about, contact, services)
 _posts/              # Blog posts (nav: "Writing", URL: /blog/)
-_readings/           # Reading posts (nav: "Dispatches", URL: /dispatches/)
+_dispatches/           # Reading posts (nav: "Dispatches", URL: /dispatches/)
 _services/           # Services collection
 _sass/               # SCSS partials (see Styling below)
 .cursor/commands/    # Slash commands for Cursor IDE (e.g., d.md for /d)
@@ -67,7 +67,7 @@ excerpt: "Brief description"
 ---
 ```
 
-**Reading post (`_readings/`) - displayed under "Dispatches" nav:**
+**Reading post (`_dispatches/`) - displayed under "Dispatches" nav:**
 ```yaml
 ---
 layout: reading
@@ -106,7 +106,7 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 
 ## Key Files to Know
 
-- `_layouts/home.html` - Home page with dynamic "Latest Dispatches" section (pulls 3 most recent from `_readings/`)
+- `_layouts/home.html` - Home page with dynamic "Latest Dispatches" section (pulls 3 most recent from `_dispatches/`)
 - `_includes/navigation.html` - Renders menu with active state detection
 - `assets/js/main.js` - Intersection Observer for fade animations, header scroll effect, copy buttons for code blocks
 - `_config.yml` - Site settings, collection definitions, plugin list
