@@ -21,7 +21,7 @@ permalink: /dispatches/
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 12px 0;
+    padding: 6px 0;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -53,13 +53,6 @@ permalink: /dispatches/
     text-decoration: underline;
   }
 
-  .reading-excerpt {
-    color: #7f8c8d;
-    font-size: 13px;
-    line-height: 1.4;
-    margin: 0;
-  }
-
   .reading-date {
     color: #7f8c8d;
     font-size: 14px;
@@ -76,9 +69,6 @@ permalink: /dispatches/
           <div class="reading-title">
             <a href="{{ reading.url | relative_url }}">{{ reading.title }}</a>
           </div>
-          {% if reading.excerpt %}
-            <p class="reading-excerpt">{{ reading.excerpt | strip_html | truncatewords: 20 }}</p>
-          {% endif %}
         </div>
         <div class="reading-date">
           <time>{{ reading.date | date: "%b %d, %Y" }}</time>

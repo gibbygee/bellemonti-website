@@ -21,7 +21,7 @@ permalink: /blog/
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 12px 0;
+    padding: 6px 0;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -76,9 +76,6 @@ permalink: /blog/
           <div class="reading-title">
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </div>
-          {% if post.excerpt %}
-            <p class="reading-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-          {% endif %}
         </div>
         <div class="reading-date">
           <time>{{ post.date | date: "%b %d, %Y" }}</time>
