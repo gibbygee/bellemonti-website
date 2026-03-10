@@ -5,7 +5,7 @@ date: 2026-03-09
 author: john garrish
 ---
 
-For twenty-five years, agile has turned PM into a meeting management role / software dev janitor. Now AI is pulling us back to what matters - the only thing that matters - JUDGEMENT!
+For twenty-five years, agile has turned PM into a meeting management role / software dev janitor. Now AI is pulling us back to what matters - the only thing that matters - JUDGMENT!
 
 [Agile Has Broken Your Company](https://x.com/chamath/status/2028650332595896555)
 - Yes, ok, Chamath is selling a product, but I'm here for it.
