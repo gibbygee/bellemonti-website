@@ -23,6 +23,7 @@ For twenty-five years, agile has turned PM into a meeting management role / soft
 
 Field:
 >"If an agent can do it for you, an agent can do it for someone else."
+
 - When execution becomes free, execution becomes worthless. What remains is taste. The one thing an agent can't generate.
 - The new job isn't building — it's selecting. Sample the widest possible space. Then be harsh enough to reject everything until something's worth keeping.
 
@@ -30,6 +31,7 @@ We're all saying the same thing.
 
 [Max Levchin on the jobs argument](https://x.com/mlevchin/status/2027473747633181151)
 > "AI means fewer software jobs is totally backwards."
+
 - Most companies in the S&P500 would build their own software if they had the talent.
 - AI means great engineers can be great engineers and great PMs can be great PMs.
 
