@@ -41,6 +41,4 @@ Those lousy at either can do something else, is my view.
 
 Kick it in the guts, Barry.
 
-<a href="https://youtu.be/qUi5Lo9SHTY?t=17" target="_blank" rel="noopener noreferrer" style="display: block; max-width: 550px;">
-  <img src="https://img.youtube.com/vi/qUi5Lo9SHTY/hqdefault.jpg" alt="Kick it in the guts, Barry" style="width: 100%; border-radius: 8px; display: block;">
-</a>
+<a href="https://youtu.be/qUi5Lo9SHTY?t=17" target="_blank" rel="noopener noreferrer" style="display:inline-block;text-decoration:none;margin-bottom:12px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 20" width="90" height="20"><path d="M27.97 3.19c-.31-1.17-1.24-2.09-2.4-2.4C23.37.13 14.5 0 14.5 0S5.63.13 3.43.79C2.27 1.1 1.34 2.02 1.03 3.19 0 6.42 0 10 0 10s0 3.58 1.03 6.81c.31 1.17 1.24 2.09 2.4 2.4 2.2.66 11.07.79 11.07.79s8.87-.13 11.07-.79c1.16-.31 2.09-1.23 2.4-2.4C29 13.58 29 10 29 10s0-3.58-1.03-6.81z" fill="#f00"/><path d="M11.5 14.5V5.5l7.5 4.5-7.5 4.5z" fill="#fff"/><text x="33" y="15" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#282828">YouTube</text></svg></a>
