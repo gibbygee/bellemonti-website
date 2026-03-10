@@ -8,7 +8,7 @@ author: john garrish
 For twenty-five years, agile has turned PM into a meeting management role / software dev janitor. Now AI is pulling us back to what matters - the only thing that matters - JUDGMENT!
 
 [Agile Has Broken Your Company](https://x.com/chamath/status/2028650332595896555)
-- Yes, ok, Chamath is selling a product, but I'm here for it.
+- Yes, ok, Chamath is selling a product, but I'm here for it. (<a href="https://www.8090.ai/" target="_blank" rel="noopener noreferrer">https://www.8090.ai/</a>)
 - He argues that Agile turned "responding to change" into an excuse to never finish anything. "Velocity" replaced quality — story points, burn-down charts, throughput, none of which measure whether the software is any good. **YES.**
 >The "Product Owner" role that was supposed to represent the customer became a bureaucratic proxy. A layer between engineers and business outcomes, distorting requirements at every handoff.
 - Sadly, PMs participated in this demise, but now it's time to fix it.
