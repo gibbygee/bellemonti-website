@@ -10,19 +10,13 @@ Here's what happens when you just let developers develop:
 
 They build things
 
-Quickly
-
-Really quickly
-
-Cool things
-
-Interesting things
-
-Things they thought of in the shower
-
-Things they saw on Hacker News
-
-Things they want to rewrite "the right way"
+- Quickly
+- Really quickly
+- Cool things
+- Interesting things
+- Things they thought of in the shower
+- Things they saw on Hacker News
+- Things they want to rewrite "the right way"
 
 And that's... actually the problem.
 
@@ -36,31 +30,24 @@ Because going fast isn't necessarily the hard part. Any decently caffeinated dev
 
 The hard part is going slow enough to:
 
-Build the right thing
-
-In the right order
-
-For the right reasons
-
-That will still make sense in 6 months
-
-That won't paint you into a corner
-
-That actually solves a real problem
+- Build the right thing
+- In the right order
+- For the right reasons
+- That will still make sense in 6 months
+- That won't paint you into a corner
+- That actually solves a real problem
 
 This is why PMs often feel like they're playing defense:
 
-"Can we validate that first?"
-
- "What problem are we actually solving?"
-
- "How does this fit into our strategy?"
+- "Can we validate that first?"
+- "What problem are we actually solving?"
+- "How does this fit into our strategy?"
 
 It's not because PMs are trying to be difficult. It's because somebody has to ask these questions before that code becomes a permanent part of your product's DNA.
 
-Development without PM = high velocity, random direction
+**Development without PM** = high velocity, random direction
 
-Development with PM = low(er) velocity, intentional direction
+**Development with PM** = low(er) velocity, intentional direction
 
 In some respects, you're not adding a PM to make development go FASTER. You're adding a PM to make development go BETTER.
 
