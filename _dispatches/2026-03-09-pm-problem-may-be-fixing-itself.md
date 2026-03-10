@@ -39,4 +39,6 @@ Those lousy at either can do something else, is my view.
 
 Kick it in the guts, Barry.
 
-[Watch on YouTube](https://youtu.be/qUi5Lo9SHTY?t=17)
+<a href="https://youtu.be/qUi5Lo9SHTY?t=17" target="_blank" rel="noopener noreferrer" style="display: block; max-width: 550px;">
+  <img src="https://img.youtube.com/vi/qUi5Lo9SHTY/hqdefault.jpg" alt="Kick it in the guts, Barry" style="width: 100%; border-radius: 8px; display: block;">
+</a>
