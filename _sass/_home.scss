@@ -78,19 +78,18 @@
   }
 }
 
-.latest-dispatch {
+.home-section-title {
   margin-top: $spacing-lg;
-  border-top: 1px solid $color-border;
-  padding-top: $spacing-md;
+  margin-bottom: $spacing-sm;
+  font-size: $font-size-small;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: $color-text-secondary;
+}
 
-  h3 {
-    margin-bottom: $spacing-sm;
-    font-size: $font-size-small;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: $color-text-secondary;
-  }
+.latest-dispatch {
+  padding-top: $spacing-md;
 }
 
 .dispatch-entry {

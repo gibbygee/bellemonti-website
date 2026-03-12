@@ -77,15 +77,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.toggleMatrix = function() {
       const btn = document.getElementById('matrix-toggle');
+      const flipCard = document.querySelector('.flip-card');
       const active = document.body.classList.toggle('matrix-active');
 
+      const heading = document.getElementById('about-heading');
+
       if (active) {
-        btn.textContent = 'The Story Ends';
+        btn.textContent = 'Back to Sleep';
+        if (flipCard) flipCard.classList.add('flipped');
+        if (heading) {
+          heading.textContent = 'We build great PMs!';
+          heading.style.fontSize = '2.5em';
+        }
         resizeCanvas();
         initDrops();
         matrixInterval = setInterval(draw, 80);
       } else {
         btn.textContent = 'Wake up, Neo';
+        if (flipCard) flipCard.classList.remove('flipped');
+        if (heading) {
+          heading.textContent = 'Market-based product management for enterprise software teams';
+          heading.style.fontSize = '';
+        }
         clearInterval(matrixInterval);
         matrixInterval = null;
         ctx.clearRect(0, 0, matrixCanvas.width, matrixCanvas.height);
