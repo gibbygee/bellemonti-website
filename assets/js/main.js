@@ -80,25 +80,22 @@ document.addEventListener('DOMContentLoaded', function() {
       const flipCard = document.querySelector('.flip-card');
       const active = document.body.classList.toggle('matrix-active');
 
-      const heading = document.getElementById('about-heading');
+      const defaultText = document.getElementById('about-default');
+      const neoText = document.getElementById('about-neo');
 
       if (active) {
         btn.textContent = 'Back to Sleep';
         if (flipCard) flipCard.classList.add('flipped');
-        if (heading) {
-          heading.textContent = 'We build great PMs!';
-          heading.style.fontSize = '2.5em';
-        }
+        if (defaultText) defaultText.style.display = 'none';
+        if (neoText) neoText.style.display = '';
         resizeCanvas();
         initDrops();
         matrixInterval = setInterval(draw, 80);
       } else {
         btn.textContent = 'Wake up, Neo';
         if (flipCard) flipCard.classList.remove('flipped');
-        if (heading) {
-          heading.textContent = 'Market-based product management for enterprise software teams';
-          heading.style.fontSize = '';
-        }
+        if (defaultText) defaultText.style.display = '';
+        if (neoText) neoText.style.display = 'none';
         clearInterval(matrixInterval);
         matrixInterval = null;
         ctx.clearRect(0, 0, matrixCanvas.width, matrixCanvas.height);

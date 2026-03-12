@@ -28,8 +28,12 @@ layout: default
           <p class="about-title">CPO Coach | Product Advisor | Founder @ Bellemonti</p>
           <button id="matrix-toggle" onclick="toggleMatrix()">Wake up, Neo</button>
         </div>
-        <div class="about-text">
+        <div class="about-text" id="about-default">
           {{ content }}
+        </div>
+        <div class="about-text" id="about-neo" style="display:none">
+          {% capture neo_content %}{% include about-neo.md %}{% endcapture %}
+          {{ neo_content | markdownify }}
         </div>
       </div>
     </div>
