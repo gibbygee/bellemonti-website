@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Financial physics"
 date: 2024-10-29
+redirect_from:
+  - /2024/10/29/financial-physics/
 author: john garrish
 ---
 

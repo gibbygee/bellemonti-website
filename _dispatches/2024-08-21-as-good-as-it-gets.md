@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "As good as it gets?"
 date: 2024-08-21
+redirect_from:
+  - /2024/08/21/as-good-as-it-gets/
 author: john garrish
 ---
 There was a movie in the 90s with jack nicholson that was called As Good As it Gets. Notionally it was about midlife trials and tribulations of people who have a lot to be thankful for, but aren't, and need to be reminded of "the sunny side of life," as one reviewer notes. 

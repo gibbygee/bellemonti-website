@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Not complex, simple"
 date: 2024-10-29
+redirect_from:
+  - /2024/10/29/not-complex-simple/
 author: john garrish
 ---
 Reminds me of that old quote from Bruce Lee:

@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Software is cumulative"
 date: 2024-10-22
+redirect_from:
+  - /2024/10/22/software-is-cumulative/
 author: john garrish
 ---
 Watching Elon Musk talk about manufacturing is a guilty pleasure. Not because of amazing technical feats (to wit: Mechazilla) but rather, how he articulates the differences between physical and digital products:

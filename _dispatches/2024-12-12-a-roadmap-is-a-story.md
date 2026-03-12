@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "A roadmap is a story"
 date: 2024-12-12
+redirect_from:
+  - /2024/12/12/a-roadmap-is-a-story/
 author: john garrish
 ---
 Roadmaps are a challenging concept for PMs - maybe the most challenging concept. 

@@ -5,84 +5,39 @@ permalink: /blog/
 ---
 
 <style>
-  .page-header {
-    padding-top: 8px;
+  .coming-soon {
+    text-align: left;
+    padding: 60px 20px;
   }
 
-  .page-header h1 {
-    padding-top: 5px;
+  .coming-soon img {
+    max-width: 480px;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 24px;
   }
 
-  .reading-list {
-    margin-top: 20px;
-  }
-
-  .reading-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 6px 0;
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  .reading-item:first-child {
-    border-top: 1px solid #e5e5e5;
-  }
-
-  .reading-item:hover {
-    background-color: #f8f8f8;
-  }
-
-  .reading-content {
-    flex: 1;
-    margin-right: 20px;
-  }
-
-  .reading-title {
-    margin-bottom: 4px;
-  }
-
-  .reading-title a {
+  .coming-soon h2 {
     color: #2c3e50;
-    text-decoration: none;
-    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 8px;
   }
 
-  .reading-title a:hover {
-    color: #3498db;
-    text-decoration: underline;
-  }
-
-  .reading-excerpt {
+  .coming-soon p {
     color: #7f8c8d;
-    font-size: 13px;
-    line-height: 1.4;
-    margin: 0;
+    font-size: 16px;
   }
 
-  .reading-date {
-    color: #7f8c8d;
-    font-size: 14px;
-    white-space: nowrap;
+  .coming-soon .photo-credit {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 4px;
   }
 </style>
 
-{% if site.posts.size > 0 %}
-  <div class="reading-list">
-    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-    {% for post in sorted_posts %}
-      <div class="reading-item">
-        <div class="reading-content">
-          <div class="reading-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </div>
-        </div>
-        <div class="reading-date">
-          <time>{{ post.date | date: "%b %d, %Y" }}</time>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-{% else %}
-  <p>No posts yet. Check back soon!</p>
-{% endif %}
+<div class="coming-soon">
+  <img src="/assets/images/aardvark.jpg" alt="An aardvark">
+  <p class="photo-credit">Photo by Kelly Abram (CC BY 4.0)</p>
+  <h2>Coming soon.</h2>
+  <p>Something new is in the works.</p>
+</div>

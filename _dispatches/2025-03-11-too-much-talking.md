@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Too much talking"
 date: 2025-03-11
+redirect_from:
+  - /2025/03/11/too-much-talking/
 author: john garrish
 ---
 In an era of talking, writing can be a subversive act.

@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Beware captive IT"
 date: 2024-08-20
+redirect_from:
+  - /2024/08/20/beware-captive-it/
 author: john garrish
 ---
 I live and breathe the "software business," as in, a company whose business is selling software and/or access to its software. 

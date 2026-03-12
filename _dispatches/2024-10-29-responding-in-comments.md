@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Responding in comments"
 date: 2024-10-29
+redirect_from:
+  - /2024/10/29/responding-in-comments/
 author: john garrish
 ---
 Reminds me of that old saying about wrestling with a pig - you both get dirty and the pig likes it.

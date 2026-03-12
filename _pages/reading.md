@@ -5,14 +5,6 @@ permalink: /dispatches/
 ---
 
 <style>
-  .page-header {
-    padding-top: 8px;
-  }
-
-  .page-header h1 {
-    padding-top: 5px;
-  }
-
   .reading-list {
     margin-top: 20px;
   }

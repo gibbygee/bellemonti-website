@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Staff work"
 date: 2024-06-27
+redirect_from:
+  - /2024/06/27/staff-work/
 author: john garrish
 ---
 Maybe the problem is - we need better staffwork

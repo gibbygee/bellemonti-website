@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Repetition and persuasion"
 date: 2024-12-02
+redirect_from:
+  - /2024/12/02/repetition-and-persuasion/
 author: john garrish
 ---
 It is often written that PMs are in the business of alignment, and communication is the craft.

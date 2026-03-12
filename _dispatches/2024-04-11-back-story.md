@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Back story"
 date: 2024-04-11
+redirect_from:
+  - /2024/04/11/back-story/
 author: john garrish
 ---
 I am a sucker for a good origin story. 

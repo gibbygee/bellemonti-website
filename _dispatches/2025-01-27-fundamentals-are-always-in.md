@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: reading
 title: "Fundamentals are always \"in\""
 date: 2025-01-27
+redirect_from:
+  - /2025/01/27/fundamentals-are-always-in/
 author: john garrish
 ---
 Somewhere along the way, last 10 years PMs started burrowing into the agile lifestyle - and when we did, we lost the lense of the business.
