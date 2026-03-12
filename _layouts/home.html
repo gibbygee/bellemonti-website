@@ -16,10 +16,8 @@ layout: default
                 <a href="{{ latest_reading.url | relative_url }}" style="font-size: 24px; font-weight: 600;">{{ latest_reading.title }}</a>
                 <span class="text-secondary text-small"> — {{ latest_reading.date | date: "%B %d, %Y" }}</span>
               </div>
-              {% capture dispatch_raw %}{{ latest_reading.content | markdownify }}{% endcapture %}
-              {% assign dispatch_parts = dispatch_raw | split: '<img' %}
-              {% capture dispatch_clean %}{% for part in dispatch_parts %}{% if forloop.first %}{{ part }}{% else %}{% assign after_img = part | split: '/>' %}{% if part contains 'dispatch-float' or part contains 'barry-thumb' %}<img{{ after_img[0] }}/>{% endif %}{% for segment in after_img %}{% unless forloop.first %}{{ segment }}{% if forloop.last == false %}/> {% endif %}{% endunless %}{% endfor %}{% endif %}{% endfor %}{% endcapture %}
-              <div class="dispatch-content reading-content">{{ dispatch_clean }}</div>
+              {% assign brace = '{' %}{% assign pct = '%' %}{% assign tag_open = brace | append: pct %}{% assign tag_close = pct | append: '}' %}{% assign raw = latest_reading.content %}{% assign segments = raw | split: tag_open %}{% capture cleaned %}{{ segments[0] }}{% for seg in segments %}{% unless forloop.first %}{% assign after_close = seg | split: tag_close %}{% for piece in after_close %}{% unless forloop.first %}{{ piece }}{% endunless %}{% endfor %}{% endunless %}{% endfor %}{% endcapture %}
+              <div class="dispatch-content reading-content" data-dispatch-url="{{ latest_reading.url | relative_url }}">{{ cleaned | markdownify }}</div>
             </div>
           </div>
         {% endif %}

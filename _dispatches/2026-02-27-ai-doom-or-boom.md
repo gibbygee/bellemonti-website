@@ -23,8 +23,6 @@ I agree more with this view - the history of Cloud adoption; or mobile; or big d
 
 ## Your Zen for Friday
 
-<video controls playsinline style="width: 100%; max-width: 550px; display: block; border-radius: 8px;">
-  <source src="/assets/images/zen-friday.mp4" type="video/mp4">
-</video>
+{% include video.html src="/assets/images/zen-friday.mp4" %}
 
 [View on X](https://x.com/brahma_4u/status/2026927250176881090)

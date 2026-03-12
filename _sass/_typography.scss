@@ -116,4 +116,14 @@ blockquote {
       text-indent: -1em;
     }
   }
+
+  video {
+    margin: $spacing-sm 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: $spacing-sm 0;
+  }
 }

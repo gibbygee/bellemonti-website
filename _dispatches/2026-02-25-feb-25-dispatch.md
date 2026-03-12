@@ -59,8 +59,6 @@ author: john garrish
 
 > *Don't persuade yourself into the restaurant mindset. Slowly over time develop the capacity to see the decision space and move around it.*
 
-<video controls playsinline style="width: 100%; max-width: 220px; display: block; border-radius: 8px;">
-  <source src="/assets/images/zen-weds.mp4" type="video/mp4">
-</video>
+{% include video.html src="/assets/images/zen-weds.mp4" max_width="220px" %}
 
 [View on Instagram](https://www.instagram.com/reel/DVHo65wjgG1/)

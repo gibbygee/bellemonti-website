@@ -102,6 +102,10 @@
   margin-top: $spacing-sm;
   color: $color-text-primary;
   line-height: $line-height-base;
+
+  img:not(.dispatch-float):not(.video-thumb) {
+    display: none;
+  }
 }
 
 .follow-links {

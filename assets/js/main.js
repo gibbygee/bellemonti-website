@@ -103,6 +103,18 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   }
 
+  // Home page: load fully rendered dispatch content
+  const dispatchEl = document.querySelector('[data-dispatch-url]');
+  if (dispatchEl) {
+    fetch(dispatchEl.dataset.dispatchUrl)
+      .then(function(r) { return r.text(); })
+      .then(function(html) {
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        var rendered = doc.querySelector('.reading-content');
+        if (rendered) dispatchEl.innerHTML = rendered.innerHTML;
+      });
+  }
+
   // Copy button for code blocks
   const codeBlocks = document.querySelectorAll('pre');
 

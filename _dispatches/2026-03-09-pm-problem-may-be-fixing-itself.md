@@ -1,13 +1,15 @@
 ---
-
-## layout: reading
+layout: reading
 title: "The PM problem may be fixing itself"
 date: 2026-03-09
 author: john garrish
+---
 
 For twenty-five years, agile has turned PM into a meeting management role / software dev janitor. Now AI is pulling us back to what matters - the only thing that matters - JUDGMENT!
 
 Today's reading...
+
+{% include avatar.html img="8090-logo.jpeg" name="8090.ai" url="https://www.8090.ai/" %}
 
 [Chamath says agile has broken your company](https://x.com/chamath/status/2028650332595896555)
 
@@ -17,8 +19,8 @@ Today's reading...
 - He argues that agile turned "responding to change" into an excuse to never finish anything. "Velocity" replaced quality — story points, burn-down charts, throughput, none of which measure whether the software is any good. **YES.**
 - Sadly, PMs participated in this demise and over the last decade, have become little ticket soliders. Or waiters. Lots and lots of waiters delivering little tickets to dev. We've lost the plot and it's time to get back to fundamentals.
 
-
-
+{% include clear.html %}
+{% include avatar.html img="signull.jpg" name="signüll" url="https://x.com/signulll" %}
 
 
 [The most underrated hire right now](https://x.com/signulll/status/2030404483897815089?s=12)
@@ -30,8 +32,8 @@ Today's reading...
 - The argument: building is no longer hard. Engineering is no longer the bottleneck. Variance in outcomes has shifted almost entirely to judgment — what to build, how to sequence it, how to tell the story.
 - I love the phrase "load bearing" - that describes it completely. It has to be real from the start.
 
-
-
+{% include clear.html %}
+{% include avatar.html img="dylan-field.jpg" name="Dylan Field" url="https://x.com/zolofield" %}
 
 
 [Figma CEO Dylan Field on taste](https://x.com/r0ck3t23/status/2027333669828866477)
@@ -42,7 +44,7 @@ Today's reading...
 - The new job isn't building — it's selecting. Sample the widest possible space. Then be harsh enough to reject everything until something's worth keeping.
 - We're all saying the same thing.
 
-
+{% include clear.html %}
 
 [Max Levchin on the jobs argument](https://x.com/mlevchin/status/2027473747633181151)
 
@@ -52,7 +54,9 @@ Today's reading...
 - With AI, it means great engineers can be great engineers and great PMs can be great PMs.
 - My take is - those lousy at either can do something else, and in the next year or two it's going to get uncomfortable for PMs that are not learning or re-learning the fundamentals. The return of the MRD is upon us.
 
+{% include clear.html %}
+
 ## Your Zen for Monday
 
-Kick it in the guts, Barry.
+{% include youtube.html url="https://youtu.be/qUi5Lo9SHTY?t=15" thumb="/assets/images/barry-thumb.jpg" title="Kick it in the guts, Barry" %}
 

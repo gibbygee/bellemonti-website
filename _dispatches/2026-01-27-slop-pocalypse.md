@@ -7,11 +7,11 @@ author: john garrish
 
 From Andrej Karpathy, former Director of AI at Tesla and a founding member of OpenAI:
 
-> "Given the latest lift in LLM coding capability, like many others I rapidly went from about 80% manual+autocomplete coding and 20% agents in November to 80% agent coding and 20% edits+touchups in December. i.e. I really am mostly programming in English now, a bit sheepishly telling the LLM what code to write... in words." <a href="https://x.com/karpathy/status/2015883857489522876?s=20" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" style="height: 1em; width: 1em; vertical-align: text-bottom; fill: currentColor;"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg></a>
+> "Given the latest lift in LLM coding capability, like many others I rapidly went from about 80% manual+autocomplete coding and 20% agents in November to 80% agent coding and 20% edits+touchups in December. i.e. I really am mostly programming in English now, a bit sheepishly telling the LLM what code to write... in words." {% include x-link.html url="https://x.com/karpathy/status/2015883857489522876" %}
 
 Aakash Gupta always has a good insight:
 
-> "Engineer" as a job title is splitting into two completely different professions: people who orchestrate agents and people who manually write code. The pay gap between those two is going to get very large, very fast." <a href="https://x.com/aakashgupta/status/2015899420592947669?s=20" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" style="height: 1em; width: 1em; vertical-align: text-bottom; fill: currentColor;"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg></a>
+> "Engineer" as a job title is splitting into two completely different professions: people who orchestrate agents and people who manually write code. The pay gap between those two is going to get very large, very fast." {% include x-link.html url="https://x.com/aakashgupta/status/2015899420592947669" %}
 
 *Author's note:*
 
