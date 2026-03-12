@@ -18,7 +18,7 @@ layout: default
               </div>
               {% capture dispatch_raw %}{{ latest_reading.content | markdownify }}{% endcapture %}
               {% assign dispatch_parts = dispatch_raw | split: '<img' %}
-              {% capture dispatch_clean %}{% for part in dispatch_parts %}{% if forloop.first %}{{ part }}{% else %}{% assign after_img = part | split: '/>' %}{% if part contains '8090-logo' or part contains 'signull' or part contains 'dylan-field' or part contains 'barry-thumb' %}<img{{ after_img[0] }}/>{% endif %}{% for segment in after_img %}{% unless forloop.first %}{{ segment }}{% if forloop.last == false %}/> {% endif %}{% endunless %}{% endfor %}{% endif %}{% endfor %}{% endcapture %}
+              {% capture dispatch_clean %}{% for part in dispatch_parts %}{% if forloop.first %}{{ part }}{% else %}{% assign after_img = part | split: '/>' %}{% if part contains 'dispatch-float' or part contains 'barry-thumb' %}<img{{ after_img[0] }}/>{% endif %}{% for segment in after_img %}{% unless forloop.first %}{{ segment }}{% if forloop.last == false %}/> {% endif %}{% endunless %}{% endfor %}{% endif %}{% endfor %}{% endcapture %}
               <div class="dispatch-content reading-content">{{ dispatch_clean }}</div>
             </div>
           </div>

@@ -81,6 +81,21 @@ author: john garrish
 
 **Important:** Use `/d` slash command to create new reading posts with proper format.
 
+**Floating avatar pattern for dispatches:**
+When linking to a person's post/tweet, place their circular avatar floated right above the section. Use `<div style="clear:both"></div>` between sections.
+```html
+<a href="PROFILE_URL" target="_blank" rel="noopener noreferrer"><img src="/assets/images/NAME.jpg" alt="Name" class="dispatch-float"></a>
+
+[Article Title](POST_URL)
+> Blockquote text
+
+- Bullet commentary
+- More commentary
+
+<div style="clear:both"></div>
+```
+The `dispatch-float` class (in `_utilities.scss`) floats the 60px circular image to the right. Images go in `assets/images/`.
+
 ## Styling
 
 SCSS files in `_sass/`:
