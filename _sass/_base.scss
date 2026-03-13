@@ -187,23 +187,25 @@ body.matrix-active {
 
 #matrix-toggle {
   font-family: 'Courier New', monospace;
-  font-size: 14px;
-  color: $color-text-secondary;
-  border: 1px solid $color-border;
-  padding: 6px 16px;
-  border-radius: 4px;
+  font-size: 11px;
+  color: #bbb;
+  border: none;
+  padding: 3px 10px;
+  min-width: 110px;
+  text-align: center;
   white-space: nowrap;
   transition: all 0.3s ease;
+  opacity: 0.5;
 
   &:hover {
+    opacity: 1;
     color: #006b1f;
-    border-color: #006b1f;
     background-color: rgba(0, 255, 65, 0.15);
   }
 
   body.matrix-active & {
+    opacity: 1;
     color: #00ff41;
-    border-color: #00ff41;
     background-color: rgba(0, 255, 65, 0.1);
   }
 }

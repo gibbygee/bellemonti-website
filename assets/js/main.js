@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const neoText = document.getElementById('about-neo');
 
       if (active) {
-        btn.textContent = 'Back to Sleep';
+        btn.textContent = 'Back';
         if (flipCard) flipCard.classList.add('flipped');
         if (defaultText) defaultText.style.display = 'none';
         if (neoText) neoText.style.display = '';

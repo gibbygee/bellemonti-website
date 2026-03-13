@@ -33,7 +33,7 @@ layout: default
           {{ content }}
         </div>
         <div class="about-text" id="about-neo" style="display:none">
-          {% capture neo_content %}{% include about-neo.md %}{% endcapture %}
+          {% capture neo_content %}{% include about/neo.md %}{% endcapture %}
           {{ neo_content | markdownify }}
         </div>
       </div>
