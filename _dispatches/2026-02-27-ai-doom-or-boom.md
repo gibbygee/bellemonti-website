@@ -1,9 +1,9 @@
 ---
-
-## layout: reading
+layout: reading
 title: "AI Doom or Boom"
 date: 2026-02-27
 author: john garrish
+---
 
 [The 2028 Global Intelligence Crisis](https://www.citriniresearch.com/p/2028gic)
 
