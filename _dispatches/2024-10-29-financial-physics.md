@@ -59,7 +59,7 @@ This is why enterprise software companies are always trying to move upmarket. It
 
 What to do?
 
-Early lifecycle products:
+## Early lifecycle products
 
 Expect maintenance from DAY ONE - the minute you have code out in the wild, you need to support it - and typically your first customers are the most hard fought and the most dear - you need to keep them happy happy happy
 
@@ -67,7 +67,7 @@ Assume every feature costs 3x what you think it will cost - its not only the dif
 
 Start planning your "move upmarket" strategy before you need it
 
-Mid-lifecycle / growth products:
+## Mid-lifecycle / growth products
 
 Watch your maintenance-to-development ratio like a hawk - if you dont track it, you need to track it
 
@@ -77,7 +77,7 @@ Start segmenting customers by maintenance cost - you might need to fire a few
 
 Figure out what features are costing you the most to maintain - and whether its worth it
 
-Late cycle and maturity:
+## Late cycle and maturity
 
 Accept that most of your dev budget is now fixed cost
 

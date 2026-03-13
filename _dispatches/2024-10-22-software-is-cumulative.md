@@ -58,13 +58,13 @@ And it all needs maintenance
 
 This is what makes enterprise software such a different beast than physical products. A car manufacturer can say "that's the 2023 model, here's the 2024." They can plan for backward compatibility if they want, or not bother. Software? Everything you've ever built is still there, still running, still needs to work with everything else, until you decide to remove it.
 
-What does this mean for PMs?
+## What does this mean for PMs?
 
-Early lifecycle products: You're not just building features - you're laying down the first layers of sediment. Your job is not only to drive use, sale and adoption to keep the product line (and maybe the company afloat) but also to build foundations that can support the weight of success.
+**Early lifecycle products:** You're not just building features - you're laying down the first layers of sediment. Your job is not only to drive use, sale and adoption to keep the product line (and maybe the company afloat) but also to build foundations that can support the weight of success.
 
-Mid-lifecycle products - often the growth phase: This is where it gets real. Your product isn't just growing - it's growing geometrically. Each new feature interacts with every existing feature. Your surface area isn't just expanding - it's exploding.
+**Mid-lifecycle products - often the growth phase:** This is where it gets real. Your product isn't just growing - it's growing geometrically. Each new feature interacts with every existing feature. Your surface area isn't just expanding - it's exploding.
 
-Late cycle and maturity: You're managing weight. Your product has gravity. Everything you do has to work within that gravity well.
+**Late cycle and maturity:** You're managing weight. Your product has gravity. Everything you do has to work within that gravity well.
 
 Mostly this problem isn't about "good decisions versus bad decisions." It's about understanding the cumulative nature of software. Each feature you add isn't just ONE feature. It's a feature that lives in relationship to every other feature.
 

@@ -26,7 +26,7 @@ So what to make of all of this? Is empowerment good or bad? Is process good or b
 
 The Answer is yes.
 
-The negative case for Empowerment
+## The negative case for Empowerment
 
 In current PM discourse, Empowerment is seen as a good thing. So, I won't argue that. What I will argue is the case AGAINST unfettered empowerment. Or, more specifically, why limit empowerment?
 
@@ -44,7 +44,7 @@ The cracks in the armature usually appear in product or company performance. The
 
 Which inevitably pendulums back to "process." Sometimes you hear teams say "we need governance" and when you hear PMs say that, you know it's bad.
 
-The positive case for Process
+## The positive case for Process
 
 Empowerment is often mistakenly seen as entirely positive, while Process is unfairly viewed as thoroughly negative. Too much process (i.e. too many meetings), or process for the sake of process is all bad. 
 
@@ -62,7 +62,7 @@ When team members are focused, they make progress. They fix problems, finish tas
 
 Post-COVID, calendars reign supreme. Unchecked empowerment breeds misalignment because PMs work in solitude. Interrupted less, PMs drift from organizational goals.
 
-The Answer
+## The Answer
 
 Balance. The answer is yes.
 
@@ -78,9 +78,9 @@ Enough meetings ... to sustain interest, momentum, and quickly resolve problems.
 
 Not enough meetings ... to make every decision. It should always feel like you don't have enough time together.
 
-Practical Methods - Try This
+## Practical Methods - Try This
 
-Ramp up the cadence
+### Ramp up the cadence
 
 Ramp up the meeting cadence.
 
@@ -88,13 +88,13 @@ Use this new forum as an excuse to have fewer meetings. Aggressively cancel. "Ju
 
 If you meet on a topic monthly, meet weekly. If you meet weekly, meet daily.
 
-Big meetings are fine, and are fine to (occasionally) miss
+### Big meetings are fine, and are fine to (occasionally) miss
 
 If you miss, just come to the next. If you meet a lot, on a high cadence, inevitably people will miss. So what.
 
-Record and transcribe
+### Record and transcribe
 
-Nothing lingers
+### Nothing lingers
 
 It's ok to go long. Meeting efficiency is not the goal. Solving problems is the goal
 
@@ -102,7 +102,7 @@ It's ok to go long. Meeting efficiency is not the goal. Solving problems is the 
 
 "Can you bring this answer back to our next meeting?" (i.e. tomorrow)
 
-Show us
+### Show us
 
 In the meeting, show us
 

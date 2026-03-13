@@ -38,7 +38,7 @@ I recognize how pedestrian this sounds. Keep in mind, though, that what is NOT s
 
 Which leads me back to: "maybe this is as good as it gets." If you are in this situation, maybe you are looking at it wrong. 
 
-An alternative view
+## An alternative view
 
 What I see happen in these kinds of teams: 
 

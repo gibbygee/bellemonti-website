@@ -34,7 +34,7 @@ To add more slash commands, create `.md` files in `.cursor/commands/`
 _config.yml          # Jekyll config (title, url, collections, plugins)
 _data/navigation.yml # Menu items (visible: true/false controls display)
 _layouts/            # Templates: default, home, page, post, reading
-_includes/           # Components: head, header, navigation, footer
+_includes/           # Components: head, header, navigation, footer, about/
 _pages/              # Static pages (home, blog, reading, about, contact, services)
 _posts/              # Blog posts (nav: "Writing", URL: /blog/)
 _dispatches/           # Reading posts (nav: "Dispatches", URL: /dispatches/)
@@ -81,20 +81,22 @@ author: john garrish
 
 **Important:** Use `/d` slash command to create new reading posts with proper format.
 
-**Floating avatar pattern for dispatches:**
-When linking to a person's post/tweet, place their circular avatar floated right above the section. Use `<div style="clear:both"></div>` between sections.
-```html
-<a href="PROFILE_URL" target="_blank" rel="noopener noreferrer"><img src="/assets/images/NAME.jpg" alt="Name" class="dispatch-float"></a>
+**Dispatch section pattern:**
+When a dispatch links to someone's post/tweet, use the avatar and clear includes. Commentary should be regular paragraphs, NOT bullet lists.
+```markdown
+{% include avatar.html img="name.jpg" name="Display Name" url="PROFILE_URL" %}
 
 [Article Title](POST_URL)
+
 > Blockquote text
 
-- Bullet commentary
-- More commentary
+Commentary as regular paragraphs separated by blank lines.
 
-<div style="clear:both"></div>
+More commentary in a separate paragraph.
+
+{% include clear.html %}
 ```
-The `dispatch-float` class (in `_utilities.scss`) floats the 60px circular image to the right. Images go in `assets/images/`.
+Avatar images go in `assets/images/`. Use `##` for section headers (e.g. `## Your Zen for Monday`). All links must be markdown `[text](url)`, never HTML `<a>` tags.
 
 ## Styling
 

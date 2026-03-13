@@ -46,6 +46,6 @@ Never ever ever snowflake. You heard it here.
 
 Resist the siren song. Resist with all your might. It is cyanide that takes like Diet Coke. Lose the customer if you have to. Get yourself fired if thats what it takes. Because what you are agreeing to is the heat death of your software company when you agree to a snowflake. Never ever ever do it.
 
-// commentary
+## Commentary
 
 Per Gregg Machacz, from whom I have learned more about dev and agile processes than anyone else:  "if its part of your business, it will always be part of your business. It's a one-way ticket."
