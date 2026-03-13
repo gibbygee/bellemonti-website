@@ -5,11 +5,11 @@ date: 2026-01-16
 author: john garrish
 ---
 
-I got the idea for this approach from the <a href="https://www.nytimes.com/2026/01/09/podcasts/hardfork-grok-crisis-claude-code.html" target="_blank" rel="noopener noreferrer">Hard Fork podcast episode</a> where Kevin Roose and Casey Newton discuss building websites with Claude Code. Both of their sites were created this way:
-- <a href="https://kevinroose.com" target="_blank" rel="noopener noreferrer">kevinroose.com</a>
-- <a href="https://cnewton.org" target="_blank" rel="noopener noreferrer">cnewton.org</a>
+I got the idea for this approach from the [Hard Fork podcast episode](https://www.nytimes.com/2026/01/09/podcasts/hardfork-grok-crisis-claude-code.html) where Kevin Roose and Casey Newton discuss building websites with Claude Code. Both of their sites were created this way:
+- [kevinroose.com](https://kevinroose.com)
+- [cnewton.org](https://cnewton.org)
 
-And yes, this very site (<a href="https://bellemonti.com" target="_blank" rel="noopener noreferrer">bellemonti.com</a>) was built the same way. Site design took me about 90 minutes. Getting the custom URL took longer, but only because it took awhile to resolve all the DNS servers. But it was dead simple.
+And yes, this very site ([bellemonti.com](https://bellemonti.com)) was built the same way. Site design took me about 90 minutes. Getting the custom URL took longer, but only because it took awhile to resolve all the DNS servers. But it was dead simple.
 
 Tooling-wise - I built it using Claude Code; and Claude Code used Jekyll to make it presentable (what you see here); and it's all stored in GitHub; which is then rendered via Github Pages. Github Pages is free to use, if you keep the repo public. I do have to pay for my custom URL, but you can use it just "vanilla" from Github if you want. No charge.
 
@@ -21,7 +21,7 @@ The best, though - markdown is the native language of AI coding assistants. Word
 
 Right now, it's just a site. Boring, really. But I think there is a virtuous loop here for consulting - whereby the consultant (me) can build a repo of verifiable information for a client, and coach along the way. And, using this kind of web framework, it would make it very easy to show the deliverable as it's built (rather than, say, viewing in Cursor which is very hard for civilians). Because its built on markdown, it would allow me to combine a few presentation pages ("here is where we are") but with, also, access to the work. Lastly, it becomes a ready-made leave behind. Standby for where this goes. :) 
 
-See the code, use the code >> <a href="https://github.com/gibbygee/bellemonti-website" target="_blank" rel="noopener noreferrer"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" style="vertical-align: middle; margin-right: 10px;"></a>
+See the code, use the code >> [![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/gibbygee/bellemonti-website)
 
 ---
 
@@ -32,7 +32,7 @@ Here are the steps I followed, as described by Kevin Roose and Casey Newton on t
 ## Steps
 
 ### Set Up Claude Code
-- Install <a href="https://claude.com/product/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a> on your computer - <a href="https://docs.claude.com/en/docs/claude-code/quickstart" target="_blank" rel="noopener noreferrer">Download and installation instructions</a>
+- Install [Claude Code](https://claude.com/product/claude-code) on your computer - [Download and installation instructions](https://docs.claude.com/en/docs/claude-code/quickstart)
 - Claude Code is an autonomous coding agent that puts the Claude chatbot inside your terminal window
 - It can take instructions in plain English and execute tasks autonomously
 
@@ -60,7 +60,7 @@ Example prompt structure:
 
 ## Key features you can add
 
-Based on Casey's experience building <a href="https://cnewton.org" target="_blank" rel="noopener noreferrer">cnewton.org</a>:
+Based on Casey's experience building [cnewton.org](https://cnewton.org):
 
 - **Responsive design** - Works on mobile and desktop automatically
 - **Dynamic widgets** - Pull in recent content (articles, podcast episodes, social media posts)

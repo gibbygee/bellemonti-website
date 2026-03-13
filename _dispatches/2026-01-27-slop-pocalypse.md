@@ -38,7 +38,7 @@ So as a PM - the choice is - either you dig in, and begin to bridge that gap bet
 
 My POV is - the best way is up to the customer, or maybe out to the market would be another way to say it. If you are a PM who has made Jira tickets your life, now is the time to build skills. Change your worldview. Use your superpowers in new ways. How do you understand what customers need, and why, and how to rank, sort, filter and articulate all of this ambiguity into revenue-bearing problems to solve? With the expectation that you are finding time for these activities by lowering your admin work via AI automation.
 
-AI automation is the new normal for PM. It's upon us. The good news is that the tools that are disrupting dev, are also disrupting PM. For example, if you haven't taken <a href="https://www.cursorforpms.com" target="_blank" rel="noopener noreferrer">Carl Velotti's Cursor for PM course</a>, do it now, today, don't wait. It is an eye-opener. 
+AI automation is the new normal for PM. It's upon us. The good news is that the tools that are disrupting dev, are also disrupting PM. For example, if you haven't taken [Carl Velotti's Cursor for PM course](https://www.cursorforpms.com), do it now, today, don't wait. It is an eye-opener. 
 
 The other topic is Product Marketing - I think the world of PMM is going to be impacted even more, simply because most of the problems they tackle are quite literally language problems. A post for another time.
 
