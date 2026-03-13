@@ -30,7 +30,8 @@ layout: default
           <button id="matrix-toggle" onclick="toggleMatrix()">Wake up, Neo</button>
         </div>
         <div class="about-text" id="about-default">
-          {{ content }}
+          {% capture about_content %}{% include about/about.md %}{% endcapture %}
+          {{ about_content | markdownify }}
         </div>
         <div class="about-text" id="about-neo" style="display:none">
           {% capture neo_content %}{% include about/neo.md %}{% endcapture %}
