@@ -1,11 +1,11 @@
 ---
-
-## layout: reading
+layout: reading
 title: "Campfire model"
 date: 2026-03-14
 author: john garrish
+---
 
-{% include avatar.html img="steve-yegge.jpg" name="Steve Yegge" url="[https://steve-yegge.medium.com](https://steve-yegge.medium.com)" %}
+{% include avatar.html img="steve-yegge.jpg" name="Steve Yegge" url="https://steve-yegge.medium.com" %}
 
 Steve Yegge is one of the sharpest minds in technology writing. and has been for twenty years. His ability to read the internal culture of an engineering organization and then explain it back to you in a way that makes you feel dumb for not seeing it yourself - that's a rare gift. The [Platforms Rant](https://gist.github.com/chitchcock/1281611) from 2011 is still cited constantly. Nobody else working today writes about engineering organizations with this much clarity and range.
 
@@ -19,7 +19,7 @@ The documentation can still exist, and will still exist, but it's now a byproduc
 
 ## Bias for action - the sequel
 
-{% include avatar.html img="paul-graham.jpg" name="Paul Graham" url="[https://www.paulgraham.com](https://www.paulgraham.com)" %}
+{% include avatar.html img="paul-graham.jpg" name="Paul Graham" url="https://www.paulgraham.com" %}
 
 > Action produces information.
 > [Paul Graham](https://startupclass.samaltman.com/courses/lec03/)
@@ -82,7 +82,7 @@ In today's WFH world, the vacuum is filled with THE DAILY CALENDAR. 30 minute sl
 
 And then these same execs wonder why nothing is moving very fast. Things aren't getting accomplished. Or worse, the team is working on stuff that doesn't seem all that valuable in hindsight.
 
-{% include avatar.html img="verne-harnish.jpg" name="Verne Harnish" url="[https://x.com/agilescaleup](https://x.com/agilescaleup)" %}
+{% include avatar.html img="verne-harnish.jpg" name="Verne Harnish" url="https://x.com/agilescaleup" %}
 
 I don't think I've ever seen this more clearly articulated than in [Mastering the Rockefeller Habits](https://amazon.com/Mastering-Rockefeller-Habits-Increase-Growing/dp/0978774957). It's an old book at this point (2002), but it's more relevant than ever. I looked at the [checklist](https://x.com/agilescaleup) and thought - damn, that's it. That's exactly it.
 
