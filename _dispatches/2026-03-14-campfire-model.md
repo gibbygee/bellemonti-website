@@ -7,7 +7,7 @@ author: john garrish
 
 {% include avatar.html img="steve-yegge.jpg" name="Steve Yegge" url="https://steve-yegge.medium.com" %}
 
-Steve Yegge is one of the sharpest minds in technology writing. and has been for twenty years. His ability to read the internal culture of an engineering organization and then explain it back to you in a way that makes you feel dumb for not seeing it yourself - that's a rare gift. The [Platforms Rant](https://gist.github.com/chitchcock/1281611) from 2011 is still cited constantly. Nobody else working today writes about engineering organizations with this much clarity and range.
+Steve Yegge is one of the sharpest minds in technology writing. And has been for twenty years. His ability to read the internal culture of an engineering organization and then explain it back to you in a way that makes you feel dumb for not seeing it yourself - that's a rare gift. The [Platforms Rant](https://gist.github.com/chitchcock/1281611) from 2011 is still cited constantly. Nobody else working today writes about engineering organizations with this much clarity and range.
 
 His latest piece is exceptional. [The Anthropic Hive Mind](https://steve-yegge.medium.com/the-anthropic-hive-mind-d01f768f3d7b) is based on conversations with roughly 40 people at Anthropic, and it introduces something he calls the campfire model:
 
