@@ -28,7 +28,7 @@ layout: default
           <h4>Recent Dispatches</h4>
           <ul>
             {% assign all_readings = site.dispatches | sort: 'date' | reverse %}
-            {% for reading in all_readings offset:1 limit:5 %}
+            {% for reading in all_readings offset:1 limit:10 %}
               <li><a href="{{ reading.url | relative_url }}">{{ reading.title }}</a></li>
             {% endfor %}
             {% if site.dispatches.size < 2 %}
