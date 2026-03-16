@@ -17,7 +17,7 @@ I am concluding that in the modern software company, a lot of people think that 
 
 > No plan of operations extends with any certainty beyond the first contact with the main hostile force.
 
-Field Marshal Helmuth von Moltke said that in the 1800s. Eisenhower rephrased it: "Plans are worthless, but planning is everything." Variously attributed to Napoleon,  Patton, and more recently, Mike Tyson. Anyone and everyone who ever watched a beautiful plan disintegrate on contact with reality.
+Field Marshal Helmuth von Moltke said that in the 1800 and Eisenhower rephrased it as "plans are worthless, but planning is everything." It has been variously attributed to Napoleon, Patton, and more recently, Mike Tyson - that is, anyone and everyone who ever watched a beautiful plan disintegrate on contact with reality.
 
 The point is not the plan. The point is the PLANNING. The process of thinking through what could go wrong, who needs to be where, what happens if the first thing fails. That's the value.
 
