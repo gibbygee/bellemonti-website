@@ -79,6 +79,12 @@ author: john garrish
 ---
 ```
 
+**CRITICAL — Front matter breaks easily when editing in Cursor:**
+- The `---` fences are YAML delimiters, NOT markdown horizontal rules. Editors may auto-format them.
+- Common breakage: blank lines inserted inside the block, `layout:` gets a `##` prefix, closing `---` gets removed.
+- **After any manual edit**, always verify the front matter is exactly 6 lines: opening `---`, four YAML fields, closing `---`, with NO blank lines and NO markdown formatting inside.
+- If front matter breaks, the dispatch won't render and the home page will show raw text or nothing.
+
 **Important:** Use `/d` slash command to create new reading posts with proper format.
 
 **Dispatch section pattern:**
