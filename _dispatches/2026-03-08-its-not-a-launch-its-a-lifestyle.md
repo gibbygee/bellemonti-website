@@ -35,11 +35,9 @@ That's the model. Plan intensely. Share everything. Then adapt in real time. The
 
 What separates the great project managers from meeting schedulers: iteration and transparency. The plan is a shared understanding of what the team needs to accomplish the goal. It's living.
 
-The great ones don't wait until the end to show you the thing. They show you every day. They share status not because their boss asked for it, but because their teammates need it. Sharing is caring. Not in the kindergarten sense - but in the "I respect you enough to keep you informed so you can do YOUR job" sense.
+The great project managers don't wait until the end to show you the thing. They show you every day. They share status not because their boss asked for it, but because their teammates need it. Sharing is caring. Not in the kindergarten sense - but in the "I respect you enough to keep you informed so you can do YOUR job" sense. It's a hard lesson for a lot of people - but it's actually really simple: you are not sharing for your boss, you are sharing for your teammates.
 
-It's a hard lesson for a lot of people to understand - but it's simple: you are not sharing for your boss, you are sharing for your teammates.
-
-This is the part people get wrong all the time. Status updates aren't upward reporting. They're horizontal communication. The person downstream from you needs to know what's happening NOW, not in two weeks when you finally surface for air.
+This is the part people get wrong all the time. Status updates aren't upward reporting, they're horizontal communication. The person downstream from you needs to know what's happening NOW, not in two weeks when you finally surface for air.
 
 Iteration matters because every cycle is an opportunity to correct. Every share-out is a chance to catch the misunderstanding BEFORE it becomes a two-week detour. Every transparent moment is a chance for someone else to say "wait, that's not what I meant" or "actually, we figured that out yesterday."
 
