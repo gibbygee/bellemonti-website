@@ -1,9 +1,9 @@
 ---
-
-## layout: reading
+layout: reading
 title: "It's not a launch, it's a lifestyle"
 date: 2026-03-08
 author: john garrish
+---
 
 If you know me you know I will rail endlessly about the difference between PROJECT management and PRODUCT management.
 
