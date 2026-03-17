@@ -58,13 +58,11 @@ It makes sense in so many ways. Sports teams practice daily. Not because they're
 
 But now? All the administrivia has, or will be soon, automated away. It's here. I don't see going back.
 
-## The new transformation - buckle up
+## The main thing is to keep the main thing the main thing.
 
 We're starting to see what "transformation" actually looks like in the age of AI. Not a two-year initiative with a steering committee and a change management consultant. The transformation is happening every single day or it isn't happening at all. 
 
 (spoiler alert - the cottage industry of "transformation consultants" is in for a very rude awakening - and it can't come to soon)
-
-## The main thing is to keep the main thing the main thing.
 
 I can't escape the idea that the secret to success - at a commercial software company anyway - is the willingness of your executive team to engage, every day, on the #1 priority. Such that it crowds ALL THE OTHER PRIORITIES out of everyone's calendar.
 
@@ -80,7 +78,7 @@ And then these same execs wonder why nothing is moving very fast. Things aren't 
 
 I don't think I've ever seen this more clearly articulated than in [Mastering the Rockefeller Habits](https://amazon.com/Mastering-Rockefeller-Habits-Increase-Growing/dp/0978774957). It's an old book at this point (2002), but it's more relevant than ever. I looked at the [checklist](https://x.com/agilescaleup) and thought - damn, that's it. That's exactly it.
 
-It's a brave new world folks. 
+It's a brave new week folks. 
 
 J.
 
