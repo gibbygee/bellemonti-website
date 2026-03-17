@@ -11,17 +11,17 @@ author: john garrish
 
 I particularly disagree with this idea.
 
-Citrini Research and Alap Shah lay out a macro doom scenario: AI displaces white-collar workers faster than they can land comparable jobs, consumer spending collapses, companies accelerate AI adoption to protect margins, and the feedback loop has no natural brake. The $13 trillion mortgage market takes a hit, and all holy hell breaks looks. 
+Citrini Research and Alap Shah lay out a macro doom scenario. 
 
-It's a well-constructed piece - worth a read if for no other reason than it's fodder for your weekend conversations. But I don't subscribe.
+It's worth a read if for no other reason than it's fodder for your weekend conversations. But I don't subscribe.
 
 [Contra Citrini](https://x.com/johnloeber/status/2025748423157432756)
 
 >Silicon Valley darlings like Stripe and Linear have built massive followings just by not being as insanely unusable and horrendous as their competitors. Ask tenured engineers "show me a piece of good software" and you'll get long silences and blank stares.
 
-This is John Loeber's rebuttal. His core argument: Everything is more complicated and takes longer than you think, and the apetitite for improvement is infinity. He isn't disputing that AI disruption is real — he's skeptical that it arrives on such a fast timeline, and on a longer timeline, in a more optimistic view - everyone will use it to get better at everything.
+This is John Loeber's rebuttal. His core argument: everything is more complicated and takes longer than you think, and the apetitite for improvement is infinity. 
 
-The reality of corporate technology improvement is all really damn slow. This makes a lot of sense.
+I'm more in this camp. The reality of corporate technology improvement is all really damn slow. REALLY REALLY REALLY slow.
 
 [The Cyborg Era: What AI Means for Jobs](https://aleximas.substack.com/p/853abb61-a5b5-48e5-a04d-23394b6a6536)
 >We’ve had millennia of things (and more humans!) replacing what humans do and yet humans do more than ever. If a million little tasks can be replaced and there is literally zero impact on total employment, why would we assume that wouldn’t hold up for a technology that replaces the next million tasks?

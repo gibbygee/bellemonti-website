@@ -7,7 +7,7 @@ author: john garrish
 
 For twenty-five years, agile has turned PM into a meeting management role / software dev janitor. Now AI is pulling us back to what matters - the only thing that matters - JUDGMENT!
 
-Today's reading...
+## Today's reading...
 
 {% include avatar.html img="8090-logo.jpeg" name="8090.ai" url="https://www.8090.ai/" %}
 

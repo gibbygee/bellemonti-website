@@ -5,6 +5,8 @@ date: 2026-02-05
 author: john garrish
 ---
 
+## The Lack'o
+
 Up until about 6 months ago, if you had asked me what my "go to" app for PM is - I would have said [Miro](https://www.miro.com). And I still love [Miro](https://www.miro.com) in so many ways.
 
 But, [Cursor](https://www.cursor.so/) has become my "PM Desktop." I've had the thought for many years that PMs live in a world of text - our world is written. UX works in pictures, and dev in code - but the craft of PM is mostly writing. 
@@ -17,7 +19,7 @@ Marty Cagan has written endlessly about the difference between [process people](
 
 I have a test I do when evaluating PM writing in whatever form it takes. I call it the "lacko." Many (too many) PMs will write a business rationale in the format of:
 
-> "We need [thing] because we lack [thing]" 
+> "We need [thing] because we lack a [thing]" 
 
 Insert a thing here - maybe a dashboard, and you'll see what I mean:
 
