@@ -1,6 +1,6 @@
 ---
 layout: reading
-title: "From Hard Fork - How to ...free website w/ Claude Code and GitHub Pages"
+title: "From Hard Fork - How to set up a free website w/ Claude Code and GitHub Pages"
 date: 2026-01-16
 author: john garrish
 ---
@@ -21,7 +21,7 @@ The best, though - markdown is the native language of AI coding assistants. Word
 
 Right now, it's just a site. Boring, really. But I think there is a virtuous loop here for consulting - whereby the consultant (me) can build a repo of verifiable information for a client, and coach along the way. And, using this kind of web framework, it would make it very easy to show the deliverable as it's built (rather than, say, viewing in Cursor which is very hard for civilians). Because its built on markdown, it would allow me to combine a few presentation pages ("here is where we are") but with, also, access to the work. Lastly, it becomes a ready-made leave behind. Standby for where this goes. :) 
 
-See the code, use the code >> [![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/gibbygee/bellemonti-website)
+See the code, use the code >> [![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png){: width="36" }](https://github.com/gibbygee/bellemonti-website)
 
 ---
 
