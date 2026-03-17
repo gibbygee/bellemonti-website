@@ -7,15 +7,15 @@ author: john garrish
 
 {% include avatar.html img="steve-yegge.jpg" name="Steve Yegge" url="https://steve-yegge.medium.com" %}
 
-Steve Yegge is one of the sharpest minds in technology writing. And has been for twenty years. His ability to read the internal culture of an engineering organization and then explain it back to you in a way that makes you feel dumb for not seeing it yourself - that's a rare gift. The [Platforms Rant](https://gist.github.com/chitchcock/1281611) from 2011 is still cited constantly. Nobody else working today writes about engineering organizations with this much clarity and range.
+Steve Yegge is one of the sharpest minds in technology writing. And has been for twenty years. The [Platforms Rant](https://gist.github.com/chitchcock/1281611) from 2011 is still cited constantly. 
 
 His latest piece is exceptional. [The Anthropic Hive Mind](https://steve-yegge.medium.com/the-anthropic-hive-mind-d01f768f3d7b) is based on conversations with roughly 40 people at Anthropic, and it introduces something he calls the campfire model:
 
 > There is no waterfall. There is no spec. There is a prototype that simply evolves, via group sculpting, into the final product.
 
-A living prototype - the "campfire" - sits at the center. The team gathers around it like people around a campfire. They shape it together. No silos. No 18-month roadmap. No spec that someone wrote in a conference room and handed to engineering. Just the thing itself, being worked on by the people who are building it, in real time.
+A living prototype - the "campfire" - sits at the center. The team gathers around it like people around a campfire. They shape it together. No silos or 18-month roadmap. Just the thing itself, being worked on by the people who are building it, in real time.
 
-The documentation can still exist, and will still exist, but it's now a byproduct of the work, not the work. The work is the agreement reached around the campfire. The alignment. The written artifact memorializes the decision - it's the output, not the input. We spent decades confusing the documentation of work with the work itself.
+The documentation can still exist, and will still exist, but it's now a byproduct of the work, not the work. The work is the agreement reached around the campfire. The alignment. We've spent decades in the greater PM/Dev/UX world confusing the documentation of work with the work itself.
 
 ## Bias for action - the sequel
 
@@ -34,13 +34,9 @@ Then you wait again.
 
 Every pause is a gap where information dies. In the worst of cases, it's where bad behavior festers.
 
-Action produces information. And the campfire model is pure action. Paul Graham had it exactly right.
+Action produces information. And the campfire model is pure action. Paul Graham has it exactly right.
 
-I've [written before](/dispatches/software-is-cumulative/) about how software is cumulative, and how easily this is forgotten. Every feature you ship exists in relationship to every other feature you've ever shipped. Surface area grows geometrically. Each layer building on the last like geological strata. 
-
-This is exactly why the punctuated model is so dangerous. When you're waiting days between handoffs, you're adding weight to the product without feeling it. By the time you reconvene, the strata have already hardened. 
-
-The campfire model is the opposite - you feel the weight accumulating in real time, and you can course-correct before the sediment sets.
+## Cadence is king
 
 [Everyone has been a talking about cadence for a long time.](/dispatches/ship-more/) The simple version:
 
@@ -58,25 +54,23 @@ The answer is not a "daily standup" or "agile ceremony" to resolve process issue
 
 You don't need the long wait times because the teams don't need to catch up. They are already "there." 
 
-It makes sense in so many ways. Sports teams practice daily. Not because they're behind. Because that's the cadence of competitive performance. Daily reps. Daily decisions. Daily feedback. No coach says "we'll practice quarterly and review our strategy in Q3." That would be insane. And yet, we thought this was normal, because it was better than it was.
+It makes sense in so many ways. Sports teams practice daily. Not because they're behind but because that's the expected cadence of competitive performance. Daily reps. Daily decisions. Daily feedback. No coach says "we'll practice quarterly and review our strategy in Q3." That would be insane. And yet, we thought this was normal, because it was better than it was in the on-prem era.
 
 But now? All the administrivia has, or will be soon, automated away. It's here. I don't see going back.
 
 ## The new transformation - buckle up
 
-This is what "transformation" actually looks like in the age of AI. Not a two-year initiative with a steering committee and a change management consultant. Not a slide deck with a maturity model. The transformation is happening every single day or it isn't happening at all. 
+We're starting to see what "transformation" actually looks like in the age of AI. Not a two-year initiative with a steering committee and a change management consultant. The transformation is happening every single day or it isn't happening at all. 
 
 (spoiler alert - the cottage industry of "transformation consultants" is in for a very rude awakening - and it can't come to soon)
 
-I can't escape the idea that the secret to success - at a commercial software company anyway - is the willingness of your executive team to engage, every day, on the #1 priority. Such that it crowds ALL THE OTHER PRIORITIES out of everyone's calendar.
+## The main thing is to keep the main thing the main thing.
 
-> The main thing is to keep the main thing the main thing.
+I can't escape the idea that the secret to success - at a commercial software company anyway - is the willingness of your executive team to engage, every day, on the #1 priority. Such that it crowds ALL THE OTHER PRIORITIES out of everyone's calendar.
 
 I see a lot of teams that find this distasteful, that somehow this is micro-management. They harbor the (frankly: delusional) idea they can occasionally talk about a topic, among many, and the teams will internalize the priority and take action. 
 
 > "Oh I told everyone that last quarter."
-
-C'mon.
 
 In today's WFH world, the vacuum is filled with THE DAILY CALENDAR. 30 minute slots that blot out everything.
 
@@ -86,8 +80,8 @@ And then these same execs wonder why nothing is moving very fast. Things aren't 
 
 I don't think I've ever seen this more clearly articulated than in [Mastering the Rockefeller Habits](https://amazon.com/Mastering-Rockefeller-Habits-Increase-Growing/dp/0978774957). It's an old book at this point (2002), but it's more relevant than ever. I looked at the [checklist](https://x.com/agilescaleup) and thought - damn, that's it. That's exactly it.
 
-> Hard work heals the heart 
+It's a brave new world folks. 
 
-In an era of flat communication you need to take action fast to capture hearts and minds. Teams that win in software mostly just have the courage to break through all the organizational "playing business" bullshit on a daily basis.
+J.
 
-It's a brave new world folks. Excellence happens in the next 5 minutes!!
+
