@@ -11,7 +11,7 @@ CEO. CTO. CFO. CRO. CMO. CPO. VP Engineering. VP Product. VP Sales. Head of Data
 
 The job is PRODUCT.
 
-## The word that appends every title
+## The word that appends every title is "product"
 
 Think about what each of these people actually does.
 
