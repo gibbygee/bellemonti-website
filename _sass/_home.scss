@@ -2,10 +2,10 @@
 @import 'variables';
 
 .home-container {
-  padding: 0 $spacing-md;
+  padding: 20px $spacing-md 0;
 
   @media (max-width: $breakpoint-mobile) {
-    padding: 0 $mobile-padding;
+    padding: 20px $mobile-padding 0;
   }
 }
 
@@ -14,8 +14,11 @@
   margin-bottom: 0;
   padding: $spacing-sm 0;
 
-  h1 {
+  h1, h2 {
     margin-top: 0;
+  }
+
+  h1 {
     margin-bottom: 0;
     font-size: 28px;
     padding-top: 5px;
@@ -40,7 +43,7 @@
 
 .home-main {
   min-width: 0;
-  padding: $spacing-xs 0;
+  padding: 0 0 $spacing-xs;
 
   h3:first-child {
     margin-top: 0;
@@ -48,7 +51,7 @@
 }
 
 .home-sidebar {
-  padding-top: $spacing-sm;
+  padding-top: 20px;
   font-size: $font-size-small;
 
   @media (max-width: $breakpoint-mobile) {

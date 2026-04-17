@@ -4,7 +4,6 @@
 .site-header {
   position: static;
   background-color: #1F2937;
-  border-bottom: 2px solid $color-accent;
   padding: $spacing-md 0;
 }
 
@@ -34,11 +33,13 @@
     }
   }
 
-  img {
-    height: 70px;
-    width: auto;
+  .site-logo-mark {
     display: block;
-    filter: brightness(0) invert(1);
+    width: 124px;
+    height: 70px;
+    background-color: $color-white;
+    -webkit-mask: url("/assets/images/logo-small.png") center / contain no-repeat;
+    mask: url("/assets/images/logo-small.png") center / contain no-repeat;
   }
 }
 
