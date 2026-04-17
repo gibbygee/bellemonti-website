@@ -11,7 +11,7 @@
 
 .welcome-section {
   width: 100%;
-  margin-bottom: $spacing-md;
+  margin-bottom: 0;
   padding: $spacing-sm 0;
 
   h1 {
@@ -19,6 +19,10 @@
     margin-bottom: 0;
     font-size: 28px;
     padding-top: 5px;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -88,14 +92,48 @@
   color: $color-text-secondary;
 }
 
-.latest-dispatch {
-  padding-top: $spacing-xs;
+.home-divider {
+  border: 0;
+  border-top: 1px solid $color-border;
+  margin: $spacing-xs 0 $spacing-md;
 }
 
-.dispatch-entry {
+.latest-dispatch {
+  padding: $spacing-lg;
+  background-color: #F7F7F5;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+}
+
+.dispatch-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $color-accent-dark;
+  margin-bottom: $spacing-xs;
+}
+
+.dispatch-title {
+  margin-bottom: 4px;
+
   a {
-    font-weight: 600;
+    font-family: $font-display;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    color: $color-text-primary;
+
+    &:hover {
+      color: $color-accent-dark;
+    }
   }
+}
+
+.dispatch-meta {
+  font-size: $font-size-small;
+  color: $color-accent-dark;
+  margin-bottom: $spacing-sm;
 }
 
 .dispatch-content {

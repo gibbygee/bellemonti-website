@@ -42,9 +42,6 @@ collections:
   pages:
     output: true
     permalink: /:slug/
-  services:
-    output: true
-    permalink: /services/:slug/
   dispatches:
     output: true
     permalink: /dispatches/:slug/
@@ -54,11 +51,6 @@ defaults:
   - scope:
       path: ""
       type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: ""
-      type: "services"
     values:
       layout: "page"
   - scope:

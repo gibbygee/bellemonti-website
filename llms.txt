@@ -13,7 +13,7 @@ The site features "Dispatches" — all writing (original essays and curated arti
 - [Home](https://bellemonti.com/): Welcome page and latest dispatch
 - [Writing](https://bellemonti.com/blog/): Coming soon (placeholder)
 - [Dispatches](https://bellemonti.com/dispatches/): All writing — original essays and curated articles (from `_dispatches/`)
-- [About](https://bellemonti.com/about/), [Services](https://bellemonti.com/services/), [Contact](https://bellemonti.com/contact/) (pages may be hidden in nav; edit `_data/navigation.yml` to show)
+- [About](https://bellemonti.com/about/), [Contact](https://bellemonti.com/contact/) (pages may be hidden in nav; edit `_data/navigation.yml` to show)
 
 ## Dispatches
 

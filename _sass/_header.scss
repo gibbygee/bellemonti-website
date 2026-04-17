@@ -3,8 +3,8 @@
 
 .site-header {
   position: static;
-  background-color: $color-white;
-  border-bottom: 1px solid $color-border;
+  background-color: #1F2937;
+  border-bottom: 2px solid $color-accent;
   padding: $spacing-md 0;
 }
 
@@ -38,13 +38,16 @@
     height: 70px;
     width: auto;
     display: block;
+    filter: brightness(0) invert(1);
   }
 }
 
 .site-title {
-  font-size: $font-size-h1;
-  font-weight: 700;
-  color: $color-text-primary;
+  font-family: $font-display;
+  font-size: 32px;
+  font-weight: 400;
+  color: $color-white;
+  line-height: 1;
 }
 
 .header-top {
@@ -56,15 +59,15 @@
 
 .login-btn {
   font-size: $font-size-small;
-  color: $color-text-secondary;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   padding: 6px 16px;
-  border: 1px solid $color-border;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 4px;
 
   &:hover {
-    color: $color-text-primary;
-    border-color: $color-text-secondary;
+    color: $color-white;
+    border-color: $color-white;
     text-decoration: none;
   }
 }

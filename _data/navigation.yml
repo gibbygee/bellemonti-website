@@ -2,10 +2,6 @@
   link: /
   visible: true
 
-- name: Services
-  link: /services/
-  visible: false  # Hidden - set to true to show
-
 - name: Writing
   link: /blog/
   visible: false

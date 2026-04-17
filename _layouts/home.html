@@ -8,14 +8,17 @@ layout: default
       <div class="home-main">
         {{ content }}
 
+        <hr class="home-divider">
+
         {% assign latest_reading = site.dispatches | sort: 'date' | reverse | first %}
         {% if latest_reading %}
           <div class="latest-dispatch">
             <div class="dispatch-entry">
-              <div style="margin-bottom: 4px;">
-                <a href="{{ latest_reading.url | relative_url }}" style="font-size: 24px; font-weight: 600;">{{ latest_reading.title }}</a>
-                <span class="text-secondary text-small"> — {{ latest_reading.date | date: "%B %d, %Y" }}</span>
+              <div class="dispatch-eyebrow">Latest Dispatch</div>
+              <div class="dispatch-title">
+                <a href="{{ latest_reading.url | relative_url }}">{{ latest_reading.title }}</a>
               </div>
+              <div class="dispatch-meta">{{ latest_reading.date | date: "%B %d, %Y" }}</div>
               {% assign brace = '{' %}{% assign pct = '%' %}{% assign tag_open = brace | append: pct %}{% assign tag_close = pct | append: '}' %}{% assign raw = latest_reading.content %}{% assign segments = raw | split: tag_open %}{% capture cleaned %}{{ segments[0] }}{% for seg in segments %}{% unless forloop.first %}{% assign after_close = seg | split: tag_close %}{% for piece in after_close %}{% unless forloop.first %}{{ piece }}{% endunless %}{% endfor %}{% endunless %}{% endfor %}{% endcapture %}
               <div class="dispatch-content reading-content" data-dispatch-url="{{ latest_reading.url | relative_url }}">{{ cleaned | markdownify }}</div>
             </div>
