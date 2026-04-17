@@ -1,4 +1,4 @@
-// Self-hosted display font
+// Self-hosted display fonts
 
 @font-face {
   font-family: "Newsreader";
@@ -16,4 +16,13 @@
   font-display: swap;
   src: local("Newsreader Italic"),
        url("/assets/fonts/newsreader-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local("Inter"),
+       url("/assets/fonts/inter-variable.woff2") format("woff2");
 }

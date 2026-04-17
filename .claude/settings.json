@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle:*)",
+      "Bash(ruby --version:*)",
+      "Bash(gem install:*)",
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(tree:*)",
+      "Bash(echo:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(open:*)",
+      "Bash(sips:*)",
+      "Bash(lsof:*)",
+      "Bash(pgrep:*)",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(PGPASSWORD=*)",
+      "Bash(cat ~/.ssh/*)",
+      "Bash(cat ~/.env*)",
+      "Bash(gh repo delete:*)"
+    ],
+    "ask": [
+      "Bash(curl:*)",
+      "Bash(git push:*)",
+      "Bash(git reset:*)",
+      "Bash(kill:*)",
+      "Bash(pkill:*)",
+      "Bash(rm -rf:*)",
+      "Bash(chmod:*)"
+    ]
+  }
+}

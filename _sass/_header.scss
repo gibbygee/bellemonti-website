@@ -4,7 +4,7 @@
 .site-header {
   position: static;
   background-color: #1F2937;
-  padding: $spacing-md 0;
+  padding: 34px 0 10px;
 }
 
 .header-container {
@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: $spacing-sm;
+  gap: 0;
 
   @media (max-width: $breakpoint-mobile) {
     padding: 0 $mobile-padding;
@@ -22,9 +22,11 @@
 }
 
 .site-logo {
+  margin-left: -15px;
+
   a {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: $spacing-sm;
     text-decoration: none;
 
@@ -44,11 +46,13 @@
 }
 
 .site-title {
-  font-family: $font-display;
-  font-size: 32px;
-  font-weight: 400;
+  font-family: "Inter", $font-primary;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   color: $color-white;
   line-height: 1;
+  transform: translateY(-13px);
 }
 
 .header-top {
