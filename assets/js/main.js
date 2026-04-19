@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const neoText = document.getElementById('about-neo');
 
       if (active) {
-        btn.textContent = 'Back';
+        if (btn) btn.textContent = 'Back';
         if (flipCard) flipCard.classList.add('flipped');
         if (defaultText) defaultText.style.display = 'none';
         if (neoText) neoText.style.display = '';
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
         initDrops();
         matrixInterval = setInterval(draw, 80);
       } else {
-        btn.textContent = 'Wake up, Neo';
+        if (btn) btn.textContent = 'Wonderland';
         if (flipCard) flipCard.classList.remove('flipped');
         if (defaultText) defaultText.style.display = '';
         if (neoText) neoText.style.display = 'none';

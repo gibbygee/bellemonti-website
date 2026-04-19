@@ -35,6 +35,14 @@
   text-align: center;
 }
 
+.about-text .about-title,
+.about-text .about-email,
+.about-text .about-name {
+  text-align: left;
+  font-size: inherit;
+  margin: 0.25rem 0 0;
+}
+
 .about-photo-col #matrix-toggle {
   margin-top: 0.5rem;
 }
