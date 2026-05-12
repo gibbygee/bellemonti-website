@@ -104,6 +104,12 @@
   justify-content: space-between;
   width: 100%;
   gap: $spacing-md;
+
+  // Override the legacy .site-nav { margin-top: -9px } nudge so nav and login
+  // sit on the same baseline inside this row.
+  .site-nav {
+    margin-top: 0;
+  }
 }
 
 .login-btn {
