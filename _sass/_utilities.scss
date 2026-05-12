@@ -123,36 +123,6 @@
   padding: $spacing-lg;
 }
 
-// Copy-markdown button on dispatch pages
-.copy-md-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 10px;
-  font-family: $font-primary;
-  font-size: 12px;
-  font-weight: 500;
-  color: $color-text-secondary;
-  background-color: transparent;
-  border: 1px solid $color-border;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: color 0.15s, background-color 0.15s, border-color 0.15s;
-
-  svg { display: block; }
-
-  &:hover {
-    color: $color-text-primary;
-    background-color: $color-white;
-  }
-
-  &.copied {
-    background-color: $color-link;
-    color: $color-white;
-    border-color: $color-link;
-  }
-}
-
 // Code block copy button
 .code-block-wrapper {
   position: relative;

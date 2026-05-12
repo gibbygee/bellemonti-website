@@ -19,22 +19,13 @@ layout: default
       {% endif %}
     </nav>
     <header class="reading-header">
-      <p class="text-secondary" style="margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between;">
-        <span>
-          <time datetime="{{ page.date | date_to_xmlschema }}">
-            {{ page.date | date: "%B %d, %Y" }}
-          </time>
-          {% if page.author %}
-            • {{ page.author }}
-          {% endif %}
-        </span>
-        <button class="copy-md-btn" type="button" aria-label="Copy markdown source" title="Copy markdown source">
-          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-          </svg>
-          <span class="copy-md-label">copy md</span>
-        </button>
+      <p class="text-secondary" style="margin-bottom: 8px;">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%B %d, %Y" }}
+        </time>
+        {% if page.author %}
+          • {{ page.author }}
+        {% endif %}
       </p>
       <h1 style="margin-bottom: 24px;">{{ page.title }}</h1>
     </header>

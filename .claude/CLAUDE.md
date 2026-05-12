@@ -114,10 +114,6 @@ More commentary in a separate paragraph.
 - `.reading-content h2, h3, h4 { clear: both }` ends the float at each section break.
 - Do not add `target="_blank"` to dispatch links by hand — the JS does it for any external href at runtime.
 
-**Copy-markdown button:**
-- `_layouts/reading.html` includes a "copy md" button next to the date line.
-- `_plugins/dispatch_raw_source.rb` writes a raw `.md` copy of each dispatch (front matter stripped) to `/dispatches/<slug>.md` after the build. The button JS in `assets/js/main.js` fetches that file and copies it to the clipboard.
-- The plugin only runs in Jekyll builders that allow custom Ruby plugins (local dev, GitHub Actions, Vercel). Plain GitHub Pages does NOT execute it.
 
 ## Styling
 
