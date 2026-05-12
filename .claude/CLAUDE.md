@@ -14,6 +14,8 @@ Read `AGENTS.md` before making any changes.
 
 Jekyll-based website for Bellemonti, a product management consulting company. Hosted on GitHub Pages at bellemonti.com.
 
+**Deployment: GitHub Pages only.** Do NOT deploy this site to Vercel. Never run `vercel`, `vercel deploy`, or `vercel link` in this repo. There is no `vercel.json`, and `.vercel/` should not exist — if you see it, delete it. Production deploys happen automatically when commits land on `main`.
+
 ## Quick Commands
 
 ```bash

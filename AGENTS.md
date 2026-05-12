@@ -146,3 +146,11 @@ Update references in all of these:
 
 ---
 updated 2/1/2026
+
+---
+
+## Deployment
+
+This site is deployed via **GitHub Pages only** (CNAME → bellemonti.com).
+
+**Do NOT deploy this site to Vercel.** Do not run `vercel`, `vercel deploy`, `vercel link`, or any Vercel CLI command in this repo. The `.vercel/` directory must stay deleted; if it reappears, remove it. There is intentionally no `vercel.json`. All production deploys happen automatically when changes land on `main` via GitHub Pages.
