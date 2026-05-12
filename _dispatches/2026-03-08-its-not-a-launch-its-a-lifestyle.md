@@ -54,4 +54,5 @@ The real work is the daily discipline of sharing, iterating, and keeping everyon
 Not because it's on the checklist. But rather, because that's how you actually get real, useful things accomplished.
 
 Be good.
+
 J.

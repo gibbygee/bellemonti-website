@@ -2,20 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Replace trailing "J." sign-off in dispatches with handwritten signature
-  document.querySelectorAll('.reading-content').forEach(function(content) {
-    const paras = content.querySelectorAll('p');
-    if (!paras.length) return;
-    const last = paras[paras.length - 1];
-    if (last.textContent.trim() === 'J.') {
-      const img = document.createElement('img');
-      img.src = '/assets/images/signature-j.png';
-      img.alt = 'J.';
-      img.className = 'dispatch-signature';
-      last.replaceWith(img);
-    }
-  });
-
   // Smooth scroll for anchor links
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
 

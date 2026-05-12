@@ -110,6 +110,25 @@ More commentary in a separate paragraph.
 - All links must be markdown `[text](url)`, never HTML `<a>` tags. External links are opened in a new tab automatically by `assets/js/main.js`.
 - For pull-quote attributions inside a blockquote, use the `> — [Name](url)` line — plain markdown, no kramdown attributes.
 
+**Inline screenshots (not avatars):**
+Plain `![alt](/path.png)` on its own line gets the 140×140 floated-avatar treatment from `_sass/_utilities.scss`. For full-width inline screenshots, append `{: .screenshot}`:
+```markdown
+![Alt text](/assets/images/some-screenshot.png){: .screenshot}
+```
+The `.screenshot` opt-out in `_sass/_utilities.scss` overrides the float, sets `width: 100%`, and restores normal paragraph spacing.
+
+**Sign-off convention:**
+End dispatches with `J.` on its own line, separated from the preceding text by a blank line, so it renders as its own `<p>`:
+```markdown
+Be good.
+
+J.
+```
+The site previously had JS in `assets/js/main.js` that swapped a trailing `J.` paragraph for a handwritten-signature image (`/assets/images/signature-j-small.png`). That was removed — sign-offs are plain text now. The small signature asset is unused but kept in `assets/images/` in case the swap is reintroduced.
+
+**Author byline is suppressed on dispatch pages:**
+`_layouts/reading.html` no longer renders `page.author`. The front-matter `author: john garrish` field is still written (used by `/d`/`/new-dispatch`) but it does not appear in the rendered header — only the date does. If you want the author back, restore the `{% if page.author %} • {{ page.author }} {% endif %}` block above the `<h1>` in `_layouts/reading.html`.
+
 **How floated avatars work (so you can debug if it looks off):**
 - `_sass/_utilities.scss` has a rule that targets any `<p>` whose only child is an image-link (`p:has(> a:only-child > img:only-child)`) and collapses its margin/line-height to zero. That makes the avatar's top edge align with the first line of the next paragraph.
 - The image itself is set to `float: right; width: 140px; height: 140px; object-fit: cover;`.

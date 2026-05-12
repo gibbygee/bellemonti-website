@@ -354,6 +354,20 @@
     margin: 0 0 0.5rem 1rem;
   }
 
+  // Opt-out: full-width inline screenshot. Mark the image with {: .screenshot}.
+  p > img.screenshot:only-child {
+    float: none;
+    width: 100%;
+    height: auto;
+    object-fit: initial;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+  }
+  p:has(> img.screenshot:only-child) {
+    margin: 1.5rem 0;
+    line-height: inherit;
+  }
+
   // Section breaks end any floated avatar from the previous section.
   h2, h3, h4 {
     clear: both;

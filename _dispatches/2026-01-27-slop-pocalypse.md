@@ -47,7 +47,8 @@ The other topic is Product Marketing - I think the world of PMM is going to be i
 
 Copy from Claude into LLM friendly text - love this. I added this to my site (this site) for "code" blocks. But not the whole page. Maybe I need to add for the whole page?
 
-![Claude copy page dropdown](/assets/images/claude-copy-page-dropdown.png)
+![Claude copy page dropdown](/assets/images/claude-copy-page-dropdown.png){: .screenshot}
 
 That's all for now, folks. Stay warm, stay safe.
--j
+
+J.
