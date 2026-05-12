@@ -1,0 +1,35 @@
+- section: First principles
+  entries:
+    - title: The upstream chain
+      url: /binder/upstream-chain/
+    - title: Software is geological
+      url: /binder/geological/
+    - title: The WHY problem
+      url: /binder/why-problem/
+    - title: Fundamentals as the moat
+      url: /binder/fundamentals/
+    - title: Platforms are not optional
+      url: /binder/platforms/
+    - title: In AI, the harness is the product
+      url: /binder/harness/
+    - title: Agile was a philosophy
+      url: /binder/agile/
+
+- section: Org and strategy
+  entries:
+    - title: Structure is the strategy
+      url: /binder/structure/
+    - title: The metrics trap
+      url: /binder/metrics-trap/
+    - title: Operators and investors
+      url: /binder/operators-investors/
+    - title: The long game
+      url: /binder/long-game/
+    - title: What makes things visible
+      url: /binder/visibility/
+    - title: What kills companies
+      url: /binder/what-kills-companies/
+    - title: As good as it gets
+      url: /binder/as-good-as-it-gets/
+    - title: On people and belief
+      url: /binder/belief/

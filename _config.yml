@@ -45,6 +45,9 @@ collections:
   dispatches:
     output: true
     permalink: /dispatches/:slug/
+  binder:
+    output: true
+    permalink: /binder/:slug/
 
 # Defaults
 defaults:
@@ -63,6 +66,11 @@ defaults:
       type: "dispatches"
     values:
       layout: "reading"
+  - scope:
+      path: ""
+      type: "binder"
+    values:
+      layout: "binder"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

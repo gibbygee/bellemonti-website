@@ -10,6 +10,10 @@
   link: /dispatches/
   visible: true
 
+- name: Binder
+  link: /binder/
+  visible: true
+
 - name: Contact
   link: /contact/
   visible: false  # Hidden - set to true to show

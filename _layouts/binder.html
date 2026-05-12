@@ -1,0 +1,175 @@
+---
+layout: default
+---
+
+<style>
+  .binder-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 56px;
+    margin-top: 24px;
+  }
+
+  .binder-toc {
+    position: sticky;
+    top: 140px;
+    align-self: start;
+    border-right: 1px solid #e5e5e5;
+    padding-right: 24px;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+  }
+
+  .binder-toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .binder-toc .binder-section {
+    margin-bottom: 18px;
+  }
+
+  .binder-toc .binder-section-title {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #999;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .binder-toc ul ul {
+    margin-left: 0;
+  }
+
+  .binder-toc a {
+    display: block;
+    padding: 4px 0 4px 12px;
+    margin-left: -2px;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.4;
+    border-left: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .binder-toc a:hover {
+    color: #C2410C;
+  }
+
+  .binder-toc a.active {
+    color: #C2410C;
+    border-left-color: #F97316;
+    font-weight: 600;
+  }
+
+  .binder-content {
+    min-width: 0;
+  }
+
+  .binder-content .binder-entry-title {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+  }
+
+  .binder-content h2 {
+    font-size: 18px;
+    margin: 32px 0 12px;
+    color: #333;
+  }
+
+  .binder-content p {
+    margin: 0 0 16px;
+    line-height: 1.65;
+  }
+
+  .binder-content ul,
+  .binder-content ol {
+    margin: 0 0 16px;
+    padding-left: 22px;
+  }
+
+  .binder-content li {
+    margin-bottom: 8px;
+    line-height: 1.55;
+  }
+
+  .binder-quote {
+    border-left: 3px solid #F97316;
+    padding: 4px 0 4px 20px;
+    margin: 20px 0;
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 19px;
+    font-style: italic;
+    color: #444;
+    line-height: 1.4;
+  }
+
+  .binder-quote cite {
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    color: #888;
+    margin-top: 8px;
+    font-family: -apple-system, sans-serif;
+  }
+
+  .binder-quote cite::before { content: "— "; }
+
+  @media (max-width: 768px) {
+    .binder-layout {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .binder-toc {
+      position: static;
+      border-right: none;
+      border-bottom: 1px solid #e5e5e5;
+      padding-right: 0;
+      padding-bottom: 16px;
+      max-height: none;
+    }
+  }
+</style>
+
+<article class="page">
+  <div class="container">
+    <header class="page-header">
+      <h1>Binder</h1>
+    </header>
+
+    <div class="binder-layout">
+
+      <aside class="binder-toc">
+        <ul>
+          {% for section in site.data.binder %}
+            <li class="binder-section">
+              <span class="binder-section-title">{{ section.section }}</span>
+              <ul>
+                {% for entry in section.entries %}
+                  <li>
+                    <a href="{{ entry.url | relative_url }}"
+                       {% if page.url == entry.url %}class="active"{% endif %}>
+                      {{ entry.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </aside>
+
+      <div class="binder-content">
+        {% if page.url != '/binder/' %}<h1 class="binder-entry-title">{{ page.title }}</h1>{% endif %}
+        {{ content }}
+      </div>
+
+    </div>
+  </div>
+</article>
