@@ -23,12 +23,15 @@
 
 .site-logo {
   margin-left: -15px;
+  min-width: 0;
+  flex: 1;
 
   a {
     display: flex;
     align-items: baseline;
     gap: $spacing-sm;
     text-decoration: none;
+    min-width: 0;
 
     &:hover {
       text-decoration: none;
@@ -39,6 +42,7 @@
     display: block;
     width: 124px;
     height: 70px;
+    flex-shrink: 0;
     background-color: $color-white;
     -webkit-mask: url("/assets/images/logo-small.png") center / contain no-repeat;
     mask: url("/assets/images/logo-small.png") center / contain no-repeat;
@@ -53,6 +57,38 @@
   color: $color-white;
   line-height: 1;
   transform: translateY(-13px);
+  white-space: nowrap;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .site-logo {
+    margin-left: -8px;
+
+    a { gap: 10px; }
+
+    .site-logo-mark {
+      width: 70px;
+      height: 40px;
+    }
+  }
+
+  .site-title {
+    font-size: 32px;
+    transform: translateY(-7px);
+  }
+
+  .login-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-logo .site-logo-mark {
+    width: 56px;
+    height: 32px;
+  }
+  .site-title { font-size: 26px; }
 }
 
 .header-top {
