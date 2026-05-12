@@ -198,6 +198,25 @@ body.matrix-active {
   transition: all 0.3s ease;
   opacity: 0.5;
 
+  li > & {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    text-align: left;
+    background: transparent;
+    cursor: pointer;
+    opacity: 1;
+
+    &:hover {
+      background: transparent;
+      color: $color-link;
+      text-decoration: underline;
+    }
+  }
+
   &:hover {
     opacity: 1;
     color: #006b1f;

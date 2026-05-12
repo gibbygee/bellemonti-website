@@ -45,6 +45,10 @@ $spacing-lg: 32px;
 $spacing-xl: 48px;
 $spacing-xxl: 64px;
 
+// Off-scale "human" spacing — used sparingly to break the sterile 8/16/24/32 grid.
+$spacing-md-loose: 28px;
+$spacing-lg-tight: 38px;
+
 // Breakpoints
 $breakpoint-mobile: 768px;
 $breakpoint-tablet: 1024px;

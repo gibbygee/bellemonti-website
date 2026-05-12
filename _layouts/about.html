@@ -28,15 +28,12 @@ layout: default
         <div class="about-text" id="about-default">
           {% capture about_content %}{% include about/about.md %}{% endcapture %}
           {{ about_content | markdownify }}
+          <p class="about-name"><img src="/assets/images/signature-j.png" alt="John Garrish signature" class="about-signature"> John Garrish</p>
           <p class="about-email"><a href="mailto:contact@bellemonti.com">contact@bellemonti.com</a></p>
-          <p class="about-name"><strong>John Garrish</strong></p>
-          <p><button class="matrix-toggle" onclick="toggleMatrix()">Wonderland</button></p>
         </div>
         <div class="about-text" id="about-neo" style="display:none">
           {% capture neo_content %}{% include about/neo.md %}{% endcapture %}
           {{ neo_content | markdownify }}
-          <p class="about-email"><a href="mailto:contact@bellemonti.com">contact@bellemonti.com</a></p>
-          <p class="about-name"><strong>John Garrish</strong></p>
           <p><button class="matrix-toggle" onclick="toggleMatrix()">Back</button></p>
         </div>
       </div>
