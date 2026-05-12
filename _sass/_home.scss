@@ -31,6 +31,7 @@
   }
 
   @media (max-width: $breakpoint-mobile) {
+    justify-content: center;
     .welcome-line { max-width: 55vw; }
     .welcome-line-2 { max-width: 65vw; }
   }
