@@ -1,4 +1,4 @@
-## Market-based product management for enterprise software teams
+## **Market-based product management for enterprise software teams**
 
 Great product management teams develop their judgment EVERY DAY:
 
