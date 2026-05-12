@@ -13,16 +13,12 @@ Edit `navigation.yml` and set `visible: true` or `visible: false` for each menu 
   link: /
   visible: true        # Shows in menu
 
-- name: About
-  link: /about/
-  visible: false       # Hidden from menu
-
-- name: Services
-  link: /services/
+- name: Writing
+  link: /blog/
   visible: false       # Hidden from menu
 
 - name: Dispatches
-  link: /blog/
+  link: /dispatches/
   visible: true        # Shows in menu
 
 - name: Contact
@@ -35,8 +31,8 @@ Edit `navigation.yml` and set `visible: true` or `visible: false` for each menu 
 Change `visible: false` to `visible: true`:
 
 ```yaml
-- name: About
-  link: /about/
+- name: Contact
+  link: /contact/
   visible: true        # Now visible in menu!
 ```
 

@@ -35,9 +35,9 @@ To add more slash commands, create `.md` files in `.cursor/commands/`
 ```
 _config.yml          # Jekyll config (title, url, collections, plugins)
 _data/navigation.yml # Menu items (visible: true/false controls display)
-_layouts/            # Templates: default, home, page, post, reading
-_includes/           # Components: head, header, navigation, footer, about/
-_pages/              # Static pages (home, blog, reading, about, contact)
+_layouts/            # Templates: default, home, page, post, reading, login
+_includes/           # Components: head, header, navigation, footer, about/ (about copy is included into the home page)
+_pages/              # Static pages (home, blog, reading, contact, login)
 _posts/              # Blog posts (nav: "Writing", URL: /blog/)
 _dispatches/         # Dispatches (nav: "Dispatches", URL: /dispatches/)
 _sass/               # SCSS partials (see Styling below)
@@ -165,12 +165,16 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 
 ## Key Files to Know
 
-- `_layouts/home.html` - Home page with dynamic "Latest Dispatches" section (pulls 3 most recent from `_dispatches/`)
-- `_includes/navigation.html` - Renders menu with active state detection
-- `assets/js/main.js` - Intersection Observer for fade animations, header scroll effect, copy buttons for code blocks
-- `_config.yml` - Site settings, collection definitions, plugin list
-- `_data/navigation.yml` - Navigation menu configuration (visible: true/false)
-- `.cursor/commands/` - Custom slash commands (e.g., `/d` for new reading posts)
+- `_layouts/home.html` - Home page wrapper. Renders `{{ content }}` from `_pages/home.md` then a "recent dispatches" list (5 most recent) below the main content.
+- `_pages/home.md` - Home page content: handwritten "Less process. More judgment." headline, then the about hero (flip-card photo + LinkedIn/X follow links + about copy + signature + email). Body copy is pulled from `_includes/about/about.md`.
+- `_includes/about/about.md` - The "Market-based product management..." heading and bullets. Edit this file to change the home page body copy. (Still imported by `_pages/home.md`; the standalone `/about/` page was removed.)
+- `_includes/about/neo.md` - Matrix-mode alternate text shown when the matrix toggle is activated.
+- `_includes/header.html` - Two-row header: `.header-top` (logo) and `.header-bottom` (nav left, Login button right, both on the same baseline).
+- `_includes/navigation.html` - Renders menu with active state detection.
+- `assets/js/main.js` - Intersection Observer for fade animations, header scroll effect, copy buttons for code blocks.
+- `_config.yml` - Site settings, collection definitions, plugin list.
+- `_data/navigation.yml` - Navigation menu configuration (visible: true/false).
+- `.cursor/commands/` - Custom slash commands (e.g., `/d` for new reading posts).
 
 ## Plugins & Dependencies
 
@@ -221,7 +225,16 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 **Wordmark optical offset:**
 - `.site-title` (Inter, 56px) has `transform: translateY(-13px)` in `_sass/_header.scss` to sit optically on the logo-mark baseline. Flex `align-items: baseline` alone lands the text too low because the mask span has no true baseline. Don't remove the translate without re-testing alignment.
 
-**Home page intro copy:**
-- Lives in `_pages/home.md`, wrapped in `<section class="welcome-section" markdown="1">`. The `markdown="1"` attribute is required for kramdown to process markdown inside an HTML block.
-- The layout (`_layouts/home.html`) renders `{{ content }}` above a hairline divider and the latest-dispatch card. Anything added to `home.md` lands in the intro slot.
-- The "Recent Dispatches" sidebar list uses `offset:1` so it intentionally skips whatever is featured in the main column.
+**Home page composition:**
+- `_pages/home.md` contains the handwritten headline (`.welcome-section`) followed by the about hero (`.about-hero` flex row with `.about-photo-col` and `.about-text`). The body copy inside `.about-text` is pulled from `_includes/about/about.md` via Liquid `{% include %}`.
+- `_layouts/home.html` is a thin wrapper: it renders `{{ content }}` and then a `<section class="home-dispatches">` list of the 5 most recent dispatches below the main content. There is no sidebar.
+- The about hero uses `flex-direction: row-reverse` so the photo sits on the right; mobile collapses to column. Flip-card sizing lives in `_sass/_flip-card.scss` (180px desktop / 140px tablet / 120px small mobile).
+- The follow icons under the photo are a `<ul class="follow-links about-follow-links">`. The `.about-follow-links` rule MUST stay after `.follow-links { margin: 0 }` in `_sass/_home.scss` so its `margin-top` override wins on source order.
+
+**About page is gone:**
+- `_pages/about.md` and `_layouts/about.html` were removed; the About entry was deleted from `_data/navigation.yml`. The About content now lives on the home page.
+- `_includes/about/about.md` and `_includes/about/neo.md` are still in use by the home page — do not delete them.
+- If you need to support inbound `/about/` links from external sources (LinkedIn, email signatures), add `redirect_from: /about/` to the front matter of `_pages/home.md` (the `jekyll-redirect-from` plugin is already enabled).
+
+**Header layout:**
+- `_includes/header.html` has two rows: `.header-top` (logo only) and `.header-bottom` (`.site-nav` left, `.login-btn` right). Both are `display: flex; justify-content: space-between`. Styles are in `_sass/_header.scss`.

@@ -10,10 +10,12 @@ The site features "Dispatches" — all writing (original essays and curated arti
 
 ## Main sections
 
-- [Home](https://bellemonti.com/): Welcome page and latest dispatch
+- [Home](https://bellemonti.com/): Welcome, about content (who we are and how we work), and the most recent dispatches
 - [Writing](https://bellemonti.com/blog/): Coming soon (placeholder)
 - [Dispatches](https://bellemonti.com/dispatches/): All writing — original essays and curated articles (from `_dispatches/`)
-- [About](https://bellemonti.com/about/), [Contact](https://bellemonti.com/contact/) (pages may be hidden in nav; edit `_data/navigation.yml` to show)
+- [Contact](https://bellemonti.com/contact/) (hidden in nav; edit `_data/navigation.yml` to show)
+
+The standalone About page was retired — about content now lives directly on the home page.
 
 ## Dispatches
 

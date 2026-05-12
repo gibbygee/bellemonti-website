@@ -98,6 +98,14 @@
   width: 100%;
 }
 
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: $spacing-md;
+}
+
 .login-btn {
   font-size: $font-size-small;
   color: rgba(255, 255, 255, 0.9);

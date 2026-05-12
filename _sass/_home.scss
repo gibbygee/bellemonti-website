@@ -60,18 +60,6 @@
   }
 }
 
-.home-grid {
-  display: grid;
-  grid-template-columns: 1fr 220px;
-  gap: $spacing-xl;
-  align-items: start;
-
-  @media (max-width: $breakpoint-mobile) {
-    grid-template-columns: 1fr;
-    gap: $spacing-lg;
-  }
-}
-
 .home-main {
   min-width: 0;
   padding: 0 0 $spacing-xs;
@@ -81,26 +69,18 @@
   }
 }
 
-.home-sidebar {
-  // Pull sidebar down so it doesn't align with the main column top — intentional asymmetry.
-  padding-top: 60px;
-  font-size: $font-size-small;
-
-  @media (max-width: $breakpoint-mobile) {
-    padding-top: 0;
-  }
-}
-
-.sidebar-section {
-  margin-bottom: $spacing-lg-tight;
+.home-dispatches {
+  margin-top: $spacing-xl;
+  padding-top: $spacing-lg;
+  border-top: 1px solid $color-border;
 
   h4 {
     margin-top: 0;
-    margin-bottom: $spacing-xs;
+    margin-bottom: $spacing-sm;
     font-size: $font-size-small;
-    text-transform: none;
-    letter-spacing: 0;
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     color: $color-text-secondary;
     border-bottom: 0;
     padding-bottom: 0;
@@ -118,15 +98,6 @@
   }
 }
 
-.home-section-title {
-  margin-top: $spacing-lg;
-  margin-bottom: $spacing-sm;
-  font-size: $font-size-small;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: $color-text-secondary;
-}
 
 .thinking-section {
   margin: 0 0 $spacing-md;
@@ -156,64 +127,12 @@
   }
 }
 
-.home-divider {
-  border: 0;
-  border-top: 1px solid $color-border;
-  margin: $spacing-xs 0 $spacing-md;
-}
-
-.latest-dispatch {
-  padding: 0;
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-}
-
-.dispatch-eyebrow {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: $color-text-secondary;
-  margin-bottom: $spacing-xs;
-}
-
-.dispatch-title {
-  margin-bottom: 4px;
-
-  a {
-    font-family: $font-display;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.25;
-    color: $color-text-primary;
-
-    &:hover {
-      color: $color-text-primary;
-      text-decoration: underline;
-    }
-  }
-}
-
-.dispatch-meta {
-  font-size: $font-size-small;
-  color: $color-text-secondary;
-  margin-bottom: $spacing-sm;
-}
-
-.dispatch-content {
-  margin-top: $spacing-sm;
-  color: $color-text-primary;
-  line-height: $line-height-base;
-
-  img:not(.dispatch-float):not(.video-thumb) {
-    display: none;
-  }
-}
-
 .follow-links {
   display: flex;
   gap: $spacing-sm;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
   li {
     margin-bottom: 0;
@@ -229,4 +148,9 @@
       text-decoration: none;
     }
   }
+}
+
+.about-follow-links {
+  margin-top: 2rem;
+  justify-content: center;
 }

@@ -29,16 +29,17 @@ A professional business website built with Jekyll and hosted on GitHub Pages.
 
 3. Run the development server:
    ```bash
-   bundle exec jekyll serve
+   bundle exec jekyll serve --port 4001
    ```
 
-4. Visit http://localhost:4000 in your browser
+4. Visit http://localhost:4001 in your browser
 
 ### Making Changes
 
-- Content pages are in the root directory (`index.html`, `about.html`, etc.)
+- Static pages live in `_pages/` (`home.md`, `blog.md`, `contact.md`, `reading.md`)
+- Dispatches live in `_dispatches/` (use the `/new-dispatch` slash command to create one)
 - Layouts are in `_layouts/`
-- Reusable components are in `_includes/`
+- Reusable components are in `_includes/` (the about hero copy is in `_includes/about/about.md` and is included into the home page)
 - Styles are in `_sass/`
 - JavaScript is in `assets/js/`
 - Navigation menu is defined in `_data/navigation.yml`

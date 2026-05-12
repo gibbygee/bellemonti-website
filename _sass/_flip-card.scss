@@ -1,5 +1,6 @@
 .about-hero {
   display: flex;
+  flex-direction: row-reverse;
   align-items: flex-start;
   gap: 2rem;
   margin-bottom: 2rem;
@@ -23,10 +24,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.flip-card-linkedin {
-  margin-top: 0.75rem;
 }
 
 .about-email {
@@ -78,21 +75,21 @@
 }
 
 .flip-card {
-  width: 280px;
-  min-width: 280px;
-  height: 280px;
+  width: 180px;
+  min-width: 180px;
+  height: 180px;
   perspective: 1000px;
 
   @media (max-width: 768px) {
-    width: 180px;
-    min-width: 180px;
-    height: 180px;
+    width: 140px;
+    min-width: 140px;
+    height: 140px;
   }
 
   @media (max-width: 360px) {
-    width: 150px;
-    min-width: 150px;
-    height: 150px;
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
   }
 }
 
