@@ -1,35 +1,82 @@
-- section: First principles
+- section: The nature of software
   entries:
-    - title: The upstream chain
-      url: /binder/upstream-chain/
-    - title: Software is geological
-      url: /binder/geological/
-    - title: The WHY problem
-      url: /binder/why-problem/
-    - title: Fundamentals as the moat
-      url: /binder/fundamentals/
+    - title: Software is cumulative
+      url: /binder/software-is-cumulative/
+    - title: Software is (mostly) not waste
+      url: /binder/software-is-mostly-not-waste/
+    - title: Financial physics
+      url: /binder/financial-physics/
+    - title: Software faith
+      url: /binder/software-faith/
+    - title: Not complex, simple
+      url: /binder/not-complex-simple/
     - title: Platforms are not optional
       url: /binder/platforms/
     - title: In AI, the harness is the product
       url: /binder/harness/
-    - title: Agile was a philosophy
-      url: /binder/agile/
 
-- section: Org and strategy
+- section: Belief and culture
+  entries:
+    - title: The upstream chain
+      url: /binder/upstream-chain/
+    - title: The WHY problem
+      url: /binder/why-problem/
+    - title: On people and belief
+      url: /binder/belief/
+    - title: Low-agency virus
+      url: /binder/low-agency-virus/
+    - title: Back story
+      url: /binder/back-story/
+    - title: Fundamentals are always "in"
+      url: /binder/fundamentals-are-always-in/
+
+- section: Strategy
   entries:
     - title: Structure is the strategy
       url: /binder/structure/
-    - title: The metrics trap
-      url: /binder/metrics-trap/
-    - title: Operators and investors
-      url: /binder/operators-investors/
     - title: The long game
       url: /binder/long-game/
-    - title: What makes things visible
-      url: /binder/visibility/
+    - title: Operators and investors
+      url: /binder/operators-investors/
+    - title: The metrics trap
+      url: /binder/metrics-trap/
+    - title: All software execs have the same job
+      url: /binder/all-software-execs-have-the-same-job/
+    - title: As good as it gets?
+      url: /binder/as-good-as-it-gets/
     - title: What kills companies
       url: /binder/what-kills-companies/
-    - title: As good as it gets
-      url: /binder/as-good-as-it-gets/
-    - title: On people and belief
-      url: /binder/belief/
+
+- section: How teams run
+  entries:
+    - title: Manage attention not time
+      url: /binder/manage-attention-not-time/
+    - title: Change your team's clock
+      url: /binder/change-your-teams-clock/
+    - title: What makes things visible
+      url: /binder/visibility/
+    - title: Too much talking
+      url: /binder/too-much-talking/
+    - title: Agile was a philosophy
+      url: /binder/agile/
+    - title: Beware captive IT
+      url: /binder/beware-captive-it/
+    - title: You will regret snowflakes
+      url: /binder/you-will-regret-snowflakes/
+
+- section: The PM craft
+  entries:
+    - title: Responsive PMs are the worst
+      url: /binder/responsive-pms-are-the-worst/
+    - title: Maybe PM should be slow
+      url: /binder/maybe-pm-should-be-slow/
+    - title: Staff work
+      url: /binder/staff-work/
+    - title: Ship more
+      url: /binder/ship-more/
+    - title: Responding in comments
+      url: /binder/responding-in-comments/
+    - title: Repetition and persuasion
+      url: /binder/repetition-and-persuasion/
+    - title: A roadmap is a story
+      url: /binder/a-roadmap-is-a-story/

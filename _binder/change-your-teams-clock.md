@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Change your team's clock"
 date: 2024-12-01
 redirect_from:
   - /2024/12/01/change-your-teams-clock/
-author: john garrish
+  - /dispatches/change-your-teams-clock/
 ---
+
 You are your calendar. 
 
 As Tom Peters said a decade ago:

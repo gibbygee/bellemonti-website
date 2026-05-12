@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Software is (mostly) not waste"
 date: 2025-12-01
 redirect_from:
   - /2025/12/01/software-is-mostly-not-waste/
-author: john garrish
+  - /dispatches/software-is-mostly-not-waste/
 ---
+
 
 A focus on "efficiency" is the catnip of turnarounds. To the untrained eye, software companies are chaos factories and need to be "run better." It is axiomatic that a company that requires a "turnaround" has had some measure of success, and is currently slowing, or perhaps flatlining. By transitive axiom, it is obviously not "well run." 
 

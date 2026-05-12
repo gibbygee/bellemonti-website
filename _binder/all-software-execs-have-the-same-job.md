@@ -1,8 +1,8 @@
 ---
-layout: reading
 title: "All software execs have the same job"
 date: 2026-04-01
-author: john garrish
+redirect_from:
+  - /dispatches/all-software-execs-have-the-same-job/
 ---
 
 I want to say the quiet thing out loud: every executive at a software company has the same job.

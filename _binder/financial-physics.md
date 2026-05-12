@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Financial physics"
 date: 2024-10-29
 redirect_from:
   - /2024/10/29/financial-physics/
-author: john garrish
+  - /dispatches/financial-physics/
 ---
+
 
 Here's what your CFO thinks software development looks like (a version of underpants gnomes):
 

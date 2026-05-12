@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Ship More"
 date: 2024-07-17
 redirect_from:
   - /2024/07/17/ship-more/
-author: john garrish
+  - /dispatches/ship-more/
 ---
+
 I'm coming to believe that the single best fix you can make at a software company (especially one that is not performing to expectations) is to ship more.
 
 By this I mean if you ship once a year then ship twice a year. If you ship twice a year, ship quarterly. If you ship quarterly, ship monthly. Ship monthly? Then ship weekly. Weekly? Daily. And so forth.

@@ -27,20 +27,51 @@ layout: default
   }
 
   .binder-toc .binder-section {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
   }
 
   .binder-toc .binder-section-title {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: #999;
     font-weight: 600;
     margin-bottom: 6px;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    padding: 2px 0;
   }
 
-  .binder-toc ul ul {
+  .binder-toc .binder-section-title::-webkit-details-marker {
+    display: none;
+  }
+
+  .binder-toc .binder-section-title::before {
+    content: "▸";
+    display: inline-block;
+    font-size: 9px;
+    color: #bbb;
+    transition: transform 0.15s ease;
+    width: 8px;
+  }
+
+  .binder-toc details[open] > .binder-section-title::before {
+    transform: rotate(90deg);
+  }
+
+  .binder-toc .binder-section-title:hover {
+    color: #666;
+  }
+
+  .binder-toc details[open] > .binder-section-title {
+    color: #555;
+  }
+
+  .binder-toc ul {
     margin-left: 0;
   }
 
@@ -54,6 +85,9 @@ layout: default
     line-height: 1.4;
     border-left: 2px solid transparent;
     transition: color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .binder-toc a:hover {
@@ -74,7 +108,13 @@ layout: default
     font-family: "Newsreader", Georgia, serif;
     font-size: 26px;
     line-height: 1.2;
-    margin: 0 0 20px;
+    margin: 0 0 6px;
+  }
+
+  .binder-content .binder-entry-date {
+    font-size: 13px;
+    color: #888;
+    margin: 0 0 24px;
   }
 
   .binder-content h2 {
@@ -146,30 +186,75 @@ layout: default
     <div class="binder-layout">
 
       <aside class="binder-toc">
-        <ul>
-          {% for section in site.data.binder %}
-            <li class="binder-section">
-              <span class="binder-section-title">{{ section.section }}</span>
-              <ul>
-                {% for entry in section.entries %}
-                  <li>
-                    <a href="{{ entry.url | relative_url }}"
-                       {% if page.url == entry.url %}class="active"{% endif %}>
-                      {{ entry.title }}
-                    </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </li>
-          {% endfor %}
-        </ul>
+        {% for section in site.data.binder %}
+          <details class="binder-section">
+            <summary class="binder-section-title">{{ section.section }}</summary>
+            <ul>
+              {% for entry in section.entries %}
+                <li>
+                  <a href="{{ entry.url | relative_url }}"
+                     title="{{ entry.title }}"
+                     {% if page.url == entry.url %}class="active"{% endif %}>
+                    {{ entry.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% endfor %}
       </aside>
 
       <div class="binder-content">
-        {% if page.url != '/binder/' %}<h1 class="binder-entry-title">{{ page.title }}</h1>{% endif %}
+        {% if page.url != '/binder/' %}
+          <h1 class="binder-entry-title">{{ page.title }}</h1>
+          {% if page.date %}<div class="binder-entry-date"><time>{{ page.date | date: "%b %-d, %Y" }}</time></div>{% endif %}
+        {% endif %}
         {{ content }}
       </div>
 
     </div>
   </div>
 </article>
+
+<script>
+  (function() {
+    var OPEN_KEY = 'binder-toc-open';
+    var SCROLL_KEY = 'binder-toc-scroll';
+    var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+    var isReload = nav && nav.type === 'reload';
+
+    if (isReload) {
+      sessionStorage.removeItem(OPEN_KEY);
+      sessionStorage.removeItem(SCROLL_KEY);
+    }
+
+    var saved = {};
+    try { saved = JSON.parse(sessionStorage.getItem(OPEN_KEY) || '{}'); } catch (e) {}
+
+    var details = document.querySelectorAll('.binder-toc details.binder-section');
+    details.forEach(function(d) {
+      var summary = d.querySelector('summary');
+      if (!summary) return;
+      var key = summary.textContent.trim();
+      if (!isReload && saved[key]) d.open = true;
+      d.addEventListener('toggle', function() {
+        var state = {};
+        try { state = JSON.parse(sessionStorage.getItem(OPEN_KEY) || '{}'); } catch (e) {}
+        if (d.open) state[key] = true;
+        else delete state[key];
+        sessionStorage.setItem(OPEN_KEY, JSON.stringify(state));
+      });
+    });
+
+    var toc = document.querySelector('.binder-toc');
+    if (toc) {
+      if (!isReload) {
+        var savedScroll = parseInt(sessionStorage.getItem(SCROLL_KEY) || '0', 10);
+        if (savedScroll) toc.scrollTop = savedScroll;
+      }
+      toc.addEventListener('scroll', function() {
+        sessionStorage.setItem(SCROLL_KEY, String(toc.scrollTop));
+      }, { passive: true });
+    }
+  })();
+</script>

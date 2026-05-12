@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Beware captive IT"
 date: 2024-08-20
 redirect_from:
   - /2024/08/20/beware-captive-it/
-author: john garrish
+  - /dispatches/beware-captive-it/
 ---
+
 I live and breathe the "software business," as in, a company whose business is selling software and/or access to its software. 
 
 It's an obvious statement, though, that as  "software is eating the world" pretty much all aspects of the modern enterprise are software enabled. All the more apparent as conjoined "tech" companies are becoming more the norm, and arguably are insanely valuable. 

@@ -6,40 +6,67 @@
 
 Bellemonti is a strategic advisory and consulting company focused on product management for b2b enterprise software, founded by John Garrish.
 
-The site features "Dispatches" — all writing (original essays and curated articles/resources) published in a single stream. The "Writing" section is a placeholder for a future project.
+The site features "Binder" — long-form essays and themes on product management, software, and how organizations work — and "Dispatches" — curated articles, links, and shorter commentary.
 
 ## Main sections
 
-- [Home](https://bellemonti.com/): Welcome, about content (who we are and how we work), and the most recent dispatches
+- [Home](https://bellemonti.com/): Welcome, about content, and the most recent dispatches
+- [Dispatches](https://bellemonti.com/dispatches/): Curated articles and short commentary (from `_dispatches/`)
+- [Binder](https://bellemonti.com/binder/): Long-form essays and themes (from `_binder/`)
 - [Writing](https://bellemonti.com/blog/): Coming soon (placeholder)
-- [Dispatches](https://bellemonti.com/dispatches/): All writing — original essays and curated articles (from `_dispatches/`)
 - [Contact](https://bellemonti.com/contact/) (hidden in nav; edit `_data/navigation.yml` to show)
 
 The standalone About page was retired — about content now lives directly on the home page.
 
+## Binder
+
+Organized in three sections. Each entry has its own page; the TOC structure lives in `_data/binder.yml`.
+
+### First principles
+
+- [The upstream chain](https://bellemonti.com/binder/upstream-chain/)
+- [The WHY problem](https://bellemonti.com/binder/why-problem/)
+- [Platforms are not optional](https://bellemonti.com/binder/platforms/)
+- [In AI, the harness is the product](https://bellemonti.com/binder/harness/)
+- [Agile was a philosophy](https://bellemonti.com/binder/agile/)
+- [Software is (mostly) not waste](https://bellemonti.com/binder/software-is-mostly-not-waste/) — Dec 1, 2025
+- [Software is cumulative](https://bellemonti.com/binder/software-is-cumulative/) — Oct 22, 2024
+- [Software faith](https://bellemonti.com/binder/software-faith/) — May 28, 2024
+- [Fundamentals are always "in"](https://bellemonti.com/binder/fundamentals-are-always-in/) — Jan 27, 2025
+- [Financial physics](https://bellemonti.com/binder/financial-physics/) — Oct 29, 2024
+- [Not complex, simple](https://bellemonti.com/binder/not-complex-simple/) — Oct 29, 2024
+- [Back story](https://bellemonti.com/binder/back-story/) — Apr 11, 2024
+
+### The PM craft
+
+- [Responsive PMs are the worst](https://bellemonti.com/binder/responsive-pms-are-the-worst/) — Apr 29, 2024
+- [Maybe PM should be slow](https://bellemonti.com/binder/maybe-pm-should-be-slow/) — Oct 29, 2024
+- [Staff work](https://bellemonti.com/binder/staff-work/) — Jun 27, 2024
+- [Ship more](https://bellemonti.com/binder/ship-more/) — Jul 17, 2024
+- [Responding in comments](https://bellemonti.com/binder/responding-in-comments/) — Oct 29, 2024
+- [Repetition and persuasion](https://bellemonti.com/binder/repetition-and-persuasion/) — Dec 2, 2024
+- [A roadmap is a story](https://bellemonti.com/binder/a-roadmap-is-a-story/) — Dec 12, 2024
+
+### Org and strategy
+
+- [Structure is the strategy](https://bellemonti.com/binder/structure/)
+- [The metrics trap](https://bellemonti.com/binder/metrics-trap/)
+- [Operators and investors](https://bellemonti.com/binder/operators-investors/)
+- [The long game](https://bellemonti.com/binder/long-game/)
+- [What makes things visible](https://bellemonti.com/binder/visibility/)
+- [What kills companies](https://bellemonti.com/binder/what-kills-companies/)
+- [All software execs have the same job](https://bellemonti.com/binder/all-software-execs-have-the-same-job/) — Apr 1, 2026
+- [On people and belief](https://bellemonti.com/binder/belief/)
+- [As good as it gets?](https://bellemonti.com/binder/as-good-as-it-gets/) — Aug 21, 2024
+- [Beware captive IT](https://bellemonti.com/binder/beware-captive-it/) — Aug 20, 2024
+- [You will regret snowflakes](https://bellemonti.com/binder/you-will-regret-snowflakes/) — Aug 19, 2024
+- [Manage attention not time](https://bellemonti.com/binder/manage-attention-not-time/) — Aug 18, 2024
+- [Change your team's clock](https://bellemonti.com/binder/change-your-teams-clock/) — Dec 1, 2024
+- [Low-agency virus](https://bellemonti.com/binder/low-agency-virus/) — Jul 18, 2024
+- [Too much talking](https://bellemonti.com/binder/too-much-talking/) — Mar 11, 2025
+
 ## Dispatches
 
-- [Back story](https://bellemonti.com/dispatches/back-story/) — Apr 11, 2024
-- [Responsive PMs are the worst](https://bellemonti.com/dispatches/responsive-pms-are-the-worst/) — Apr 29, 2024
-- [Software faith](https://bellemonti.com/dispatches/software-faith/) — May 28, 2024
-- [Staff work](https://bellemonti.com/dispatches/staff-work/) — Jun 27, 2024
-- [Ship More](https://bellemonti.com/dispatches/ship-more/) — Jul 17, 2024
-- [Low-agency virus](https://bellemonti.com/dispatches/low-agency-virus/) — Jul 18, 2024
-- [Manage attention not time](https://bellemonti.com/dispatches/manage-attention-not-time/) — Aug 18, 2024
-- [You will regret snowflakes](https://bellemonti.com/dispatches/you-will-regret-snowflakes/) — Aug 19, 2024
-- [Beware captive IT](https://bellemonti.com/dispatches/beware-captive-it/) — Aug 20, 2024
-- [As good as it gets?](https://bellemonti.com/dispatches/as-good-as-it-gets/) — Aug 21, 2024
-- [Software is cumulative](https://bellemonti.com/dispatches/software-is-cumulative/) — Oct 22, 2024
-- [Financial physics](https://bellemonti.com/dispatches/financial-physics/) — Oct 29, 2024
-- [Maybe PM should be slow](https://bellemonti.com/dispatches/maybe-pm-should-be-slow/) — Oct 29, 2024
-- [Not complex, simple](https://bellemonti.com/dispatches/not-complex-simple/) — Oct 29, 2024
-- [Responding in comments](https://bellemonti.com/dispatches/responding-in-comments/) — Oct 29, 2024
-- [Change your team's clock](https://bellemonti.com/dispatches/change-your-teams-clock/) — Dec 1, 2024
-- [Repetition and persuasion](https://bellemonti.com/dispatches/repetition-and-persuasion/) — Dec 2, 2024
-- [A roadmap is a story](https://bellemonti.com/dispatches/a-roadmap-is-a-story/) — Dec 12, 2024
-- [Fundamentals are always "in"](https://bellemonti.com/dispatches/fundamentals-are-always-in/) — Jan 27, 2025
-- [Too much talking](https://bellemonti.com/dispatches/too-much-talking/) — Mar 11, 2025
-- [Software is (mostly) not waste](https://bellemonti.com/dispatches/software-is-mostly-not-waste/) — Dec 1, 2025
 - [Cursor PM tutorial from Carl Velotti + PM-in-Code](https://bellemonti.com/dispatches/cursor-pm-tutorial/) — Jan 15, 2026
 - [From Hard Fork - How to build a free website w/ Claude Code and GitHub Pages](https://bellemonti.com/dispatches/claude-code-github-pages/) — Jan 16, 2026
 - [I'm repeating myself + code copy button](https://bellemonti.com/dispatches/setting-up-claude-context/) — Jan 17, 2026
@@ -70,6 +97,7 @@ The standalone About page was retired — about content now lives directly on th
 ## Technical
 
 - Built with Jekyll; hosted on GitHub Pages. Created with Claude Code.
-- Content: all posts in `_dispatches/` (permalink `/dispatches/:slug/`). Old blog URLs redirect via `jekyll-redirect-from`. Layouts in `_layouts/`, nav in `_data/navigation.yml`.
+- Content: long-form essays in `_binder/` (permalink `/binder/:slug/`); curated articles in `_dispatches/` (permalink `/dispatches/:slug/`). Binder TOC structure in `_data/binder.yml`. Old `/dispatches/<slug>/` URLs for moved essays redirect to `/binder/<slug>/` via `jekyll-redirect-from`.
+- Layouts in `_layouts/`, nav in `_data/navigation.yml`.
 - For AI agents: read `AGENTS.md` at the project root before making changes; it is the single source of truth for formatting and coding behavior.
-- **Keep this file current**: update `llms.txt` whenever a new post or dispatch is added.
+- **Keep this file current**: update `llms.txt` whenever a new post, dispatch, or binder entry is added.

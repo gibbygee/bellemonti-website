@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Responding in comments"
 date: 2024-10-29
 redirect_from:
   - /2024/10/29/responding-in-comments/
-author: john garrish
+  - /dispatches/responding-in-comments/
 ---
+
 Reminds me of that old saying about wrestling with a pig - you both get dirty and the pig likes it.
 
 That's exactly what happens in document comments. Nobody wins, but somehow everybody keeps diving back into the mud.

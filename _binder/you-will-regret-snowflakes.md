@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "You will regret snowflakes"
 date: 2024-08-19
 redirect_from:
   - /2024/08/19/you-will-regret-snowflakes/
-author: john garrish
+  - /dispatches/you-will-regret-snowflakes/
 ---
+
 I keep encountering this phenomena and it baffles me. How can this possibly persist in this day and age. Even in the "on-prem" packaged era of software (late 90s - early 00') it was 'relatively' uncommon to see snowflakes among scaled vendors. But you see it enough and you wonder how it happens. Even in cloud, now, which is arguably worse because YOU, the vendor, pay the freight.
 
 Customers don't care, really, whether you snowflake your solutions, or not. But they do notice, and care, that inevitably when the soot and grime accumulate in the engine, and you are unable to keep delivering at the fevered pace they've come to expect. Or, the pace that they see in the market. 

@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Manage attention not time"
 date: 2024-08-18
 redirect_from:
   - /2024/08/18/manage-attention-not-time/
-author: john garrish
+  - /dispatches/manage-attention-not-time/
 ---
+
 Product Managers hate micromanagement and complain about it constantly. 
 
 > It kills motivation! It kills creativity! 

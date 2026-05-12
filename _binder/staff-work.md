@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Staff work"
 date: 2024-06-27
 redirect_from:
   - /2024/06/27/staff-work/
-author: john garrish
+  - /dispatches/staff-work/
 ---
+
 Maybe the problem is - we need better staffwork
 
 The modern software org is collaboration across, down, and up - all the directions. 

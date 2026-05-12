@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Responsive PMs are the worst"
 date: 2024-04-29
 redirect_from:
   - /2024/04/29/responsive-pms-are-the-worst/
-author: john garrish
+  - /dispatches/responsive-pms-are-the-worst/
 ---
+
 Reminds me of that old 30 Rock gag... 
 
 > We might not be the best people, but we're not the worst — graduate students are the worst!

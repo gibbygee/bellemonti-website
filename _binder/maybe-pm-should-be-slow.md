@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Maybe PM should be slow"
 date: 2024-10-29
 redirect_from:
   - /2024/10/29/maybe-pm-should-be-slow/
-author: john garrish
+  - /dispatches/maybe-pm-should-be-slow/
 ---
+
 What if Product Management isn't about going faster? What if the whole point of Product Management is to SLOW THINGS DOWN?
 
 Here's what happens when you just let developers develop:

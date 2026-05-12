@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Low-agency virus"
 date: 2024-07-18
 redirect_from:
   - /2024/07/18/low-agency-virus/
-author: john garrish
+  - /dispatches/low-agency-virus/
 ---
+
 We live in a moment of empowerment. A few years ago the term was the super-empowered individual, applied to the malicious cretins like Osama bin Laden who with a relatively small resource footprint was able to catalyze the US into a 20 year war. It's the Arab Spring, or the Kardashians or the unlikely 2016 Trump victory or AOC or any of 1000s of other examples.
 
 It's the power of the ordinary joe, typing away a viral tweet that flashes around the world. Cell phones that enable more communication power than even the President of the United States up to say, maybe the 80s? 

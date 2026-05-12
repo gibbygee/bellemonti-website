@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "Too much talking"
 date: 2025-03-11
 redirect_from:
   - /2025/03/11/too-much-talking/
-author: john garrish
+  - /dispatches/too-much-talking/
 ---
+
 In an era of talking, writing can be a subversive act.
 
 Software is intangible. Which means that software companies are largely intangible. It follows that describing things that happen in software companies in intangible ways is ... not good.  

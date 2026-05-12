@@ -1,11 +1,11 @@
 ---
-layout: reading
 title: "A roadmap is a story"
 date: 2024-12-12
 redirect_from:
   - /2024/12/12/a-roadmap-is-a-story/
-author: john garrish
+  - /dispatches/a-roadmap-is-a-story/
 ---
+
 Roadmaps are a challenging concept for PMs - maybe the most challenging concept. 
 
 Many PMs believe it is a pro-forma part of the job - a picture that the execs or customers require of them and they are not always clear on WHY or WHAT its purpose is. They just assume "we gotta do this thing," as if it was filing expense reports or something.
