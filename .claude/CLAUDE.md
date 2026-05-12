@@ -88,22 +88,36 @@ author: john garrish
 
 **Important:** Use `/d` slash command to create new reading posts with proper format.
 
-**Dispatch section pattern:**
-When a dispatch links to someone's post/tweet, use the avatar and clear includes. Commentary should be regular paragraphs, NOT bullet lists.
+**Dispatch section pattern (standard markdown, no Liquid includes):**
+When a dispatch links to someone's post/tweet, open the section with a markdown image-link. The avatar floats right and the surrounding text wraps around it automatically. Commentary should be regular paragraphs, NOT bullet lists.
 ```markdown
-{% include avatar.html img="name.jpg" name="Display Name" url="PROFILE_URL" %}
+[![Display Name](/assets/images/name.jpg)](PROFILE_URL)
 
 [Article Title](POST_URL)
 
 > Blockquote text
+>
+> — [Author Name](ATTRIBUTION_URL)
 
 Commentary as regular paragraphs separated by blank lines.
 
 More commentary in a separate paragraph.
-
-{% include clear.html %}
 ```
-Avatar images go in `assets/images/`. Use `##` for section headers (e.g. `## Your Zen for Monday`). All links must be markdown `[text](url)`, never HTML `<a>` tags.
+- Avatar images go in `assets/images/`.
+- Use `##` for section headers (e.g. `## Your Zen for Monday`). Section headers also auto-clear any floated avatar from the previous section, so no manual `clear` is needed.
+- All links must be markdown `[text](url)`, never HTML `<a>` tags. External links are opened in a new tab automatically by `assets/js/main.js`.
+- For pull-quote attributions inside a blockquote, use the `> — [Name](url)` line — plain markdown, no kramdown attributes.
+
+**How floated avatars work (so you can debug if it looks off):**
+- `_sass/_utilities.scss` has a rule that targets any `<p>` whose only child is an image-link (`p:has(> a:only-child > img:only-child)`) and collapses its margin/line-height to zero. That makes the avatar's top edge align with the first line of the next paragraph.
+- The image itself is set to `float: right; width: 140px; height: 140px; object-fit: cover;`.
+- `.reading-content h2, h3, h4 { clear: both }` ends the float at each section break.
+- Do not add `target="_blank"` to dispatch links by hand — the JS does it for any external href at runtime.
+
+**Copy-markdown button:**
+- `_layouts/reading.html` includes a "copy md" button next to the date line.
+- `_plugins/dispatch_raw_source.rb` writes a raw `.md` copy of each dispatch (front matter stripped) to `/dispatches/<slug>.md` after the build. The button JS in `assets/js/main.js` fetches that file and copies it to the clipboard.
+- The plugin only runs in Jekyll builders that allow custom Ruby plugins (local dev, GitHub Actions, Vercel). Plain GitHub Pages does NOT execute it.
 
 ## Styling
 

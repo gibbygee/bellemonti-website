@@ -5,9 +5,17 @@ date: 2026-04-01
 author: john garrish
 ---
 
-Here's something nobody wants to say out loud: every executive at a software company has the same job.
+I want to say the quiet thing out loud: every executive at a software company has the same job.
 
-CEO. CTO. CFO. CRO. CMO. CPO. VP Engineering. VP Product. VP Sales. Head of Data. Head of CS. Head of Platform. Strip the titles away and you're looking at the same mandate.
+- CEO
+- CTO 
+- CFO
+- CRO 
+- CMO 
+- CPO
+- CxO 
+
+Strip the titles away.
 
 The job is PRODUCT.
 
@@ -15,13 +23,21 @@ The job is PRODUCT.
 
 Think about what each of these people actually does.
 
-The CEO sells the product. To the board, to the market, to the next hire. The CTO builds the product. The architecture, the infrastructure, the machine that makes it real. The CRO sells the product. To buyers, to renewals, to expansion. The CMO positions the product. The story, the market, the reason anyone cares. The CFO funds the product. Every dollar in and every dollar out exists because of what the product does. The CPO shapes the product. What it does, what it doesn't, and why. The VP Engineering develops the product. The VP CS retains customers on the product. The Head of Data measures the product.
+The CEO sells the product. To the board, to the market, to the next hire. 
+
+The CTO builds the product. The architecture, the infrastructure, the machine that makes it real. 
+The CRO sells the product. To buyers, to renewals, to expansion. 
+The CMO positions the product. The story, the market, the reason anyone cares. 
+The CFO funds the product. Every dollar in and every dollar out exists because of what the product does. 
+The CPO shapes the product. What it does, what it doesn't, and why. 
 
 Sell products. Build products. Fund products. Position products. Shape products. Measure products. Retain customers on products.
 
 It's all products.
 
-The moment you see it this way, the org chart stops mattering. Every exec at a software company is a product executive with a different vantage point. The ones who forget that - who start thinking their job is "technology strategy" or "pipeline generation" or "brand awareness" or "financial modeling" - lose the thread.
+The moment you see it this way, the org chart stops mattering so much. Have I mentioned that RACI is the heat death of a software company? And if the RACI disease infects your executive team you are SUNK. 
+
+Every exec at a software company is a product executive with a different vantage point. The ones who forget that - who start thinking their job is "technology strategy" or "pipeline generation" or "brand awareness" or "financial modeling" - lose the thread.
 
 ## What happens when they forget
 

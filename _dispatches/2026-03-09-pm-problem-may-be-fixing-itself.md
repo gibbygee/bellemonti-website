@@ -9,7 +9,7 @@ For twenty-five years, agile has turned PM into a meeting management role / soft
 
 ## Today's reading...
 
-{% include avatar.html img="8090-logo.jpeg" name="8090.ai" url="https://www.8090.ai/" %}
+[![8090.ai](/assets/images/8090-logo.jpeg)](https://www.8090.ai/)
 
 [Chamath says agile has broken your company](https://x.com/chamath/status/2028650332595896555)
 
@@ -23,8 +23,7 @@ Sadly, PMs participated in this demise and over the last decade, have become lit
 
 Who can get me access to this tool so I don't have to pay to try it?? DMs open, people.
 
-{% include clear.html %}
-{% include avatar.html img="signull.jpg" name="signüll" url="https://x.com/signulll" %}
+[![signüll](/assets/images/signull.jpg)](https://x.com/signulll)
 
 
 [The most underrated hire right now](https://x.com/signulll/status/2030404483897815089?s=12)
@@ -38,8 +37,7 @@ The argument: building is no longer hard. Engineering is no longer the bottlenec
 
 I love the phrase "load bearing" - that describes it completely. It has to be real from the start.
 
-{% include clear.html %}
-{% include avatar.html img="dylan-field.jpg" name="Dylan Field" url="https://x.com/zolofield" %}
+[![Dylan Field](/assets/images/dylan-field.jpg)](https://x.com/zolofield)
 
 
 [Figma CEO Dylan Field on taste](https://x.com/r0ck3t23/status/2027333669828866477)
@@ -52,7 +50,6 @@ The new job isn't building — it's selecting. Sample the widest possible space.
 
 We're all saying the same thing.
 
-{% include clear.html %}
 
 [Max Levchin on the jobs argument](https://x.com/mlevchin/status/2027473747633181151)
 
@@ -64,7 +61,6 @@ With AI, it means great engineers can be great engineers and great PMs can be gr
 
 My take is - for those lousy at either roll? It's time to do something else. In the next year or two it's going to get crazy uncomfortable for PMs that are not learning or re-learning the fundamentals. The return of the MRD is upon us.
 
-{% include clear.html %}
 
 ## Your Zen for Monday
 

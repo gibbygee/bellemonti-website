@@ -123,6 +123,36 @@
   padding: $spacing-lg;
 }
 
+// Copy-markdown button on dispatch pages
+.copy-md-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 500;
+  color: $color-text-secondary;
+  background-color: transparent;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+
+  svg { display: block; }
+
+  &:hover {
+    color: $color-text-primary;
+    background-color: $color-white;
+  }
+
+  &.copied {
+    background-color: $color-link;
+    color: $color-white;
+    border-color: $color-link;
+  }
+}
+
 // Code block copy button
 .code-block-wrapper {
   position: relative;
@@ -311,7 +341,7 @@
   }
 }
 
-// Dispatch floating avatar
+// Legacy floated avatar (kept so older dispatches using {% include avatar.html %} still render)
 .dispatch-avatar {
   display: block;
   float: right;
@@ -326,11 +356,52 @@
   display: block;
 }
 
-// Dispatch clear
 .dispatch-clear {
   display: block;
   clear: both;
   height: 0;
+}
+
+// V2 dispatch format — pure-markdown avatars that float right and let text wrap.
+// Any image-link (or bare image) that is the only thing in a paragraph becomes
+// a 140px square floated right. The wrapper paragraph collapses so the image's
+// top aligns with the first line of the following paragraph.
+.reading-content {
+  // Image-link wrapper paragraph: no surrounding spacing, image floats right.
+  p:has(> a:only-child > img:only-child),
+  p:has(> img:only-child) {
+    margin: 0;
+    line-height: 0;
+  }
+
+  p > a:only-child > img:only-child,
+  p > img:only-child {
+    float: right;
+    display: block;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin: 0 0 0.5rem 1rem;
+  }
+
+  // Section breaks end any floated avatar from the previous section.
+  h2, h3, h4 {
+    clear: both;
+  }
+
+  // Blockquote attribution line — opt in with kramdown IAL: {: .attribution}
+  blockquote .attribution,
+  blockquote p.attribution {
+    display: block;
+    font-style: normal;
+    font-size: 0.9em;
+    color: $color-text-secondary;
+    margin-top: 0.25rem;
+
+    &::before {
+      content: "— ";
+    }
+  }
 }
 
 // Video preview (YouTube / Instagram)

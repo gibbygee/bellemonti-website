@@ -115,6 +115,43 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 
+  // Open external links in a new tab.
+  // Same-origin and pure-fragment links are left alone.
+  document.querySelectorAll('a[href]').forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+    let url;
+    try { url = new URL(href, window.location.href); } catch (e) { return; }
+    if (url.host && url.host !== window.location.host) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  // Copy-markdown button (dispatch pages)
+  const copyMdBtn = document.querySelector('.copy-md-btn');
+  if (copyMdBtn) {
+    copyMdBtn.addEventListener('click', async () => {
+      const mdUrl = window.location.pathname.replace(/\/$/, '') + '.md';
+      const label = copyMdBtn.querySelector('.copy-md-label');
+      try {
+        const res = await fetch(mdUrl);
+        if (!res.ok) throw new Error('not found');
+        const md = await res.text();
+        await navigator.clipboard.writeText(md);
+        if (label) label.textContent = 'copied!';
+        copyMdBtn.classList.add('copied');
+        setTimeout(() => {
+          if (label) label.textContent = 'copy md';
+          copyMdBtn.classList.remove('copied');
+        }, 2000);
+      } catch (err) {
+        if (label) label.textContent = 'failed';
+        setTimeout(() => { if (label) label.textContent = 'copy md'; }, 2000);
+      }
+    });
+  }
+
   // Copy button for code blocks
   const codeBlocks = document.querySelectorAll('pre');
 
