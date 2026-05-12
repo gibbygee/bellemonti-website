@@ -11,7 +11,7 @@ permalink: /
   <img src="/assets/images/more-judgment.png" alt="" class="welcome-line welcome-line-2">
 </h2>
 
-<p>I help enterprise software product teams spend more time on the decisions that matter. We sharpen judgment, accelerate decisions, and grow by building the product your customers actually want. <a href="/about/">Learn more</a></p>
+<p>I help enterprise software product teams spend more time on the decisions that matter. We work together to sharpen judgment, accelerate decisions, and grow by building the product your customers actually want. <a href="/about/">Learn more</a></p>
 
 </section>
 
