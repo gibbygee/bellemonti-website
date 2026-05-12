@@ -4,7 +4,7 @@ title: In AI, the harness is the product
 
 The model is interchangeable. The scaffold around it is what creates value.
 
-Same model. One scaffold: 42% success on a benchmark. Different scaffold: 78%. The model didn't change. Everything that matters — context loading, tool design, progressive disclosure, the architecture of the agent loop — lives in the harness. Build the harness.
+Same model. One scaffold: 42% success on a benchmark. Different scaffold: 78%. The model didn't change. Everything that matters - context loading, tool design, progressive disclosure, the architecture of the agent loop - lives in the harness. Build the harness.
 
 ## The same principle applies to enterprise software
 

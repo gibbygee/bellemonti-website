@@ -8,7 +8,7 @@ redirect_from:
 
 Reminds me of that old 30 Rock gag... 
 
-> We might not be the best people, but we're not the worst — graduate students are the worst!
+> We might not be the best people, but we're not the worst - graduate students are the worst!
 
 The old saw among sales people at enterprise software companies: 
 

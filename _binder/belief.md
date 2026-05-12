@@ -8,7 +8,7 @@ title: On people and belief
 
 The financialization of the software industry produced enormous wealth and also a lot of people who don't understand what makes software companies work. It's not the capital. It's not the tech stack. It's not the methodology.
 
-It's belief. People need to believe what they're doing will work. They need to believe in each other and in the mission of the day. When that's gone — when employees sense the pastor is drunk and spending time at the casino — the drivers stop driving and burrow in. After a few quarters you've lost the best people.
+It's belief. People need to believe what they're doing will work. They need to believe in each other and in the mission of the day. When that's gone - when employees sense the pastor is drunk and spending time at the casino - the drivers stop driving and burrow in. After a few quarters you've lost the best people.
 
 ## Selection matters more than training
 

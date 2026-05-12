@@ -6,11 +6,11 @@ The deaths look different but the underlying pattern is consistent. Local optimi
 
 ## Efficiency theater
 
-The most common death. A company needs a turnaround, efficiency is the obvious lever. So you optimize each cylinder of the V8 individually — sales gets its playbook, dev gets its process, product gets its framework. Each function locally optimized. The sum performs worse than its parts. Strategic coherence disappears because no one is in charge of the whole engine.
+The most common death. A company needs a turnaround, efficiency is the obvious lever. So you optimize each cylinder of the V8 individually - sales gets its playbook, dev gets its process, product gets its framework. Each function locally optimized. The sum performs worse than its parts. Strategic coherence disappears because no one is in charge of the whole engine.
 
 ## The operator curse
 
-Operators are brilliant at scaling processes. They are terrible for anything requiring creative judgment or bold bets. When operators run product organizations, they manage for optics — keeping presentations tight, hitting metrics, managing up. They stop deeply understanding users. Differentiation dies.
+Operators are brilliant at scaling processes. They are terrible for anything requiring creative judgment or bold bets. When operators run product organizations, they manage for optics - keeping presentations tight, hitting metrics, managing up. They stop deeply understanding users. Differentiation dies.
 
 ## Snowflakes
 
@@ -23,7 +23,7 @@ One-of-a-kind custom implementations for individual customers. The money is sedu
 
 ## The internal customer trap
 
-When product teams start treating internal stakeholders as the customer, the backlog becomes a social contract. No means escalate. Every decision is political. The actual paying customer — the market customer — gets lost.
+When product teams start treating internal stakeholders as the customer, the backlog becomes a social contract. No means escalate. Every decision is political. The actual paying customer - the market customer - gets lost.
 
 You need a dollar, or you need to save three. That's the heuristic. Everything else is noise.
 
