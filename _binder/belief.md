@@ -10,7 +10,14 @@ The financialization of the software industry produced enormous wealth and also 
 
 It's belief. People need to believe what they're doing will work. They need to believe in each other and in the mission of the day. 
 
-When that's gone - when employees sense the pastor is drunk and spending time at the casino - the drivers stop driving and burrow in. After a few quarters you've lost the best people.
+## Values before the product
+
+<div class="binder-quote">
+  "As the story goes, Guidewire's core values were created by the 6 co-founders — even before they knew exactly what product to build."
+  <cite>Early Guidewire</cite>
+</div>
+
+## Selection matters more than training
 
 [Byron Deeter](https://x.com/bdeeter) had a sharp version of this argument recently:
 
