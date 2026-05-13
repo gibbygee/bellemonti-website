@@ -36,6 +36,7 @@ plugins:
 
 # Custom settings
 image: /assets/images/logo.png
+aardvark_url: https://aardvark.bellemonti.com
 
 # Collections
 collections:

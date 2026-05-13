@@ -14,7 +14,15 @@ Read `AGENTS.md` before making any changes.
 
 Jekyll-based website for Bellemonti, a product management consulting company. Hosted on GitHub Pages at bellemonti.com.
 
-**Deployment: GitHub Pages only.** Do NOT deploy this site to Vercel. Never run `vercel`, `vercel deploy`, or `vercel link` in this repo. There is no `vercel.json`, and `.vercel/` should not exist — if you see it, delete it. Production deploys happen automatically when commits land on `main`.
+**Deployment: GitHub Pages only, gibbygee account only.** This repo lives at `gibbygee/bellemonti-website` and is served at bellemonti.com via GitHub Pages. Production deploys happen automatically when commits land on `main`.
+
+Hard rules before any `git push`, `gh`, or remote-touching command:
+- The remote MUST be `git@github.com-gibbygee:gibbygee/bellemonti-website.git`. Verify with `git remote -v`. The `github.com-gibbygee` host alias routes through the gibbygee SSH key in `~/.ssh/config` — that is how pushes authenticate, independent of `gh auth status`.
+- The local git identity MUST be `gibbygee` / `58671192+gibbygee@users.noreply.github.com`. Verify with `git config user.name` and `git config user.email`. Never push commits authored as `jg-s0`, `gibbygee-isw`, `John.Garrish@insightsoftware.com`, or `jgarrish@gmail.com`.
+- Do NOT push or fork this repo into any other GitHub org or account — not `jg-s0`, not `systemzero-inc`, not `Product-at-isw`, not personal. If you find a remote pointing somewhere other than `gibbygee/bellemonti-website`, stop and ask before doing anything.
+- `gh auth status` may show a different account as "active" — that's the global CLI state, not this repo's push auth. It does not block a correct SSH-based push to `gibbygee`, but if you need `gh` commands here, run `gh auth switch -u gibbygee` first.
+
+**Do NOT deploy this site to Vercel.** Never run `vercel`, `vercel deploy`, or `vercel link` in this repo. There is no `vercel.json`, and `.vercel/` should not exist — if you see it, delete it.
 
 ## Quick Commands
 
@@ -23,10 +31,13 @@ bundle exec jekyll serve --port 4001    # Always use port 4001 for this project
 bundle install                          # Install dependencies
 ```
 
+**Starting the local server (read this before doing it):**
+- Run the `jekyll serve` command with `dangerouslyDisableSandbox: true` and `run_in_background: true`. The sandbox blocks `bind(2)` with `Errno::EPERM` and the server stays in the foreground, so both flags are required.
+- If port 4001 is already in use, find the PID with `lsof -i :4001` and kill it with `kill -9 <pid>` (also needs sandbox disabled — sending signals to processes outside the sandbox is blocked).
+- After starting, smoke-test with `curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:4001/` before reporting "the server is up." Sandbox blocks network too, so this also needs sandbox disabled.
+
 **Slash Commands:**
 - `/new-dispatch` - Create new reading post (Dispatch) in `_dispatches/` directory with today's date
-
-**Important:** Whenever a new post (`_posts/`) or dispatch (`_dispatches/`) is added, update `llms.txt` in the project root to include the new entry with its title, URL, and date.
 
 To add more slash commands, create `.md` files in `.cursor/commands/`
 
@@ -41,14 +52,13 @@ _pages/              # Static pages (home, blog, reading, contact, login)
 _posts/              # Blog posts (nav: "Writing", URL: /blog/)
 _dispatches/         # Dispatches (nav: "Dispatches", URL: /dispatches/)
 _binder/             # Binder entries (long-form notes, URL: /binder/:slug/)
-_data/binder.yml     # Binder cover sections + entry lists
+_data/binder.yml     # Binder section metadata + ordered entry slug lists (TOC)
 _sass/               # SCSS partials (see Styling below)
 .cursor/commands/    # Slash commands for Cursor IDE (e.g., d.md for /d)
 assets/css/main.scss # Main stylesheet (imports all partials)
 assets/js/main.js    # JS: header scroll, smooth anchors, fade animations, copy buttons
 assets/images/       # Logo files and images
 assets/fonts/        # Self-hosted woff2 (Newsreader, Inter) — required because CSP blocks external fonts
-llms.txt             # Project description for AI tools
 ```
 
 ## Collections
@@ -151,7 +161,8 @@ SCSS files in `_sass/` (import order in `assets/css/main.scss`):
 - `_home.scss` - Home grid, welcome section, dispatch card
 - `_footer.scss` - Footer styles
 - `_animations.scss` - Fade-in and slide animations
-- `_grid.scss`, `_utilities.scss`, `_flip-card.scss` - Utility partials
+- `_utilities.scss`, `_about-hero.scss` - Utility partials
+- `_binder.scss`, `_article.scss`, `_dispatch-list.scss`, `_coming-soon.scss` - Page/layout-specific partials
 
 **Brand tokens (`_sass/_variables.scss`) — single source of truth:**
 - `$color-accent` / `$color-accent-dark` - Site accent color. Currently vivid orange (`#F97316` / `#C2410C`). Change these two values to re-theme the whole site (nav underline, dispatch eyebrow, dispatch date, hover states).
@@ -171,13 +182,14 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 - `_layouts/home.html` - Home page wrapper. Renders `{{ content }}` from `_pages/home.md` then a "recent dispatches" list (5 most recent) below the main content.
 - `_pages/home.md` - Home page content: handwritten "Less process. More judgment." headline, then the about hero (flip-card photo + LinkedIn/X follow links + "Getting Started with AI" button + about copy + signature + email). Body copy is pulled from `_includes/about/about.md`.
 - `_includes/about/about.md` - The "Market-based product management..." heading and bullets. Edit this file to change the home page body copy. (Still imported by `_pages/home.md`; the standalone `/about/` page was removed.)
-- `_includes/about/neo.md` - Source of truth for the Getting Started with AI content. Rendered inside `_binder/getting-started-with-ai.md` via `{% include %}` + `markdownify`. Was originally the home page's hidden "matrix mode" content — that toggle is gone; this file now feeds the binder entry instead.
-- `_binder/getting-started-with-ai.md` - Thin wrapper around the neo.md include; wraps it in `.neo-hero` (photo-right hero with helmet headshot). Surfaced as the first binder tile.
+- `_binder/getting-started-with-ai.md` - "Getting Started with AI" binder entry. Wraps its content in `.neo-hero` (photo-right hero with helmet headshot) — the markdown body lives inside `<div class="neo-text" markdown="1">` so kramdown processes it despite the HTML wrapper. Surfaced as the first binder tile.
 - `_layouts/binder.html` - Has three render branches: cover (`/binder/`), single-page entry (when section has `direct_url`), and standard entry-with-TOC.
-- `_includes/header.html` - Two-row header: `.header-top` (logo) and `.header-bottom` (nav left, Login button right, both on the same baseline).
+- `_includes/header.html` - Two-row header: `.header-top` (logo) and `.header-bottom` (nav left, Login button right, both on the same baseline). Login href is `{{ site.aardvark_url }}/login`.
 - `_includes/navigation.html` - Renders menu with active state detection.
+- `_includes/social-icons.html` - LinkedIn + X follow icons (inline SVG). Used on the home page. Add another icon by dropping a `<li>` with its own SVG.
+- `_includes/article-nav.html` - Prev/next nav for posts and dispatches. Shared by `_layouts/post.html` and `_layouts/reading.html`.
 - `assets/js/main.js` - Intersection Observer for fade animations, header scroll effect, copy buttons for code blocks.
-- `_config.yml` - Site settings, collection definitions, plugin list.
+- `_config.yml` - Site settings, collection definitions, plugin list. Custom keys: `aardvark_url` (login/forgot-password redirect target — change here, not in markup).
 - `_data/navigation.yml` - Navigation menu configuration (visible: true/false).
 - `.cursor/commands/` - Custom slash commands (e.g., `/d` for new reading posts).
 
@@ -213,7 +225,6 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 - Container max-width: 960px (`$container-width`)
 - Sass deprecation warnings are cosmetic (uses @import, will need migration to @use eventually)
 - Site hosted on GitHub Pages at bellemonti.com (CNAME file)
-- `llms.txt` provides project description for AI tools
 
 ## Gotchas (non-obvious, read before changing)
 
@@ -234,7 +245,7 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 - `_pages/home.md` contains the handwritten headline (`.welcome-section`) followed by the about hero (`.about-hero` flex row with `.about-photo-col` and `.about-text`). The body copy inside `.about-text` is pulled from `_includes/about/about.md` via Liquid `{% include %}`.
 - Under the LinkedIn/X icons sits a `.matrix-toggle.about-ai-btn` anchor that links to `/binder/getting-started-with-ai/`. (Earlier iterations toggled an in-place "matrix mode" via JS `toggleMatrix()`; that JS still exists in `assets/js/main.js` but the home page no longer wires it up. The `body.matrix-active` CSS in `_sass/_base.scss` is now reduced to hiding `.site-header` / `.home-dispatches` and theming `.neo-title`.)
 - `_layouts/home.html` is a thin wrapper: it renders `{{ content }}` and then a `<section class="home-dispatches">` list of the 5 most recent dispatches below the main content. There is no sidebar.
-- The about hero uses `flex-direction: row-reverse` so the photo sits on the right; mobile collapses to column. Flip-card sizing lives in `_sass/_flip-card.scss` (180px desktop / 140px tablet / 120px small mobile).
+- The about hero uses `flex-direction: row-reverse` so the photo sits on the right; mobile collapses to column. Flip-card sizing lives in `_sass/_about-hero.scss` (180px desktop / 140px tablet / 120px small mobile).
 - The follow icons under the photo are a `<ul class="follow-links about-follow-links">`. The `.about-follow-links` rule MUST stay after `.follow-links { margin: 0 }` in `_sass/_home.scss` so its `margin-top` override wins on source order.
 
 **Binder layout (`_layouts/binder.html`):**
@@ -243,9 +254,18 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 - A section in `_data/binder.yml` with `direct_url: /some/path/` makes its cover tile link straight to that URL and skips the section-TOC view. Used for one-page sections like Getting Started with AI. The matching `_binder/<slug>.md` entry must also exist; the layout's "single-page" branch fires when `current_section.direct_url` is truthy and renders inside `.binder-single > .binder-content.binder-content-wide` (no sidebar).
 - The page-level `<h1>Binder</h1>` header and per-page `← Back to Binder` link have been removed across all branches — navigation back to the cover lives in the top site nav only.
 
+**Binder data model (read before adding/editing an entry):**
+- `_data/binder.yml` is the table of contents. Each section has `slug`, `title`, `description`, optional `narrative`, optional `direct_url`, and `entries:` — an ordered list of binder slugs (strings, not objects).
+- `_binder/<slug>.md` is the content. The entry's title lives in its own front matter `title:` field — never duplicated in yml.
+- To add an entry: create `_binder/<new-slug>.md` with a `title:` front matter field, then add `- new-slug` to the right section's `entries:` list in `_data/binder.yml`. Position in the list controls TOC order.
+- To rename an entry: edit `title:` in the entry file. The yml only stores the slug (= filename), so it's untouched.
+- To move an entry between sections: cut the slug from one section's `entries:` and paste into another.
+- The layout resolves entry titles in the TOC via `site.binder | where: 'slug', entry_slug | first`. If you misspell a slug in yml, the entry silently disappears from the TOC (no build error). Verify after edits.
+- The five section pages (`_pages/binder-*.md`) are 4-line permalink shims that set `theme_slug:` matching a yml section. Add a new shim when you add a new section to yml.
+
 **About page is gone:**
 - `_pages/about.md` and `_layouts/about.html` were removed; the About entry was deleted from `_data/navigation.yml`. The About content now lives on the home page.
-- `_includes/about/about.md` is still used by the home page; `_includes/about/neo.md` is used by `_binder/getting-started-with-ai.md`. Do not delete either.
+- `_includes/about/about.md` is still used by the home page. Do not delete it.
 - If you need to support inbound `/about/` links from external sources (LinkedIn, email signatures), add `redirect_from: /about/` to the front matter of `_pages/home.md` (the `jekyll-redirect-from` plugin is already enabled).
 
 **Header layout:**

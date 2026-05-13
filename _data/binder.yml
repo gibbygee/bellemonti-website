@@ -1,10 +1,14 @@
+# Binder sections (table of contents)
+# Each section: slug, title, description, optional narrative, optional direct_url.
+# `entries:` is an ordered list of binder slugs that live in `_binder/<slug>.md`.
+# Entry titles are read from each entry's own front matter — do not duplicate here.
+
 - slug: getting-started-with-ai
   title: Getting Started with AI
   description: A short, opinionated map for product folks who want to get hands-on with AI without getting lost. Low-risk first projects, current stack, watch list.
   direct_url: /binder/getting-started-with-ai/
   entries:
-    - title: Getting Started with AI
-      url: /binder/getting-started-with-ai/
+    - getting-started-with-ai
 
 - slug: nature-of-software
   title: The nature of software
@@ -14,27 +18,13 @@
 
     The work itself is not exotic. [Most teams fail at the basics](/binder/not-complex-simple/), not for lack of advanced technique. The compounding advantage comes from [platforms](/binder/platforms/) - the first product pays the freight, and every product after goes faster. The same principle holds in AI: [the model is interchangeable](/binder/harness/); the scaffold around it is what creates the value.
   entries:
-    - title: Software is cumulative
-      url: /binder/software-is-cumulative/
-      description: Every line of code shipped stays. Maintenance compounds like debt. Year five, half your engineers are holding walls up.
-    - title: Software is (mostly) not waste
-      url: /binder/software-is-mostly-not-waste/
-      description: Experimental inefficiency is the cost of discovery. The real waste is strategic incoherence - local optimization without a unified yardstick.
-    - title: Financial physics
-      url: /binder/financial-physics/
-      description: CFOs see underpants-gnomes math. The real economics of software development is invisible to most execs - and that ignorance is what bankrupts companies.
-    - title: Software faith
-      url: /binder/software-faith/
-      description: Software companies are fragile, like dandelions. Belief is the operating system. When employees sense the pastor is drunk, the best people leave.
-    - title: Not complex, simple
-      url: /binder/not-complex-simple/
-      description: Bruce Lee's 10,000 kicks. PMs fail at the basics, not for lack of advanced frameworks. The backlog full of dead batteries.
-    - title: Platforms are not optional
-      url: /binder/platforms/
-      description: A product without a platform is a dead end. The first product pays the freight; the second goes faster. Leverage compounds.
-    - title: In AI, the harness is the product
-      url: /binder/harness/
-      description: The model is interchangeable. The scaffold around it - context, tools, evals - creates the value. Domain expertise is the moat.
+    - software-is-cumulative
+    - software-is-mostly-not-waste
+    - financial-physics
+    - software-faith
+    - not-complex-simple
+    - platforms
+    - harness
 
 - slug: belief-and-culture
   title: Belief and culture
@@ -44,24 +34,12 @@
 
     Not everyone is a high-agency self-starter. The empowerment narrative is a [narcotic for the few and abandonment for the many](/binder/low-agency-virus/); structure is the cure, not better hiring. The signal of a company in trouble is rarely a missing feature - it's usually [eroded fundamentals](/binder/fundamentals-are-always-in/). And every company carries its [origin story](/binder/back-story/) in its habits and language, whether anyone notices or not.
   entries:
-    - title: The upstream chain
-      url: /binder/upstream-chain/
-      description: Product is upstream of revenue. Culture is upstream of product. Process is upstream of nothing. Fix the incentive, not the behavior.
-    - title: The WHY problem
-      url: /binder/why-problem/
-      description: People will do anything if the work is meaningful. PE-backed companies lose people because the narrative collapses. Missionaries beat mercenaries.
-    - title: On people and belief
-      url: /binder/belief/
-      description: Belief is fragile. Selection matters more than training. Mission focus creates alignment; competing missions create division.
-    - title: Low-agency virus
-      url: /binder/low-agency-virus/
-      description: Super-empowerment is a narcotic for high-agency people and leaves everyone else behind. The cure isn't better hiring - it's structure.
-    - title: Back story
-      url: /binder/back-story/
-      description: Origin stories are diagnostic. The ghosts linger in the long-time employees' habits and language. Listen to the echoes.
-    - title: Fundamentals are always "in"
-      url: /binder/fundamentals-are-always-in/
-      description: Depth over breadth. Companies in trouble aren't the ones that stopped innovating - they're the ones whose fundamentals eroded.
+    - upstream-chain
+    - why-problem
+    - belief
+    - low-agency-virus
+    - back-story
+    - fundamentals-are-always-in
 
 - slug: strategy
   title: Strategy
@@ -71,27 +49,13 @@
 
     The [metrics trap](/binder/metrics-trap/) is the most reliable killer - metrics become the product, users become an externality, and the cure is principles. Underneath all of it, [every exec at a software company has the same job](/binder/all-software-execs-have-the-same-job/): product. Forget that and the org carves into lanes, each locally optimized and collectively mediocre. Most companies aren't growing anyway - [maturity is the actual stage](/binder/as-good-as-it-gets/), and pretending otherwise is the cargo cult that [kills companies](/binder/what-kills-companies/).
   entries:
-    - title: Structure is the strategy
-      url: /binder/structure/
-      description: McChrystal - org design, not the plan, is the strategy. Distributed structure beats centralized plans every time.
-    - title: The long game
-      url: /binder/long-game/
-      description: Long-term companies generate 47% higher revenue growth. The short game is competed. The long game is mostly empty.
-    - title: Operators and investors
-      url: /binder/operators-investors/
-      description: Two temperaments that don't overlap. PE hires investors; software needs operators. Most companies have the wrong type for their mode.
-    - title: The metrics trap
-      url: /binder/metrics-trap/
-      description: Kent Beck - metrics become the product, users become an externality. The cure is principles, not better metrics.
-    - title: All software execs have the same job
-      url: /binder/all-software-execs-have-the-same-job/
-      description: Strip the titles - the job is product. Functional silos kill software companies. RACI is the heat death.
-    - title: As good as it gets?
-      url: /binder/as-good-as-it-gets/
-      description: Most companies aren't growth-stage; maturity can last 15 years. The cargo cult of "the right way" kills mature products. Build the machine.
-    - title: What kills companies
-      url: /binder/what-kills-companies/
-      description: Efficiency theater, the operator curse, snowflakes, the internal customer trap, first-principles thinking in the wrong context.
+    - structure
+    - long-game
+    - operators-investors
+    - metrics-trap
+    - all-software-execs-have-the-same-job
+    - as-good-as-it-gets
+    - what-kills-companies
 
 - slug: how-teams-run
   title: How teams run
@@ -101,27 +65,13 @@
 
     The anti-patterns are reliable. [Agile became a program](/binder/agile/) and the philosophy got buried under ceremony, while engineering used the process to consolidate power. [Captive IT shops](/binder/beware-captive-it/) optimize for internal stakeholders and lose the discipline of an actual market. And [snowflakes](/binder/you-will-regret-snowflakes/) - one-of-a-kind custom implementations - are sclerosis disguised as flexibility.
   entries:
-    - title: Manage attention not time
-      url: /binder/manage-attention-not-time/
-      description: PMs hate micromanagement, but managing attention isn't micromanagement - it's the job. Calendar = attention = focus = results.
-    - title: Change your team's clock
-      url: /binder/change-your-teams-clock/
-      description: You are your calendar. Daily is executive. Weekly is supervisory. Monthly is once-removed oversight. Cadence determines results.
-    - title: What makes things visible
-      url: /binder/visibility/
-      description: Control surfaces. Writing is the work; talking is overhead. Amazon's narrative memo forces the thinking into the open.
-    - title: Too much talking
-      url: /binder/too-much-talking/
-      description: In an era of talking, writing is subversive. Companies that run on meetings run on misunderstanding.
-    - title: Agile was a philosophy
-      url: /binder/agile/
-      description: Iteration and learning were the insight. Agile became a rigid program and engineers used it to consolidate power.
-    - title: Beware captive IT
-      url: /binder/beware-captive-it/
-      description: PM at an IT-style org isn't the same as PM at a software business. The character of the role is fundamentally different.
-    - title: You will regret snowflakes
-      url: /binder/you-will-regret-snowflakes/
-      description: One-off custom implementations are sclerosis. Customers don't care that you snowflake - they care when the engine seizes.
+    - manage-attention-not-time
+    - change-your-teams-clock
+    - visibility
+    - too-much-talking
+    - agile
+    - beware-captive-it
+    - you-will-regret-snowflakes
 
 - slug: pm-craft
   title: The PM craft
@@ -131,24 +81,10 @@
 
     What good PMs actually do is [staff work](/binder/staff-work/): painstaking synthesis across teams that makes ideas land. They [ship more](/binder/ship-more/) because the pace of shipment drives the pace of learning. They don't [argue in doc comments](/binder/responding-in-comments/) - they talk to the person and put it in the doc. They [repeat the strategy until people mock the delivery](/binder/repetition-and-persuasion/), because the craft is persuasion. And they understand that [the roadmap is a story](/binder/a-roadmap-is-a-story/) - it's how the strategy becomes visible to the people executing it.
   entries:
-    - title: Responsive PMs are the worst
-      url: /binder/responsive-pms-are-the-worst/
-      description: A responsive PM is dangerous. Responsiveness without judgment means sales owns the roadmap.
-    - title: Maybe PM should be slow
-      url: /binder/maybe-pm-should-be-slow/
-      description: PM isn't about going faster. The whole point of PM is to slow things down - to stop engineers from building the wrong things faster.
-    - title: Staff work
-      url: /binder/staff-work/
-      description: The PM's tools are logic and influence - you talk for your living. Great PMs do painstaking synthesis across teams to make ideas land.
-    - title: Ship more
-      url: /binder/ship-more/
-      description: The pace of shipment drives the pace of decisions. More decisions, more learning, more feedback. Whatever your current cadence, double it.
-    - title: Responding in comments
-      url: /binder/responding-in-comments/
-      description: Doc-comment fights are wrestling with a pig. Don't litigate decisions in the margins.
-    - title: Repetition and persuasion
-      url: /binder/repetition-and-persuasion/
-      description: PMs are in the business of alignment, and the craft is persuasion. Repeat your strategy 200 times. When people mock your delivery, they got it.
-    - title: A roadmap is a story
-      url: /binder/a-roadmap-is-a-story/
-      description: Roadmaps aren't pro-forma artifacts. The roadmap is how the strategy becomes visible to the people executing it.
+    - responsive-pms-are-the-worst
+    - maybe-pm-should-be-slow
+    - staff-work
+    - ship-more
+    - responding-in-comments
+    - repetition-and-persuasion
+    - a-roadmap-is-a-story

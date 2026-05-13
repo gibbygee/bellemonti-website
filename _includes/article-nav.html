@@ -1,0 +1,15 @@
+{% comment %}
+  Prev/next links for posts and dispatches.
+  Liquid quirk: page.next is older (earlier in time), page.previous is newer.
+  We label them as "older →" / "← back" to read naturally.
+{% endcomment %}
+<nav class="article-nav">
+  {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">← back</a>
+  {% else %}
+    <span></span>
+  {% endif %}
+  {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">older →</a>
+  {% endif %}
+</nav>

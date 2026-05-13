@@ -1,0 +1,48 @@
+// Dispatch index list (/dispatches/)
+@import 'variables';
+
+.reading-list {
+  margin-top: 20px;
+}
+
+.reading-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 6px 0;
+  border-bottom: 1px solid #e5e5e5;
+
+  &:first-child {
+    border-top: 1px solid #e5e5e5;
+  }
+
+  &:hover {
+    background-color: #f8f8f8;
+  }
+}
+
+.reading-item-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.reading-title {
+  margin-bottom: 4px;
+
+  a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: $color-link;
+      text-decoration: underline;
+    }
+  }
+}
+
+.reading-date {
+  color: $color-text-secondary;
+  font-size: $font-size-small;
+  white-space: nowrap;
+}
