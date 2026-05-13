@@ -37,10 +37,6 @@
   }
 }
 
-@media (max-width: $breakpoint-mobile) {
-  .thinking-heading { max-width: 75vw; }
-}
-
 .welcome-section {
   width: 100%;
   margin-bottom: $spacing-md-loose;
@@ -99,34 +95,6 @@
   }
 }
 
-
-.thinking-section {
-  margin: 0 0 $spacing-md;
-
-  .thinking-heading {
-    display: block;
-    height: auto;
-    width: 100%;
-    max-width: 260px;
-    margin: 0 0 2px -2px;
-  }
-
-  .thinking-date {
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: $color-text-secondary;
-    margin: 0 0 4px;
-  }
-
-  p:not(.thinking-date) {
-    font-size: 14px;
-    line-height: 1.5;
-    color: $color-text-primary;
-    margin: 0;
-    max-width: 60ch;
-  }
-}
 
 .follow-links {
   display: flex;

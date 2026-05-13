@@ -13,3 +13,9 @@ It's a glimpse into the company before they become big and official and corporat
 The founders and original team all long gone, the company is like an anthill. The back story can be a pathology that holds them back but it can also be the inspiration renew vows. You just never know. 
 
 It's a good clue to what the company is like if you are joining a company. You just need to listen to the echoes.
+
+## Related
+
+[About GORUCK](https://www.goruck.com/pages/about-goruck) — origin story for the brand:
+
+{% include youtube.html url="https://www.youtube.com/watch?v=Lz8V7pF_iHs" thumb="/assets/images/goruck-about-thumb.jpg" title="GORUCK — Who We Are" %}

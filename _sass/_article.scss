@@ -1,0 +1,43 @@
+// Article layout — shared by post + reading (dispatch) views.
+// Covers: top spacing, prev/next nav, date/title header, back-link footer.
+@import 'variables';
+
+.article {
+  margin-top: 8px;
+}
+
+.article-nav {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: $color-text-secondary;
+    text-decoration: none;
+    font-size: $font-size-small;
+  }
+}
+
+.article-header {
+  .article-date {
+    margin-bottom: 8px;
+    color: $color-text-secondary;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+  }
+}
+
+.article-footer {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #e1e4e8;
+
+  a {
+    color: $color-text-secondary;
+    text-decoration: none;
+    font-size: $font-size-small;
+  }
+}
