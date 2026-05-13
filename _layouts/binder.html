@@ -27,13 +27,33 @@ layout: default
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 16px;
   }
 
   .binder-theme-card {
+    position: relative;
     padding: 20px 22px;
     background: #fafafa;
     border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    transition: background 0.15s, border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+  }
+
+  .binder-theme-card:hover {
+    background: #fff;
+    border-color: #d4d4d4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
+  }
+
+  .binder-theme-card:hover h2 a {
+    color: #C2410C;
+  }
+
+  .binder-theme-card .stretched-link::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     border-radius: 8px;
   }
 
@@ -238,6 +258,10 @@ layout: default
 
   .binder-quote cite::before { content: "- "; }
 
+  .binder-single {
+    margin-top: 16px;
+  }
+
   @media (max-width: 768px) {
     .binder-layout {
       grid-template-columns: 1fr;
@@ -254,9 +278,6 @@ layout: default
 
 <article class="page">
   <div class="container">
-    <header class="page-header">
-      <h1>Binder</h1>
-    </header>
 
     {% if page.url == '/binder/' %}
 
@@ -266,11 +287,25 @@ layout: default
 
       <div class="binder-themes">
         {% for section in site.data.binder %}
+          {% if section.direct_url %}
+            {% assign card_url = section.direct_url | relative_url %}
+          {% else %}
+            {% assign card_url = section.slug | prepend: '/binder/' | append: '/' | relative_url %}
+          {% endif %}
           <div class="binder-theme-card">
-            <h2><a href="{{ section.slug | prepend: '/binder/' | append: '/' | relative_url }}">{{ section.title }}</a></h2>
+            <h2><a href="{{ card_url }}" class="stretched-link">{{ section.title }}</a></h2>
             <p>{{ section.description }}</p>
           </div>
         {% endfor %}
+      </div>
+
+    {% elsif current_section and current_section.direct_url %}
+
+      <div class="binder-single">
+        <div class="binder-content binder-content-wide">
+          <h1 class="binder-entry-title">{{ page.title }}</h1>
+          {{ content }}
+        </div>
       </div>
 
     {% else %}
@@ -278,7 +313,6 @@ layout: default
       <div class="binder-layout">
 
         <aside class="binder-toc">
-          <a href="{{ '/binder/' | relative_url }}" class="binder-toc-back">← Back to Binder</a>
           {% if current_section %}
             <h3 class="binder-toc-section-title">
               <a href="{{ current_section.slug | prepend: '/binder/' | append: '/' | relative_url }}">{{ current_section.title }}</a>

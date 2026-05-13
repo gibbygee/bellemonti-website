@@ -155,3 +155,23 @@
   margin-top: 2rem;
   justify-content: center;
 }
+
+.about-ai-btn {
+  display: block;
+  margin: 0.75rem auto 0;
+  background: transparent;
+  cursor: pointer;
+  min-width: 0;
+  padding: 0;
+  white-space: normal;
+  text-align: center;
+  text-decoration: none;
+  color: $color-text-primary;
+  opacity: 1;
+
+  &:hover {
+    color: $color-link;
+    background: transparent;
+    opacity: 1;
+  }
+}

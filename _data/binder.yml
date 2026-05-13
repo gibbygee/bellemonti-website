@@ -1,3 +1,11 @@
+- slug: getting-started-with-ai
+  title: Getting Started with AI
+  description: A short, opinionated map for product folks who want to get hands-on with AI without getting lost. Low-risk first projects, current stack, watch list.
+  direct_url: /binder/getting-started-with-ai/
+  entries:
+    - title: Getting Started with AI
+      url: /binder/getting-started-with-ai/
+
 - slug: nature-of-software
   title: The nature of software
   description: What software actually is and how it behaves. Accumulation, fragility, economics, and the AI scaffold.

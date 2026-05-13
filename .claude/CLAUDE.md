@@ -40,6 +40,8 @@ _includes/           # Components: head, header, navigation, footer, about/ (abo
 _pages/              # Static pages (home, blog, reading, contact, login)
 _posts/              # Blog posts (nav: "Writing", URL: /blog/)
 _dispatches/         # Dispatches (nav: "Dispatches", URL: /dispatches/)
+_binder/             # Binder entries (long-form notes, URL: /binder/:slug/)
+_data/binder.yml     # Binder cover sections + entry lists
 _sass/               # SCSS partials (see Styling below)
 .cursor/commands/    # Slash commands for Cursor IDE (e.g., d.md for /d)
 assets/css/main.scss # Main stylesheet (imports all partials)
@@ -56,6 +58,7 @@ llms.txt             # Project description for AI tools
 | pages | `/:slug/` | page |
 | posts | `/blog/:slug/` | post |
 | dispatches | `/dispatches/:slug/` | reading |
+| binder | `/binder/:slug/` | binder |
 
 Services collection was removed. Don't re-introduce references in nav, config, or content.
 
@@ -166,9 +169,11 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 ## Key Files to Know
 
 - `_layouts/home.html` - Home page wrapper. Renders `{{ content }}` from `_pages/home.md` then a "recent dispatches" list (5 most recent) below the main content.
-- `_pages/home.md` - Home page content: handwritten "Less process. More judgment." headline, then the about hero (flip-card photo + LinkedIn/X follow links + about copy + signature + email). Body copy is pulled from `_includes/about/about.md`.
+- `_pages/home.md` - Home page content: handwritten "Less process. More judgment." headline, then the about hero (flip-card photo + LinkedIn/X follow links + "Getting Started with AI" button + about copy + signature + email). Body copy is pulled from `_includes/about/about.md`.
 - `_includes/about/about.md` - The "Market-based product management..." heading and bullets. Edit this file to change the home page body copy. (Still imported by `_pages/home.md`; the standalone `/about/` page was removed.)
-- `_includes/about/neo.md` - Matrix-mode alternate text shown when the matrix toggle is activated.
+- `_includes/about/neo.md` - Source of truth for the Getting Started with AI content. Rendered inside `_binder/getting-started-with-ai.md` via `{% include %}` + `markdownify`. Was originally the home page's hidden "matrix mode" content — that toggle is gone; this file now feeds the binder entry instead.
+- `_binder/getting-started-with-ai.md` - Thin wrapper around the neo.md include; wraps it in `.neo-hero` (photo-right hero with helmet headshot). Surfaced as the first binder tile.
+- `_layouts/binder.html` - Has three render branches: cover (`/binder/`), single-page entry (when section has `direct_url`), and standard entry-with-TOC.
 - `_includes/header.html` - Two-row header: `.header-top` (logo) and `.header-bottom` (nav left, Login button right, both on the same baseline).
 - `_includes/navigation.html` - Renders menu with active state detection.
 - `assets/js/main.js` - Intersection Observer for fade animations, header scroll effect, copy buttons for code blocks.
@@ -227,13 +232,20 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 
 **Home page composition:**
 - `_pages/home.md` contains the handwritten headline (`.welcome-section`) followed by the about hero (`.about-hero` flex row with `.about-photo-col` and `.about-text`). The body copy inside `.about-text` is pulled from `_includes/about/about.md` via Liquid `{% include %}`.
+- Under the LinkedIn/X icons sits a `.matrix-toggle.about-ai-btn` anchor that links to `/binder/getting-started-with-ai/`. (Earlier iterations toggled an in-place "matrix mode" via JS `toggleMatrix()`; that JS still exists in `assets/js/main.js` but the home page no longer wires it up. The `body.matrix-active` CSS in `_sass/_base.scss` is now reduced to hiding `.site-header` / `.home-dispatches` and theming `.neo-title`.)
 - `_layouts/home.html` is a thin wrapper: it renders `{{ content }}` and then a `<section class="home-dispatches">` list of the 5 most recent dispatches below the main content. There is no sidebar.
 - The about hero uses `flex-direction: row-reverse` so the photo sits on the right; mobile collapses to column. Flip-card sizing lives in `_sass/_flip-card.scss` (180px desktop / 140px tablet / 120px small mobile).
 - The follow icons under the photo are a `<ul class="follow-links about-follow-links">`. The `.about-follow-links` rule MUST stay after `.follow-links { margin: 0 }` in `_sass/_home.scss` so its `margin-top` override wins on source order.
 
+**Binder layout (`_layouts/binder.html`):**
+- Branches by URL/front matter: cover (`/binder/`), single-page entry (section has `direct_url`), or theme/entry with TOC.
+- Cover tiles (`.binder-theme-card`) are fully clickable via a stretched `::before` overlay on the h2 anchor (`.stretched-link`). The whole card responds to hover (background lift + accent-color title). Don't wrap the card in `<a>` — keep the stretched-link pattern so the description text remains selectable.
+- A section in `_data/binder.yml` with `direct_url: /some/path/` makes its cover tile link straight to that URL and skips the section-TOC view. Used for one-page sections like Getting Started with AI. The matching `_binder/<slug>.md` entry must also exist; the layout's "single-page" branch fires when `current_section.direct_url` is truthy and renders inside `.binder-single > .binder-content.binder-content-wide` (no sidebar).
+- The page-level `<h1>Binder</h1>` header and per-page `← Back to Binder` link have been removed across all branches — navigation back to the cover lives in the top site nav only.
+
 **About page is gone:**
 - `_pages/about.md` and `_layouts/about.html` were removed; the About entry was deleted from `_data/navigation.yml`. The About content now lives on the home page.
-- `_includes/about/about.md` and `_includes/about/neo.md` are still in use by the home page — do not delete them.
+- `_includes/about/about.md` is still used by the home page; `_includes/about/neo.md` is used by `_binder/getting-started-with-ai.md`. Do not delete either.
 - If you need to support inbound `/about/` links from external sources (LinkedIn, email signatures), add `redirect_from: /about/` to the front matter of `_pages/home.md` (the `jekyll-redirect-from` plugin is already enabled).
 
 **Header layout:**

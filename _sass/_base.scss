@@ -96,71 +96,89 @@ button {
 }
 
 body.matrix-active {
-  background-color: #000;
-
-  #matrix-canvas {
-    display: block;
+  .site-header,
+  .home-dispatches {
+    display: none;
   }
 
-  .site-wrapper {
-    position: relative;
-    z-index: 1;
-  }
+  .neo-title {
+    font-family: 'Courier New', monospace;
+    color: #00b341;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0 0 1.5rem;
 
-  .site-header {
-    background-color: transparent;
-    border-bottom-color: rgba(0, 255, 65, 0.2);
-  }
-
-  .site-content,
-  .home-container {
-    background-color: transparent;
-  }
-
-  // All text green
-  color: rgba(0, 255, 65, 0.9);
-
-  a {
-    color: #00ff41;
-
-    &:hover {
-      color: #7fff7f;
+    &::before {
+      content: "> ";
+      opacity: 0.7;
     }
 
-    &.active {
-      color: #00ff41 !important;
+    &::after {
+      content: "_";
+      display: inline-block;
+      margin-left: 0.15em;
+      animation: neo-cursor-blink 1s steps(1) infinite;
     }
   }
+}
 
-  h1, h2, h3, h4, h5, h6,
-  .site-title,
-  span,
-  p, li, td, th, label, blockquote {
-    color: rgba(0, 255, 65, 0.9) !important;
+@keyframes neo-cursor-blink {
+  50% { opacity: 0; }
+}
+
+.minimal-body .minimal-content {
+  padding: 20px $spacing-md 4rem;
+  line-height: 1.6;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 20px $mobile-padding 4rem;
   }
+}
 
-  .text-secondary,
-  .color-text-secondary {
-    color: rgba(0, 255, 65, 0.5) !important;
+.minimal-body .minimal-back {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+  font-family: 'Courier New', monospace;
+}
+
+.minimal-body .minimal-back-bottom {
+  margin-top: 2.5rem;
+}
+
+.neo-hero {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 2.5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
+}
 
-  .login-btn {
-    color: #00ff41;
-    border-color: rgba(0, 255, 65, 0.3);
+.neo-photo-col {
+  flex: 0 0 auto;
+  text-align: center;
+}
 
-    &:hover {
-      color: #7fff7f;
-      border-color: #00ff41;
-    }
-  }
+.neo-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
 
-  .site-logo img {
-    filter: brightness(0) invert(48%) sepia(96%) saturate(1458%) hue-rotate(93deg) brightness(104%) contrast(105%);
-  }
+.neo-photo {
+  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
 
-  // SVG icons
-  svg {
-    fill: #00ff41 !important;
+  @media (max-width: 1024px) {
+    width: 140px;
+    height: 140px;
   }
 }
 
