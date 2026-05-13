@@ -14,7 +14,15 @@ Read `AGENTS.md` before making any changes.
 
 Jekyll-based website for Bellemonti, a product management consulting company. Hosted on GitHub Pages at bellemonti.com.
 
-**Deployment: GitHub Pages only.** Do NOT deploy this site to Vercel. Never run `vercel`, `vercel deploy`, or `vercel link` in this repo. There is no `vercel.json`, and `.vercel/` should not exist — if you see it, delete it. Production deploys happen automatically when commits land on `main`.
+**Deployment: GitHub Pages only, gibbygee account only.** This repo lives at `gibbygee/bellemonti-website` and is served at bellemonti.com via GitHub Pages. Production deploys happen automatically when commits land on `main`.
+
+Hard rules before any `git push`, `gh`, or remote-touching command:
+- The remote MUST be `git@github.com-gibbygee:gibbygee/bellemonti-website.git`. Verify with `git remote -v`. The `github.com-gibbygee` host alias routes through the gibbygee SSH key in `~/.ssh/config` — that is how pushes authenticate, independent of `gh auth status`.
+- The local git identity MUST be `gibbygee` / `58671192+gibbygee@users.noreply.github.com`. Verify with `git config user.name` and `git config user.email`. Never push commits authored as `jg-s0`, `gibbygee-isw`, `John.Garrish@insightsoftware.com`, or `jgarrish@gmail.com`.
+- Do NOT push or fork this repo into any other GitHub org or account — not `jg-s0`, not `systemzero-inc`, not `Product-at-isw`, not personal. If you find a remote pointing somewhere other than `gibbygee/bellemonti-website`, stop and ask before doing anything.
+- `gh auth status` may show a different account as "active" — that's the global CLI state, not this repo's push auth. It does not block a correct SSH-based push to `gibbygee`, but if you need `gh` commands here, run `gh auth switch -u gibbygee` first.
+
+**Do NOT deploy this site to Vercel.** Never run `vercel`, `vercel deploy`, or `vercel link` in this repo. There is no `vercel.json`, and `.vercel/` should not exist — if you see it, delete it.
 
 ## Quick Commands
 
