@@ -43,6 +43,7 @@ Staying current on AI is half the battle:
 - [Claude Code](https://www.anthropic.com/claude-code) - for everything I can possibly use it for. I've created a lot of skills - use these a ton. It's been helpful to standardize on Claude Code as a way to share skills across projects.
 - [Github](https://github.com) - I find myself "caging in" my AI work with file folders, and this fits naturally into the Git/Github lifestyle.
 - [Caveman](https://github.com/JuliusBrussee/caveman) - ultra-compressed communication mode for Claude Code. Cuts token usage about 75% by getting the model to talk like a smart caveman while keeping the technical substance intact. I use this constantly.
+- [Claude agents](https://docs.claude.com/en/docs/claude-code/sub-agents) - subagents inside Claude Code. I've built a handful for client work (AR collections, invoice reminders, customer risk analysis). They delegate cleanly, run with their own focused context, and return a tight summary to the main thread. Keeps the main session lean and lets me parallelize work that would otherwise blow out the context window.
 
 ## Fan club - light use
 
