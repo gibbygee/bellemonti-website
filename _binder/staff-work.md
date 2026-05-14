@@ -34,21 +34,15 @@ Inside of each of these questions are 2-3 equally viable directions ... (of whic
 
 How do you do it? You map out and drive:
 
-Who is involved? 
+- Who is involved? 
+- Who has something to say? 
+- Who is critical to get feedback from, versus nice to have?
+- If there are core conflicts how will the team make the decision? 
+- Who breaks ties?
+- What data or frameworks or background can you anticipate and collate, that your extended team will need in order to make the decision in the time frame required to make the decision?
+- How will you help get the team get through the discussion in the time allotted?
 
-Who has something to say? 
-
-Who is critical to get feedback from, versus nice to have?
-
-If there are core conflicts how will the team make the decision? 
-
-Who breaks ties?
-
-What data or frameworks or background can you anticipate and collate, that your extended team will need in order to make the decision in the time frame required to make the decision?
-
-How will you help get the team get through the discussion in the time allotted?
-
-And then show your deck to e-v-e-r-y-o-n-e you can, but especially sales, dev and leadership. Take notes. Capture words that matter. Gather up alternative views, hear them out. Steelman where you need to. 
+And then show your deck to E-V-E-R-Y-O-N-E you can, but especially sales, dev and leadership. Take notes. Capture words that matter. Gather up alternative views, hear them out. Steelman where you need to. 
 
 Practice your explanations and sharpen them up. It's a statement of follower-ship and humility to get input and feedback from your team, openly, in good faith. 
 

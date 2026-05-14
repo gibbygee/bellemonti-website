@@ -179,6 +179,51 @@
     color: #888;
   }
 
+  // Dynamic "Next" button at the bottom of each entry. Resolves to the next
+  // entry in the current section's `entries:` list in `_data/binder.yml`.
+  .binder-next {
+    display: block;
+    margin-top: 24px;
+    padding: 14px 18px;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+
+    &:hover {
+      background: #fff;
+      border-color: #d4d4d4;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      transform: translateY(-1px);
+      text-decoration: none;
+
+      .binder-next-title {
+        color: $color-accent-dark;
+      }
+    }
+
+    .binder-next-label {
+      display: block;
+      font-family: $font-primary;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin-bottom: 4px;
+    }
+
+    .binder-next-title {
+      display: block;
+      font-family: $font-display;
+      font-size: 18px;
+      line-height: 1.25;
+      color: #1a1a1a;
+      transition: color 0.15s;
+    }
+  }
+
   h2 {
     font-family: $font-display;
     font-weight: 600;

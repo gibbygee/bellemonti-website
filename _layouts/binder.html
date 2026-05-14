@@ -95,6 +95,29 @@ layout: default
             {% if page.date %}
               <p class="binder-entry-updated">Last updated: <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></p>
             {% endif %}
+            {% comment %}
+              Dynamic Next button — resolves the next slug in the current section's
+              entries list. If this entry is the last in the section, no button.
+            {% endcomment %}
+            {% if current_section %}
+              {% assign current_idx = nil %}
+              {% for s in current_section.entries %}
+                {% if s == page.slug %}{% assign current_idx = forloop.index0 %}{% endif %}
+              {% endfor %}
+              {% if current_idx != nil %}
+                {% assign next_idx = current_idx | plus: 1 %}
+                {% if next_idx < current_section.entries.size %}
+                  {% assign next_slug = current_section.entries[next_idx] %}
+                  {% assign next_entry = site.binder | where: 'slug', next_slug | first %}
+                  {% if next_entry %}
+                    <a href="{{ next_entry.url | relative_url }}" class="binder-next">
+                      <span class="binder-next-label">Next in {{ current_section.title }}</span>
+                      <span class="binder-next-title">{{ next_entry.title }} →</span>
+                    </a>
+                  {% endif %}
+                {% endif %}
+              {% endif %}
+            {% endif %}
           {% endif %}
         </div>
 

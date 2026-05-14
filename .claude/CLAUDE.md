@@ -154,7 +154,7 @@ The site previously had JS in `assets/js/main.js` that swapped a trailing `J.` p
 SCSS files in `_sass/` (import order in `assets/css/main.scss`):
 - `_fonts.scss` - `@font-face` for Newsreader (display) and Inter (wordmark). Imported first.
 - `_variables.scss` - Colors, typography, spacing, breakpoints, brand tokens
-- `_base.scss` - Reset and base element styles; includes `.matrix-active` dark mode hook
+- `_base.scss` - Reset and base element styles; `.neo-hero` (photo-right hero used by the Getting Started with AI binder entry) lives here too
 - `_typography.scss` - Headings (h1/h2 use `$font-display` / Newsreader)
 - `_header.scss` - Dark charcoal header, masked logo, wordmark in Inter
 - `_navigation.scss` - Nav with animated underline, muted gray link color
@@ -232,6 +232,8 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 - `default-src 'self'` means no external fonts, scripts, or styles.
 - Google Fonts CDN is blocked. All fonts must be self-hosted in `assets/fonts/` and declared in `_sass/_fonts.scss`.
 - If adding a new typeface: download woff2, place in `assets/fonts/`, add `@font-face` to `_sass/_fonts.scss`.
+- `frame-src` is also narrowly scoped. Currently allowed iframe sources: `https://www.slideshare.net`, `https://www.youtube.com`, `https://www.youtube-nocookie.com`. To embed from anywhere else (Vimeo, Loom, Figma, Twitter/X cards, etc.) you MUST add the host to `frame-src` in `_includes/head.html` first — otherwise the iframe silently fails to render with no console error visible to a casual page visitor.
+- `img-src 'self' https://github.githubassets.com` — external images are blocked. For video thumbnails and avatars, download to `assets/images/` first; do NOT hot-link.
 
 **Logo flash fix (do not revert):**
 - The header logo is rendered as an empty `<span class="site-logo-mark">` with `mask: url(logo-small.png)` and `background-color: white` in `_sass/_header.scss`.
@@ -243,7 +245,7 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 
 **Home page composition:**
 - `_pages/home.md` contains the handwritten headline (`.welcome-section`) followed by the about hero (`.about-hero` flex row with `.about-photo-col` and `.about-text`). The body copy inside `.about-text` is pulled from `_includes/about/about.md` via Liquid `{% include %}`.
-- Under the LinkedIn/X icons sits a `.matrix-toggle.about-ai-btn` anchor that links to `/binder/getting-started-with-ai/`. (Earlier iterations toggled an in-place "matrix mode" via JS `toggleMatrix()`; that JS still exists in `assets/js/main.js` but the home page no longer wires it up. The `body.matrix-active` CSS in `_sass/_base.scss` is now reduced to hiding `.site-header` / `.home-dispatches` and theming `.neo-title`.)
+- Under the LinkedIn/X icons sits a plain `.about-ai-btn` anchor that links to `/binder/getting-started-with-ai/`. The home page social icons are rendered by `{% include social-icons.html %}` — add a new icon by dropping a `<li>` with its own inline SVG into that include. (An older "matrix mode" toggle that swapped the home page into a fake terminal lived here; the JS, CSS, canvas element, and `matrix-toggle` class were all removed. Don't reintroduce.)
 - `_layouts/home.html` is a thin wrapper: it renders `{{ content }}` and then a `<section class="home-dispatches">` list of the 5 most recent dispatches below the main content. There is no sidebar.
 - The about hero uses `flex-direction: row-reverse` so the photo sits on the right; mobile collapses to column. Flip-card sizing lives in `_sass/_about-hero.scss` (180px desktop / 140px tablet / 120px small mobile).
 - The follow icons under the photo are a `<ul class="follow-links about-follow-links">`. The `.about-follow-links` rule MUST stay after `.follow-links { margin: 0 }` in `_sass/_home.scss` so its `margin-top` override wins on source order.
@@ -262,6 +264,35 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 - To move an entry between sections: cut the slug from one section's `entries:` and paste into another.
 - The layout resolves entry titles in the TOC via `site.binder | where: 'slug', entry_slug | first`. If you misspell a slug in yml, the entry silently disappears from the TOC (no build error). Verify after edits.
 - The five section pages (`_pages/binder-*.md`) are 4-line permalink shims that set `theme_slug:` matching a yml section. Add a new shim when you add a new section to yml.
+- **Every entry MUST have a `date:` field in front matter.** The layout renders a `Last updated: <date>` footer on each entry by reading `page.date`. Without an explicit `date:`, Jekyll silently falls back to the file's mtime (often the build time), and every dateless entry will display "Last updated: <today>" — misleading. New entries: add `date: YYYY-MM-DD`. Date semantics here are "last meaningfully updated," not "published."
+- TOC sidebar uses `text-overflow: ellipsis` to truncate long titles. Sidebar is 240px wide; long titles fit but very long ones may still elide. Shorter titles read better.
+- `.binder-layout` uses negative L/R margins to break out of `.container` padding so the TOC sits flush left and the content runs to the right edge of the 960px wrapper. If you change the wrapper width or `.container` padding, revisit the breakout values in `_sass/_binder.scss`.
+
+**Quote and embed patterns (pick the right one):**
+
+The site has a small vocabulary of pull-quote and external-embed treatments. Use the closest match rather than inventing a new one — the styling is already in `_sass/_binder.scss` and `_sass/_utilities.scss`.
+
+| Pattern | Use for | Source |
+|---|---|---|
+| `<div class="binder-quote">` with `<cite>` | Short pull-quote (1 line) with attribution. Italic Newsreader, accent-bar left border. | `_sass/_binder.scss` `.binder-quote` |
+| `<div class="binder-quote">` with `<p>` children + `<cite>` | Multi-paragraph external quote (e.g., a tweet). Same visual treatment, paragraph-aware spacing. | same |
+| Markdown `> ...` blockquote with `> — [Author](url)` attribution line | Mid-essay quoted excerpt where you want native markdown flow (no HTML). Slootman, Peters calendar quote use this. | kramdown default |
+| `<div class="video-embed">` wrapping a YouTube `<iframe>` | Inline video player. 16:9 responsive, max-width 560px. Requires `frame-src` allowance. | `_sass/_binder.scss` `.video-embed` |
+| `<div class="slide-embed">` wrapping a SlideShare `<iframe>` + `.slide-embed-caption` | Inline slide deck. 510:420 responsive. Requires `frame-src` allowance. | `_sass/_binder.scss` `.slide-embed` |
+| `{% include youtube.html url=... thumb=... title=... %}` | Click-through video card (thumbnail + play icon + caption opens YT in new tab). Used when you don't want an inline player or you want consistency with older dispatches. Needs a local thumbnail in `assets/images/`. | `_includes/youtube.html`, `.video-preview` in `_utilities.scss` |
+| Floated avatar pattern (markdown image-link as the only thing in a paragraph) | Dispatch sections introducing someone's post. Documented above under "Dispatch section pattern." | `_sass/_utilities.scss` |
+
+**Embedding YouTube:** Two valid treatments depending on intent.
+- `youtube.html` include (click-through card) — preferred for "go watch this later" references; doesn't need CSP changes.
+- Inline `<iframe>` in `.video-embed` — preferred for "watch right here" embedded experience; requires the YouTube hosts in `frame-src`.
+
+**Embedding a SlideShare deck:** Use the iframe in `.slide-embed`. SlideShare doesn't have a click-through alternative include. CSP must allow `https://www.slideshare.net`.
+
+**Embedding an X/Twitter tweet:** No real embed possible — X's `widgets.js` is blocked by `script-src 'self'`. Render manually as a `.binder-quote` (multi-`<p>` form) with `<cite>` linking to the tweet. See `_binder/belief.md` Deeter quote for the pattern.
+
+**Markdown inside an HTML wrapper:** kramdown does not parse markdown inside block-level HTML by default. To opt in, add `markdown="1"` to the wrapper element. Example: `_binder/getting-started-with-ai.md` wraps its body in `<div class="neo-text" markdown="1">` so the markdown headings, lists, and links render.
+
+**HTML-encoding inside `.binder-quote`:** When quoted text contains `&`, you must write `&amp;` because the content is raw HTML, not markdown. `<` and `>` similarly become `&lt;` and `&gt;`.
 
 **About page is gone:**
 - `_pages/about.md` and `_layouts/about.html` were removed; the About entry was deleted from `_data/navigation.yml`. The About content now lives on the home page.
