@@ -48,6 +48,9 @@ layout: default
         <div class="binder-content binder-content-wide">
           <h1 class="binder-entry-title">{{ page.title }}</h1>
           {{ content }}
+          {% if page.date %}
+            <p class="binder-entry-updated">Last updated: <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+          {% endif %}
         </div>
       </div>
 
@@ -88,8 +91,10 @@ layout: default
             {% endif %}
           {% else %}
             <h1 class="binder-entry-title">{{ page.title }}</h1>
-            {% if page.date %}<div class="binder-entry-date"><time>{{ page.date | date: "%b %-d, %Y" }}</time></div>{% endif %}
             {{ content }}
+            {% if page.date %}
+              <p class="binder-entry-updated">Last updated: <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+            {% endif %}
           {% endif %}
         </div>
 

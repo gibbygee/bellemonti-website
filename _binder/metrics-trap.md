@@ -1,5 +1,6 @@
 ---
 title: The metrics trap
+date: 2026-05-12
 ---
 
 <div class="binder-quote">

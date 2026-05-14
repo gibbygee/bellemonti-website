@@ -1,5 +1,6 @@
 ---
 title: What kills companies
+date: 2026-05-12
 ---
 
 The deaths look different but the underlying pattern is consistent. Local optimization. Lost coherence. The metric replaces the mission.

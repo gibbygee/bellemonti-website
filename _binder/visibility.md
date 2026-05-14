@@ -1,5 +1,6 @@
 ---
 title: What makes things visible
+date: 2026-05-12
 ---
 
 To change a company, change what's visible. Product. Price list. Website. Customer deck. Board deck. Bonus spreadsheet. Discount matrix.

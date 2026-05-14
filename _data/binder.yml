@@ -12,38 +12,37 @@
 
 - slug: nature-of-software
   title: The nature of software
-  description: What software actually is and how it behaves. Accumulation, fragility, economics, and the AI scaffold.
+  description: The peculiarity of the software business. Accumulation, fragility, repeat economics. 
   narrative: |
-    Software [accumulates](/binder/software-is-cumulative/) - every line shipped stays, and maintenance compounds like debt. Confusing that for inefficiency is a [category error](/binder/software-is-mostly-not-waste/); the real waste is local optimization without a unifying yardstick. CFOs miss the [physics underneath](/binder/financial-physics/), which is why so many software companies break under their own weight. The companies that survive understand they are [fragile dandelions](/binder/software-faith/) - belief is the operating system, not capital.
+    Software [accumulates](/binder/software-is-cumulative/) - every line shipped stays, and maintenance compounds like debt. Confusing that for inefficiency is a [category error](/binder/software-is-mostly-not-waste/); the real waste is local optimization without coherence. Silo'd CFOs miss the [physics underneath](/binder/financial-physics/), which is why so many software companies break under their own weight. The companies that survive understand they are [fragile dandelions](/binder/software-faith/) - belief is the operating system, not capital.
 
-    The work itself is not exotic. [Most teams fail at the basics](/binder/not-complex-simple/), not for lack of advanced technique. The compounding advantage comes from [platforms](/binder/platforms/) - the first product pays the freight, and every product after goes faster. The same principle holds in AI: [the model is interchangeable](/binder/harness/); the scaffold around it is what creates the value.
+    The work itself is not exotic. [Most teams fail at the basics](/binder/not-complex-simple/), not for lack of process or "best practices." The compounding advantage comes from [platforms](/binder/platforms/) - the first product pays the freight, and every product after goes faster. The same principle holds in AI: [the model is interchangeable](/binder/harness/); the scaffold creates the value.
   entries:
+    - financial-physics
     - software-is-cumulative
     - software-is-mostly-not-waste
-    - financial-physics
-    - software-faith
     - not-complex-simple
     - platforms
     - harness
 
 - slug: belief-and-culture
   title: Belief and culture
-  description: Why companies live or die on belief. Mission, agency, what gets remembered, what gets rewarded.
+  description: Why companies live or die on belief. Mission, agency, what gets remembered, gets done.
   narrative: |
-    Process is downstream of product, product is downstream of culture, and [culture sets the ceiling](/binder/upstream-chain/) for everything else. Companies that lose the [WHY](/binder/why-problem/) lose their best people first - the narrative collapses, the missionaries leave, and the mercenaries who replace them never quite get it back. Belief is [the operating layer](/binder/belief/) - fragile, hard to build, easy to break.
+    Process is downstream of product, product is downstream of culture, and [culture sets the ceiling](/binder/upstream-chain/) for everything else. Companies that lose the [WHY](/binder/why-problem/) lose their best people first - the narrative collapses, the missionaries leave, and the functionaries who replace them never quite get back the mojo. Belief is [the operating layer](/binder/belief/) - fragile, hard to build, easy to break.
 
-    Not everyone is a high-agency self-starter. The empowerment narrative is a [narcotic for the few and abandonment for the many](/binder/low-agency-virus/); structure is the cure, not better hiring. The signal of a company in trouble is rarely a missing feature - it's usually [eroded fundamentals](/binder/fundamentals-are-always-in/). And every company carries its [origin story](/binder/back-story/) in its habits and language, whether anyone notices or not.
+    The signal of a company in trouble is rarely a missing feature - it's usually [eroded fundamentals](/binder/fundamentals-are-always-in/). Reclaiming growth and leadership is usually a renewal of the [origin story](/binder/back-story/) the habits and language that got you there in the first place.
   entries:
-    - upstream-chain
-    - why-problem
     - belief
+    - upstream-chain
+    - software-faith
+    - why-problem
     - low-agency-virus
     - back-story
-    - fundamentals-are-always-in
 
 - slug: strategy
   title: Strategy
-  description: Picking the long road. Structure, time horizons, the trap of metrics, what kills companies.
+  description: Strategy is a series of choices. Strategy is structure. The trap of metrics. 
   narrative: |
     McChrystal had it right: [structure, not the plan, is the strategy](/binder/structure/). Distributed structure beats centralized plans every time, and [the long game](/binder/long-game/) - patient compounding across decades - beats the quarterly grind by a wide margin. The hard part is that most software companies are run by [the wrong temperament for their mode](/binder/operators-investors/): investors when they need operators, operators when they need investors.
 
@@ -56,6 +55,7 @@
     - all-software-execs-have-the-same-job
     - as-good-as-it-gets
     - what-kills-companies
+    - you-will-regret-snowflakes
 
 - slug: how-teams-run
   title: How teams run
@@ -71,20 +71,20 @@
     - too-much-talking
     - agile
     - beware-captive-it
-    - you-will-regret-snowflakes
 
 - slug: pm-craft
   title: The PM craft
-  description: What product managers actually do. Judgment over responsiveness, staff work over story tickets, slow on purpose.
+  description: What product managers actually do. Judgment first, process last. Leadership at every level.
   narrative: |
-    The job description of PM is mostly wrong. [Responsiveness is a trap](/binder/responsive-pms-are-the-worst/) - the responsive PM is the one whose roadmap is owned by sales. [PM should probably be slow](/binder/maybe-pm-should-be-slow/), in fact - the whole point of the role is to stop engineers from building the wrong things faster.
+    The job description of PM is mostly wrong. [Responsiveness is a trap](/binder/responsive-pms-are-the-worst/) - the responsive PM is the one whose roadmap is not prioritized for impact. [PM should probably be slow](/binder/maybe-pm-should-be-slow/), the point being to build the right thing, which in practice often means avoiding building the wrong things. 
 
-    What good PMs actually do is [staff work](/binder/staff-work/): painstaking synthesis across teams that makes ideas land. They [ship more](/binder/ship-more/) because the pace of shipment drives the pace of learning. They don't [argue in doc comments](/binder/responding-in-comments/) - they talk to the person and put it in the doc. They [repeat the strategy until people mock the delivery](/binder/repetition-and-persuasion/), because the craft is persuasion. And they understand that [the roadmap is a story](/binder/a-roadmap-is-a-story/) - it's how the strategy becomes visible to the people executing it.
+    What good PMs actually do is [staff work](/binder/staff-work/): painstaking synthesis. They [ship more](/binder/ship-more/) because the pace of shipment drives the pace of learning. They don't [argue in doc comments](/binder/responding-in-comments/) - they let the writing talk. They [repeat the strategy until people mock the delivery](/binder/repetition-and-persuasion/), because the craft is persuasion. And they understand that [the roadmap is a story](/binder/a-roadmap-is-a-story/) - it's how the strategy becomes visible to the people executing it.
   entries:
     - responsive-pms-are-the-worst
     - maybe-pm-should-be-slow
+    - a-roadmap-is-a-story
+    - repetition-and-persuasion
     - staff-work
     - ship-more
     - responding-in-comments
-    - repetition-and-persuasion
-    - a-roadmap-is-a-story
+    - fundamentals-are-always-in

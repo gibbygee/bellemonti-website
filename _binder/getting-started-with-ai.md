@@ -1,6 +1,7 @@
 ---
 title: Getting Started with AI
 theme_slug: getting-started-with-ai
+date: 2026-05-13
 ---
 
 <div class="neo-hero">

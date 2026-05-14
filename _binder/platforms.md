@@ -1,5 +1,6 @@
 ---
 title: Platforms are not optional
+date: 2026-05-13
 ---
 
 A product without a platform is a dead end. A platform without a product is a science project.

@@ -1,5 +1,6 @@
 ---
 title: The long game
+date: 2026-05-12
 ---
 
 McKinsey's data is clear: companies executing long-term approaches generate 47% higher revenue growth and 36% more earnings over 10 years versus short-term focused peers. That's not a small delta.

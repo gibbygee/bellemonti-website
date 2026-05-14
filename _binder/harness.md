@@ -1,5 +1,6 @@
 ---
 title: In AI, the harness is the product
+date: 2026-05-12
 ---
 
 The model is interchangeable. The scaffold around it is what creates value.

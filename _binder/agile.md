@@ -1,5 +1,6 @@
 ---
 title: Agile was a philosophy, not a program
+date: 2026-05-12
 ---
 
 Agile was meant to be a cultural statement about how software differs from manufacturing. Iteration, learning, adaptation. That's the insight.

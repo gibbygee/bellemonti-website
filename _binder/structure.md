@@ -1,5 +1,6 @@
 ---
 title: Structure is the strategy
+date: 2026-05-12
 ---
 
 <div class="binder-quote">

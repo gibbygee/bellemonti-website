@@ -1,5 +1,6 @@
 ---
 title: Operators and investors
+date: 2026-05-12
 ---
 
 <div class="binder-quote">
