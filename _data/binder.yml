@@ -80,11 +80,12 @@
 
     What good PMs actually do is [staff work](/binder/staff-work/): painstaking synthesis. They [ship more](/binder/ship-more/) because the pace of shipment drives the pace of learning. They don't [argue in doc comments](/binder/responding-in-comments/) - they let the writing talk. They [repeat the strategy until people mock the delivery](/binder/repetition-and-persuasion/), because the craft is persuasion. And they understand that [the roadmap is a story](/binder/a-roadmap-is-a-story/) - it's how the strategy becomes visible to the people executing it.
   entries:
+    - fundamentals-are-always-in
     - responsive-pms-are-the-worst
     - maybe-pm-should-be-slow
     - a-roadmap-is-a-story
     - repetition-and-persuasion
     - staff-work
-    - ship-more
     - responding-in-comments
-    - fundamentals-are-always-in
+    - ship-more    
+
