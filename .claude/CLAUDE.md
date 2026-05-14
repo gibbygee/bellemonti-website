@@ -301,3 +301,20 @@ The site has a small vocabulary of pull-quote and external-embed treatments. Use
 
 **Header layout:**
 - `_includes/header.html` has two rows: `.header-top` (logo only) and `.header-bottom` (`.site-nav` left, `.login-btn` right). Both are `display: flex; justify-content: space-between`. Styles are in `_sass/_header.scss`.
+
+**Mobile gutter lives on `.site-wrapper`, not `.container`:**
+- `_layouts/default.html` wraps the page in `.site-wrapper`, not `.container`. Pages that don't use `.container` (most of them) inherit no horizontal padding from `.container`.
+- `.site-wrapper` in `_sass/_base.scss` has a `@media (max-width: $breakpoint-mobile) { padding: 0 $mobile-padding }` rule. That's what keeps mobile content off the screen edge. `.container` has its own identical rule for the cases where it IS used.
+- If mobile content runs edge-to-edge, the fix is to bump `$mobile-padding` in `_sass/_variables.scss` (currently 24px), not to add `.container` to layouts.
+
+**Removing or merging a binder entry (do all four or you'll get 404s / broken TOC):**
+1. Delete `_binder/<slug>.md`.
+2. Remove the slug from every `entries:` list it appears in inside `_data/binder.yml` (entries are referenced by slug only, no other registry).
+3. Scrub inline `[label](/binder/<slug>/)` links from any `narrative:` blocks in `_data/binder.yml` — those don't break the build, but they leak through to the section cover page as live links.
+4. If the entry had a public URL anyone might link to (especially if it was previously a `_dispatches/` entry with a dated `/YYYY/MM/DD/...` URL), add a `redirect_from:` block to the receiving entry's front matter so old URLs route to the new home. `jekyll-redirect-from` is already enabled. Example: when `you-will-regret-snowflakes` was folded into `what-kills-companies`, `_binder/what-kills-companies.md` gained:
+   ```yaml
+   redirect_from:
+     - /2024/08/19/you-will-regret-snowflakes/
+     - /dispatches/you-will-regret-snowflakes/
+     - /binder/you-will-regret-snowflakes/
+   ```

@@ -28,6 +28,10 @@ body {
   max-width: $container-width;
   margin: 0 auto;
   min-height: 100vh;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0 $mobile-padding;
+  }
 }
 
 // Container

@@ -44,18 +44,16 @@
   title: Strategy
   description: Strategy is a series of choices. Strategy is structure. The trap of metrics. 
   narrative: |
-    McChrystal had it right: [structure, not the plan, is the strategy](/binder/structure/). Distributed structure beats centralized plans every time, and [the long game](/binder/long-game/) - patient compounding across decades - beats the quarterly grind by a wide margin. The hard part is that most software companies are run by [the wrong temperament for their mode](/binder/operators-investors/): investors when they need operators, operators when they need investors.
+    McChrystal had it right: [structure, not the plan, is the strategy](/binder/structure/). Distributed structure beats centralized plans every time. The hard part is that most software companies are run by [the wrong temperament for their mode](/binder/operators-investors/): investors when they need operators, operators when they need investors.
 
     The [metrics trap](/binder/metrics-trap/) is the most reliable killer - metrics become the product, users become an externality, and the cure is principles. Underneath all of it, [every exec at a software company has the same job](/binder/all-software-execs-have-the-same-job/): product. Forget that and the org carves into lanes, each locally optimized and collectively mediocre. Most companies aren't growing anyway - [maturity is the actual stage](/binder/as-good-as-it-gets/), and pretending otherwise is the cargo cult that [kills companies](/binder/what-kills-companies/).
   entries:
-    - structure
-    - long-game
     - operators-investors
     - metrics-trap
+    - structure
     - all-software-execs-have-the-same-job
     - as-good-as-it-gets
     - what-kills-companies
-    - you-will-regret-snowflakes
 
 - slug: how-teams-run
   title: How teams run
@@ -63,7 +61,7 @@
   narrative: |
     Teams don't run on time, they run on [attention](/binder/manage-attention-not-time/) - what your calendar is full of is what gets done. [Cadence](/binder/change-your-teams-clock/) determines the operating tempo: daily is executive, weekly is supervisory, monthly is once-removed. The job is to make work [visible](/binder/visibility/) through artifacts that can be reviewed and argued with, and to [write more than you talk](/binder/too-much-talking/) - meetings cement misunderstandings, writing forces clarity.
 
-    The anti-patterns are reliable. [Agile became a program](/binder/agile/) and the philosophy got buried under ceremony, while engineering used the process to consolidate power. [Captive IT shops](/binder/beware-captive-it/) optimize for internal stakeholders and lose the discipline of an actual market. And [snowflakes](/binder/you-will-regret-snowflakes/) - one-of-a-kind custom implementations - are sclerosis disguised as flexibility.
+    The anti-patterns are reliable. [Agile became a program](/binder/agile/) and the philosophy got buried under ceremony, while engineering used the process to consolidate power. [Captive IT shops](/binder/beware-captive-it/) optimize for internal stakeholders and lose the discipline of an actual market. And [snowflakes](/binder/what-kills-companies/#snowflakes) - one-of-a-kind custom implementations - are sclerosis disguised as flexibility.
   entries:
     - manage-attention-not-time
     - change-your-teams-clock
