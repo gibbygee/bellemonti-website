@@ -319,3 +319,4 @@ The site has a small vocabulary of pull-quote and external-embed treatments. Use
      - /dispatches/you-will-regret-snowflakes/
      - /binder/you-will-regret-snowflakes/
    ```
+   Note: `what-kills-companies` itself was deleted in May 2026, which orphaned those three `you-will-regret-snowflakes` redirects. If traffic to those URLs reappears, re-home the `redirect_from:` block on another binder entry.
