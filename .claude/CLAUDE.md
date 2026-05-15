@@ -154,7 +154,7 @@ The site previously had JS in `assets/js/main.js` that swapped a trailing `J.` p
 SCSS files in `_sass/` (import order in `assets/css/main.scss`):
 - `_fonts.scss` - `@font-face` for Newsreader (display) and Inter (wordmark). Imported first.
 - `_variables.scss` - Colors, typography, spacing, breakpoints, brand tokens
-- `_base.scss` - Reset and base element styles; `.neo-hero` (photo-right hero used by the Getting Started with AI binder entry) lives here too
+- `_base.scss` - Reset and base element styles. (`.neo-hero`/`.neo-photo-col`/`.neo-text`/`.neo-photo` still defined but currently unused — the Getting Started with AI entry no longer wraps in `.neo-hero` and renders as a plain binder entry.)
 - `_typography.scss` - Headings (h1/h2 use `$font-display` / Newsreader)
 - `_header.scss` - Dark charcoal header, masked logo, wordmark in Inter
 - `_navigation.scss` - Nav with animated underline, muted gray link color
@@ -183,7 +183,7 @@ Edit `_data/navigation.yml` to modify menu. Set `visible: false` to hide items w
 - `_layouts/home.html` - Home page wrapper. Renders `{{ content }}` from `_pages/home.md` then a "recent dispatches" list (5 most recent) below the main content.
 - `_pages/home.md` - Home page content: handwritten "Less process. More judgment." headline, then the about hero (flip-card photo + LinkedIn/X follow links + "Getting Started with AI" button + about copy + signature + email). Body copy is pulled from `_includes/about/about.md`.
 - `_includes/about/about.md` - The "Market-based product management..." heading and bullets. Edit this file to change the home page body copy. (Still imported by `_pages/home.md`; the standalone `/about/` page was removed.)
-- `_binder/getting-started-with-ai.md` - "Getting Started with AI" binder entry. Wraps its content in `.neo-hero` (photo-right hero with helmet headshot) — the markdown body lives inside `<div class="neo-text" markdown="1">` so kramdown processes it despite the HTML wrapper. Surfaced as the first binder tile.
+- `_binder/getting-started-with-ai.md` - "Getting Started with AI" binder entry. Renders as a plain binder entry (no photo, no flex wrapper) - same body-text structure as other binder entries. Surfaced as the first binder tile. Previously wrapped in `.neo-hero` with a photo-right helmet headshot; the `.neo-*` CSS still exists in `_base.scss` if the treatment needs to be restored.
 - `_layouts/binder.html` - Has three render branches: cover (`/binder/`), single-page entry (when section has `direct_url`), and standard entry-with-TOC.
 - `_includes/header.html` - Two-row header: `.header-top` (logo) and `.header-bottom` (nav left, Login button right, both on the same baseline). Login href is `{{ site.aardvark_url }}/login`.
 - `_includes/navigation.html` - Renders menu with active state detection.
@@ -291,7 +291,7 @@ The site has a small vocabulary of pull-quote and external-embed treatments. Use
 
 **Embedding an X/Twitter tweet:** No real embed possible — X's `widgets.js` is blocked by `script-src 'self'`. Render manually as a `.binder-quote` (multi-`<p>` form) with `<cite>` linking to the tweet. See `_binder/belief.md` Deeter quote for the pattern.
 
-**Markdown inside an HTML wrapper:** kramdown does not parse markdown inside block-level HTML by default. To opt in, add `markdown="1"` to the wrapper element. Example: `_binder/getting-started-with-ai.md` wraps its body in `<div class="neo-text" markdown="1">` so the markdown headings, lists, and links render.
+**Markdown inside an HTML wrapper:** kramdown does not parse markdown inside block-level HTML by default. To opt in, add `markdown="1"` to the wrapper element. (No live example in the repo right now - the AI page used to demonstrate this with `<div class="neo-text" markdown="1">` but has been simplified to plain markdown.)
 
 **HTML-encoding inside `.binder-quote`:** When quoted text contains `&`, you must write `&amp;` because the content is raw HTML, not markdown. `<` and `>` similarly become `&lt;` and `&gt;`.
 

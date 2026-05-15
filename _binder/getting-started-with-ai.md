@@ -4,12 +4,6 @@ theme_slug: getting-started-with-ai
 date: 2026-05-13
 ---
 
-<div class="neo-hero">
-  <div class="neo-photo-col">
-    <img src="/assets/images/headshot-bike.jpg" alt="John Garrish" class="neo-photo">
-  </div>
-  <div class="neo-text" markdown="1">
-
 I get asked a lot >> If I'm ready to graduate from "consumer AI" ... what's next?
 
 Here are a few thoughts for PMs - or anyone - about how to get hands-on with AI without getting lost. Not an exhaustive list, just what I'm using and watching right now.
@@ -78,5 +72,3 @@ Staying current on AI is half the battle:
 - [Gamma](https://gamma.app/) - popular, but I find it hard to control. Slop cannon.
 - All the consumer chats - [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) web. Fine for civilian use, but I find them sloppy for corporate use.
 
-</div>
-</div>
