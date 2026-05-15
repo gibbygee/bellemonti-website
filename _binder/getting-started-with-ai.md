@@ -78,5 +78,5 @@ Staying current on AI is half the battle:
 - [Gamma](https://gamma.app/) - popular, but I find it hard to control. Slop cannon.
 - All the consumer chats - [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/) web. Fine for civilian use, but I find them sloppy for corporate use.
 
-  </div>
+</div>
 </div>
