@@ -27,10 +27,6 @@ The best operators are the ones willing to unlearn the climb. To forget the ladd
 
 One-of-a-kind custom implementations for individual customers. The money is seductive. The cost is the heat death of your software company. Snowflakes always increase complexity, always increase maintenance cost, always lengthen development cycles, and always handbrake scalability. The recovering addict's logic applies: "just this once." They end up making a habit of it.
 
-> "If it's part of your business, it will always be part of your business. It's a one-way ticket."
->
-> Gregg Machacz
-
 The counter is a platform. The genesis of most snowflakes is a customer that wants something off-piste, something that breaks the tenets of what you're building. A platform gives you toggles and configurations instead. Build the standard product on top of a small platform from day one. The first product pays the freight; everything after rides the leverage.
 
 A product without a platform is a dead end. A platform without a product is a science project. Keep them tethered. One bridge onto the island, both on the same roadmap.
