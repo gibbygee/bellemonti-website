@@ -293,6 +293,8 @@ The site has a small vocabulary of pull-quote and external-embed treatments. Use
 
 **Markdown inside an HTML wrapper:** kramdown does not parse markdown inside block-level HTML by default. To opt in, add `markdown="1"` to the wrapper element. (No live example in the repo right now - the AI page used to demonstrate this with `<div class="neo-text" markdown="1">` but has been simplified to plain markdown.)
 
+**Gotcha when closing the wrapper:** the closing `</div>` MUST be at column 0, not indented. If the markdown body ends with a bullet list and the next line is `  </div>` (2-space indent), kramdown reads the indented `</div>` as list-item continuation. The result: the last `<li>` gets wrapped in `<p>` and the literal `</div>` is rendered as escaped text inside the list item. Unindent the closing tag to fix.
+
 **HTML-encoding inside `.binder-quote`:** When quoted text contains `&`, you must write `&amp;` because the content is raw HTML, not markdown. `<` and `>` similarly become `&lt;` and `&gt;`.
 
 **About page is gone:**
