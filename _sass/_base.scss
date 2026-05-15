@@ -108,6 +108,13 @@ button {
 .neo-text {
   flex: 1 1 auto;
   min-width: 0;
+
+  // First heading inside neo-text sits tight under the intro paragraphs.
+  // Without this, .binder-content h2 { margin-top: 28px } feels wide
+  // next to the short intro + tall photo column.
+  h2:first-of-type {
+    margin-top: 12px;
+  }
 }
 
 .neo-photo {
