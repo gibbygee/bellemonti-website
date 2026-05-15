@@ -167,6 +167,7 @@ SCSS files in `_sass/` (import order in `assets/css/main.scss`):
 **Brand tokens (`_sass/_variables.scss`) — single source of truth:**
 - `$color-accent` / `$color-accent-dark` - Site accent color. Currently vivid orange (`#F97316` / `#C2410C`). Change these two values to re-theme the whole site (nav underline, dispatch eyebrow, dispatch date, hover states).
 - `$font-display` - Newsreader (self-hosted serif). Used on h1/h2 and dispatch titles.
+- `$font-primary` - Body text. Currently a Palatino stack (`Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif`) - system serif font, no self-hosting needed. Experimental swap from the prior `-apple-system / Segoe UI` sans stack; revert that one line in `_variables.scss` to go back to sans.
 - Wordmark uses `"Inter"` directly (self-hosted variable font) — not via `$font-display`.
 - Header background: hardcoded `#1F2937` in `_header.scss`.
 - Dispatch card background: hardcoded `#F7F7F5` in `_home.scss`.
