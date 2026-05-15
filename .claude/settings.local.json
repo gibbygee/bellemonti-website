@@ -266,7 +266,14 @@
       "Bash(python3 /tmp/claude/installer.py)",
       "Bash(python3 /tmp/claude/bold.py)",
       "Bash(python3 /tmp/claude/font.py)",
-      "Bash(python3 /tmp/claude/fixdiv.py)"
+      "Bash(python3 /tmp/claude/fixdiv.py)",
+      "Bash(python3 /tmp/claude/dedash2.py)",
+      "Bash(python3 /tmp/claude/unindent.py)",
+      "Bash(python3 /tmp/claude/neogap.py)",
+      "Bash(python3 /tmp/claude/neoh2.py)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 /tmp/claude/strip_neo.py)",
+      "Bash(python3 /tmp/claude/singlespace.py)"
     ],
     "deny": [
       "Bash(cat ~/.ssh/*)",
