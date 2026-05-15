@@ -273,7 +273,8 @@
       "Bash(python3 /tmp/claude/neoh2.py)",
       "Bash(python3 -c ' *)",
       "Bash(python3 /tmp/claude/strip_neo.py)",
-      "Bash(python3 /tmp/claude/singlespace.py)"
+      "Bash(python3 /tmp/claude/singlespace.py)",
+      "Bash(python3 /tmp/claude/clmd4.py)"
     ],
     "deny": [
       "Bash(cat ~/.ssh/*)",
